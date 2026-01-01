@@ -54,11 +54,12 @@ python3 3_eval_mc_ms_tf.py
 
 ## In Answer Mode, evaluate answers from FB/OE questions by semantic similiarity & LLM judge
 ## In Rationale Mode, evaluate rationales from ALL questions by semantic similarity & LLM judge, producing evaluation scores each LLM evaluator, in v3, error taxonomy is not yet implemented. Other problems arise: payment required for API tokens if not set max_tokens, setting max_tokens is ok for testing only but not real evaluation
-python3 4_eval_llm_judge_v3.py --mode answer --input_file openai_gpt-4o-mini_scored_partial.json
+python3 4_eval_llm_judge_v4.py --mode answer --input_file openai_gpt-4o-mini_scored_partial.json
 + openai_gpt-4o-mini_scored_partial_final_answer.json
 (Wait for expert score to calculate Final Answer Score manually…)
 
-python3 4_eval_llm_judge_v3.py --mode rationale --input_file openai_gpt-4o-mini_scored_partial_final_answer.json
+python3 4_eval_llm_judge_v4.py --mode rationale --input_file openai_gpt-4o-mini_scored_partial_final_answer.json
 + openai_gpt-4o-mini_scored_partial_final_answer_final_rationale.json
 (actually only evaluation scores of LLMs, not yet final rationale score for LLMs which refers to the average eval score of LLMs)
 
+python3 5_generate_report.py --input_file openai_gpt-4o-mini_scored_partial_final_answer_final_rationale.json
