@@ -1,0 +1,37 @@
+[
+    {
+        "question_id": "1",
+        "question_domain": "Algorithms and Complexity",
+        "question_type": "MC",
+        "question_prompt": "Which of the following statements concerning the complexity classes P, NP, and NP-Complete is strictly FALSE, assuming P ≠ NP?\n\nA) If a problem X is in NP-Complete, then there exists a polynomial-time reduction from every problem in NP to X.\nB) If X is in P, then X is also in NP.\nC) There exists a problem Y in NP that is neither in P nor in NP-Complete.\nD) If a problem Z is NP-Hard, it must be decidable.",
+        "gold_answer": "D"
+    },
+    {
+        "question_id": "2",
+        "question_domain": "Computer Systems and Architecture",
+        "question_type": "MS",
+        "question_prompt": "Regarding the operation of a standard 5-stage MIPS pipeline (Fetch, Decode, Execute, Memory, Writeback), which of the following hazard scenarios can be fully resolved using 'forwarding' (bypassing) without requiring a pipeline stall (bubble)? Select all that apply.\n\nA) EX hazard: An instruction needs a register value computed by the immediately preceding instruction's ALU operation.\nB) Load-Use hazard: An instruction needs a register value loaded from memory by the immediately preceding instruction.\nC) EX hazard: An instruction needs a register value computed by the instruction two cycles prior.\nD) Control hazard: A conditional branch outcome is determined in the Execute stage.",
+        "gold_answer": "A, C"
+    },
+    {
+        "question_id": "3",
+        "question_domain": "Software Engineering and AI Fundamentals",
+        "question_type": "True-or-False",
+        "question_prompt": "In the context of Generative Adversarial Networks (GANs), the 'vanishing gradient' problem is most likely to occur when the discriminator is significantly weaker than the generator, causing the generator to receive random or useless feedback.",
+        "gold_answer": "False"
+    },
+    {
+        "question_id": "4",
+        "question_domain": "Data Structures",
+        "question_type": "Fill-In-Blank",
+        "question_prompt": "In a Red-Black Tree, the maximum height of the tree with n internal nodes is strictly bounded by ______.",
+        "gold_answer": "2 * log2(n + 1)"
+    },
+    {
+        "question_id": "5",
+        "question_domain": "Databases and Information Systems",
+        "question_type": "Open-Ended",
+        "question_prompt": "Describe the 'Write Skew' anomaly in database concurrency control. Provide a concrete scenario where Write Skew can occur under Snapshot Isolation but would be prevented by Serializability.",
+        "gold_answer": "Write Skew is a concurrency anomaly where two transactions (T1 and T2) read overlapping data sets but update disjoint subsets based on a condition over the intersection, violating a constraint. Scenario: Two doctors are 'on call'. The rule is 'at least one doctor must remain on call'. T1 reads both are on call and removes Doctor A. T2 concurrently reads both are on call and removes Doctor B. Both commit under Snapshot Isolation because they write to different rows, but the final state (0 doctors) violates the business rule. Serializability prevents this by forcing T1 and T2 to execute sequentially."
+    }
+]

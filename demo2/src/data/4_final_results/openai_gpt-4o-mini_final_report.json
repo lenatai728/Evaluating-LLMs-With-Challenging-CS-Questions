@@ -1,0 +1,57 @@
+[
+    {
+        "question_id": "1",
+        "question_domain": "Algorithms and Complexity",
+        "question_type": "MC",
+        "average_answer_score": 2.0,
+        "average_rationale_score": 2.0,
+        "wA": 1.0,
+        "wR": 1.0,
+        "Final Score": 100.0,
+        "Explanation Code": "E0"
+    },
+    {
+        "question_id": "2",
+        "question_domain": "Computer Systems and Architecture",
+        "question_type": "MS",
+        "average_answer_score": 2.0,
+        "average_rationale_score": 1.5,
+        "wA": 1.0,
+        "wR": 0.75,
+        "Final Score": 75.0,
+        "Explanation Code": "E0, E9"
+    },
+    {
+        "question_id": "3",
+        "question_domain": "Software Engineering and AI Fundamentals",
+        "question_type": "TF",
+        "average_answer_score": 0.0,
+        "average_rationale_score": 0.0,
+        "wA": 0.0,
+        "wR": 0.0,
+        "Final Score": 0.0,
+        "Explanation Code": "E1"
+    },
+    {
+        "question_id": "4",
+        "question_domain": "Data Structures",
+        "question_type": "FB",
+        "average_answer_score": 2.0,
+        "average_rationale_score": 2.0,
+        "wA": 1.0,
+        "wR": 1.0,
+        "Final Score": 100.0,
+        "Explanation Code": "E0"
+    },
+    {
+        "question_id": "5",
+        "question_domain": "Databases and Information Systems",
+        "question_type": "OE",
+        "average_answer_score": 1.5,
+        "average_rationale_score": 1.0,
+        "wA": 0.75,
+        "wR": 0.5,
+        "Final Score": 50.0,
+        "Explanation Code": "E3"
+    }
+]

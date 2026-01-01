@@ -1,0 +1,42 @@
+[
+    {
+        "question_id": "1",
+        "question_domain": "Algorithms and Complexity",
+        "question_type": "MC",
+        "question_prompt": "Which of the following statements concerning the complexity classes P, NP, and NP-Complete is strictly FALSE, assuming P ≠ NP?\n\nA) If a problem X is in NP-Complete, then there exists a polynomial-time reduction from every problem in NP to X.\nB) If X is in P, then X is also in NP.\nC) There exists a problem Y in NP that is neither in P nor in NP-Complete.\nD) If a problem Z is NP-Hard, it must be decidable.",
+        "gold_answer": "D",
+        "gold_rationale": "Statement D is strictly false. The definition of NP-Hard requires that every problem in NP can be reduced to it in polynomial time, but it does not require the NP-Hard problem itself to be in NP or even to be decidable. A classic example is the Halting Problem, which is NP-Hard (since any NP problem instance can be mapped to a Halting Problem instance) but is undecidable. In contrast, Statement A is the definition of NP-Completeness. Statement B is true because P is a subset of NP (deterministic polynomial time implies non-deterministic polynomial time). Statement C is true based on Ladner's Theorem, which proves that if P ≠ NP, there exist 'NP-Intermediate' problems that are neither P nor NP-Complete."
+    },
+    {
+        "question_id": "2",
+        "question_domain": "Computer Systems and Architecture",
+        "question_type": "MS",
+        "question_prompt": "Regarding the operation of a standard 5-stage MIPS pipeline (Fetch, Decode, Execute, Memory, Writeback), which of the following hazard scenarios can be fully resolved using 'forwarding' (bypassing) without requiring a pipeline stall (bubble)? Select all that apply.\n\nA) EX hazard: An instruction needs a register value computed by the immediately preceding instruction's ALU operation.\nB) Load-Use hazard: An instruction needs a register value loaded from memory by the immediately preceding instruction.\nC) EX hazard: An instruction needs a register value computed by the instruction two cycles prior.\nD) Control hazard: A conditional branch outcome is determined in the Execute stage. (Select all that apply.)",
+        "gold_answer": "A, C",
+        "gold_rationale": "Option A is correct: This is a standard RAW hazard where the result is available at the end of the EX stage of the first instruction and needed at the start of the EX stage of the second. Forwarding from the EX/MEM pipeline register to the ALU input resolves this immediately. Option C is correct: The result from an instruction two cycles prior is available in the MEM/WB pipeline register (or the register file write port) and can be forwarded to the ALU. Option B is incorrect: In a Load-Use hazard, the data is only available after the MEM stage, but the dependent instruction needs it at the beginning of its EX stage. Even with forwarding, the data cannot travel 'backward' in time, necessitating a one-cycle stall. Option D is incorrect: A control hazard where the branch is decided in EX implies the correct PC is not known until the EX stage, meaning instructions fetched during the Decode and Fetch cycles of the branch are invalid. Forwarding helps calculate the condition, but it cannot resolve the penalty of having fetched the wrong instructions; a flush or stall is required."
+    },
+    {
+        "question_id": "3",
+        "question_domain": "Software Engineering and AI Fundamentals",
+        "question_type": "TF",
+        "question_prompt": "In the context of Generative Adversarial Networks (GANs), the 'vanishing gradient' problem is most likely to occur when the discriminator is significantly weaker than the generator, causing the generator to receive random or useless feedback.",
+        "gold_answer": "False",
+        "gold_rationale": "The statement is False. In GANs, the vanishing gradient problem typically occurs when the Discriminator is too strong (perfect or near-perfect). When the Discriminator classifies real vs. generated data with absolute certainty (outputting probabilities close to 1 or 0), the loss function for the Generator (especially in the original Minimax formulation) saturates. This results in gradients close to zero, providing no useful direction for the Generator to update its weights. A weak discriminator may lead to poor convergence or mode collapse, but it does not cause the mathematical 'vanishing gradient' phenomenon."
+    },
+    {
+        "question_id": "4",
+        "question_domain": "Data Structures",
+        "question_type": "aaaaFB",
+        "question_prompt": "In a Red-Black Tree, the maximum height of the tree with n internal nodes is strictly bounded by ______.",
+        "gold_answer": "2 * log2(n + 1)",
+        "gold_rationale": "In a Red-Black Tree, properties enforce that no path from the root to a leaf is more than twice as long as any other path. Specifically, the 'black-height' (number of black nodes on a path) is invariant across all paths, and red nodes cannot be adjacent (meaning at least half the nodes on any path must be black). It can be proven that a subtree with black-height 'bh' has at least 2^bh - 1 internal nodes. Consequently, for a tree with n nodes, the height 'h' is bounded such that h <= 2 * log2(n + 1)."
+    },
+    {
+        "question_id": "5",
+        "question_domain": "Databases and Information Systems",
+        "question_type": "OE",
+        "question_prompt": "Describe the 'Write Skew' anomaly in database concurrency control. Provide a concrete scenario where Write Skew can occur under Snapshot Isolation but would be prevented by Serializability.",
+        "gold_answer": "Write Skew is a concurrency anomaly where two transactions (T1 and T2) read overlapping data sets but update disjoint subsets based on a condition over the intersection, violating a constraint. Scenario: Two doctors are 'on call'. The rule is 'at least one doctor must remain on call'. T1 reads both are on call and removes Doctor A. T2 concurrently reads both are on call and removes Doctor B. Both commit under Snapshot Isolation because they write to different rows, but the final state (0 doctors) violates the business rule. Serializability prevents this by forcing T1 and T2 to execute sequentially.",
+        "gold_rationale": "The core mechanism of Write Skew relies on the behavior of Snapshot Isolation (SI), which prevents conflicts only if two transactions attempt to modify the *same* data item concurrently (First-Committer-Wins). In the doctor scenario, the consistency constraint (Total Doctors >= 1) depends on the aggregate state of the database. T1 and T2 both read the consistent snapshot where Total=2. T1's write set is {DoctorA} and T2's write set is {DoctorB}. Since {DoctorA} and {DoctorB} are disjoint, SI detects no write-write conflict and allows both to commit. However, the logical constraint is violated because the final state reflects both subtractions. A Serializable isolation level (e.g., using 2-Phase Locking) would require T1 to lock the read data (the count or the rows) before updating, forcing T2 to wait until T1 commits or aborts, thus ensuring the constraint is checked against the latest state."
+    }
+]
