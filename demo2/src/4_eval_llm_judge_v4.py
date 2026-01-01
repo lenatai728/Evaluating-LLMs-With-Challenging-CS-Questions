@@ -37,10 +37,15 @@ JUDGE_CONFIGS = [
 ]
 
 # --- LOGGING ---
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+os.makedirs('logs', exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.FileHandler("logs/4_eval_llm_judge.log"), logging.StreamHandler()]
+)
 logger = logging.getLogger(__name__)
 
-def get_judge_response(q_id, judge_config, system_prompt, user_prompt):
+def get_judge_response(q_id, judge_config, system_prompt, user_prompt, eval_mode):
     """
     Generic function to call any OpenAI-compatible API (DeepSeek, OpenAI, etc.)
     """
@@ -65,20 +70,28 @@ def get_judge_response(q_id, judge_config, system_prompt, user_prompt):
         content = response.choices[0].message.content.strip()
         logging.info(f"[{q_id}] get_judge_response(): Judge {judge_config['id']} Response: {content}")
         
-        # Parse the standardized output: Score: <number>\nCode: <code>
-        score = -1
-        ex_code = None
-        lines = content.split('\n')
-        for line in lines:
-            if line.startswith("Score:"):
-                try:
-                    score = int(line.split("Score:")[1].strip())
-                except ValueError:
-                    score = -1
-            elif line.startswith("Code:"):
-                ex_code = line.split("Code:")[1].strip()
+        if eval_mode == "answer":
+            try:
+                score = int(content)
+            except ValueError:
+                score = -1  # Error code
+            return score, None  # No explanation code for answer mode
         
-        return score, ex_code
+        elif eval_mode == "rationale":
+            # Parse the standardized output: Score: <number>\nCode: <code>
+            score = -1
+            ex_code = None
+            lines = content.split('\n')
+            for line in lines:
+                if line.startswith("Score:"):
+                    try:
+                        score = int(line.split("Score:")[1].strip())
+                    except ValueError:
+                        score = -1
+                elif line.startswith("Code:"):
+                    ex_code = line.split("Code:")[1].strip()
+            
+            return score, ex_code
         
     except Exception as e:
         logger.error(f"API Error with {judge_config['id']}: {e}")
@@ -208,7 +221,7 @@ def main():
                 entry[f"{eval_mode}_eval_method"] = "llm_judge"
                 scores = []
                 for judge in JUDGE_CONFIGS:
-                    score, ex_code = get_judge_response(idx, judge, system_prompt, user_prompt)
+                    score, ex_code = get_judge_response(idx, judge, system_prompt, user_prompt, eval_mode)
                     entry[f"{judge['id']}_{eval_mode}_score"] = score
                     if eval_mode == "rationale":
                         entry[f"{judge['id']}_{eval_mode}_exCode"] = ex_code
@@ -223,7 +236,7 @@ def main():
             entry[f"{eval_mode}_eval_method"] = "llm_judge"
             scores = []
             for judge in JUDGE_CONFIGS:
-                score, ex_code = get_judge_response(idx, judge, system_prompt, user_prompt)
+                score, ex_code = get_judge_response(idx, judge, system_prompt, user_prompt, eval_mode)
                 entry[f"{judge['id']}_{eval_mode}_score"] = score
                 if eval_mode == "rationale":
                     entry[f"{judge['id']}_{eval_mode}_exCode"] = ex_code

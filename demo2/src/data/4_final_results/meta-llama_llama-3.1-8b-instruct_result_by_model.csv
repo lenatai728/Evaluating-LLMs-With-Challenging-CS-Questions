@@ -1,2 +1,2 @@
 Model Name,Number of Question Samples,Final Model Score,Experiment Date
-openai/gpt-4o-mini,5,65.0,2026-01-01
+meta-llama/llama-3.1-8b-instruct,15,48.333333333333336,2026-01-01

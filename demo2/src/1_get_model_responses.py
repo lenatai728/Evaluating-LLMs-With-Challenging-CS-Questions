@@ -2,6 +2,7 @@ import json
 import os
 import logging
 import argparse
+import time
 from dotenv import load_dotenv
 from openai import OpenAI
 # from huggingface_hub import InferenceClient
@@ -12,7 +13,7 @@ os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler("logs/1_generation.log"), logging.StreamHandler()]
+    handlers=[logging.FileHandler("logs/1_get_model_responses.log"), logging.StreamHandler()]
 )
 logger = logging.getLogger(__name__)
 
@@ -50,39 +51,48 @@ def construct_prompt(q_set):
     #     ### Answer: [Your final answer here] 
     # """
     
-    prompt = f"""
-    You are a Computer Science expert taking a final year exam. You should decide your best answer.
-    Domain: {q_set['question_domain']}
-    Question Type: {q_set['question_type']}
+    system_prompt = f"""
+    You are a Computer Science expert taking a final year exam. 
+    You are given university-level Computer Science questions. 
+    You should read each question carefully and decide your best answer for every question.
+    When you respond, you must follow the INSTRUCTIONS and FORMAT below.
 
-    QUESTION:
-    {q_set['question_prompt']}
+    **CRITICAL: YOU MUST FOLLOW THIS FORMAT EXACTLY**
+    Your response MUST contain BOTH sections below, or your answer will be marked invalid:
+    1. A rationale section starting with "### Rationale:"
+    2. An answer section starting with "### Answer:"
 
     GLOBAL INSTRUCTIONS:
     1. **NO LATEX**: Do not use LaTeX formatting (e.g., no `\\( ... \\)`, no `\log`).
     2. **Standard Math Notation**: Use simple, standard ASCII characters for math.
-    - Use `*` for multiplication, `/` for division, `^` for power.
-    - Use `log2()` for log base 2, `sqrt()` for square root.
-    - Example: Write `2 * log2(4n + 1)` instead of `\( 2 \log_2(4n + 1) \)`.
-    3. **Plain Text Rationale**: Write your rationale in clear, plain text paragraphs.
-    - **DO NOT** use bullet points, numbered lists, bold text (**text**), or headers.
-    - Keep the explanation logical but free of markdown styling.
+       - Use `*` for multiplication, `/` for division, `^` for power.
+       - Use `log2()` for log base 2, `sqrt()` for square root.
+       - Example: Write `2 * log2(4n + 1)` instead of `\( 2 \log_2(4n + 1) \)`.
+    3. **Plain Text Rationale**: Write your rationale in clear, concise, plain text paragraphs.
+       - **DO NOT** use bullet points, numbered lists, bold text (**text**), or headers.
+       - Keep the explanation logical but free of markdown styling.
 
     SPECIFIC ANSWER FORMATTING:
     {get_type_specific_instructions(q_set['question_type'])}
 
-    OUTPUT FORMAT:
+    OUTPUT FORMAT (DO NOT DEVIATE):
     ### Rationale:
-    [Your plain text explanation here]
+    [Your final rationale strictly following the specific formatting rules above]
 
     ### Answer:
     [Your final answer strictly following the specific formatting rules above]
     """
     
-    return prompt 
+    user_prompt = f"""
+        Domain: {q_set['question_domain']}
+        Question Type: {q_set['question_type']}
+        QUESTION:{q_set['question_prompt']}
+    """
+    
+    return system_prompt, user_prompt 
     
 
-def get_llm_response(prompt, model_name, provider):
+def get_llm_response(system_prompt, user_prompt, model_name, provider):
     """
         Get response from specified LLM model. 
     """
@@ -100,15 +110,15 @@ def get_llm_response(prompt, model_name, provider):
             response = client.chat.completions.create(
                 model=model_name,
                 messages=[
+                    {"role": "system", "content": system_prompt},
                     {
                         "role":"user",
                         "content": [
                             {
                                 "type": "text",
-                                "text": prompt
+                                "text": user_prompt
                             }
                         ]
-                        # "text":prompt
                     }
                 ],
                 temperature=0.0,
@@ -161,9 +171,11 @@ def main():
 
         for i, q in enumerate(data):
             
-            full_prompt = construct_prompt(q)
+            system_prompt, user_prompt = construct_prompt(q)
             
-            response = get_llm_response(full_prompt, current_model, "openrouter")
+            response = get_llm_response(system_prompt, user_prompt, current_model, "openrouter")
+            
+            time.sleep(0.5)  # To avoid rate limits
             
             output_entry = q.copy()
             output_entry['model'] = current_model

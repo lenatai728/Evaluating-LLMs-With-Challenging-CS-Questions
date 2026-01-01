@@ -1,6 +1,0 @@
-question_id,question_domain,question_type,average_answer_score,average_rationale_score,wA,wR,Final Score,Explanation Code
-1,Algorithms and Complexity,MC,2.0,2.0,1.0,1.0,100.0,E0
-2,Computer Systems and Architecture,MS,2.0,1.5,1.0,0.75,75.0,"E0, E9"
-3,Software Engineering and AI Fundamentals,TF,0.0,0.0,0.0,0.0,0.0,E1
-4,Data Structures,FB,2.0,2.0,1.0,1.0,100.0,E0
-5,Databases and Information Systems,OE,1.5,1.0,0.75,0.5,50.0,E3

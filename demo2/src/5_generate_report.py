@@ -12,7 +12,12 @@ INPUT_DIR = os.path.join('data', '3_scores')
 OUTPUT_DIR = os.path.join('data', '4_final_results')
 
 # --- LOGGING ---
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+os.makedirs('logs', exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.FileHandler("logs/5_generate_report.log"), logging.StreamHandler()]
+)
 logger = logging.getLogger(__name__)
 
 def generate_report(input_file, output_csv_q, output_csv_m):

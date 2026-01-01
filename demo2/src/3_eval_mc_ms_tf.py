@@ -4,10 +4,11 @@ import logging
 import re
 
 # --- LOGGING SETUP ---
+os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler()]
+    handlers=[logging.FileHandler("logs/3_eval_mc_ms_tf.log"), logging.StreamHandler()]
 )
 logger = logging.getLogger(__name__)
 
