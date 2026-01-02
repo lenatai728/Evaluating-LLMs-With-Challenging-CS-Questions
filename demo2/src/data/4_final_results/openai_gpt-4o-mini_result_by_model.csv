@@ -1,0 +1,2 @@
+Model Name,Number of Question Samples,MC Score,MS Score,TF Score,FB Score,OE Score,Final Model Score,Experiment Date
+openai/gpt-4o-mini,15,56.67,100.0,70.0,100.0,75.0,80.33,2026-01-02
