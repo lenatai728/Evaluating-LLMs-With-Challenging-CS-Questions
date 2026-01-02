@@ -1,0 +1,137 @@
+2026-01-02 10:42:17,565 - INFO - Loading RoBERTa model...
+2026-01-02 10:42:17,607 - INFO - Use pytorch device_name: mps
+2026-01-02 10:42:17,607 - INFO - Load pretrained SentenceTransformer: all-roberta-large-v1
+2026-01-02 10:42:22,825 - INFO - --- Starting Evaluation Mode: ANSWER ---
+2026-01-02 10:42:23,261 - INFO - [3] Low Similarity (0.291). Sending to Judges.
+2026-01-02 10:42:23,679 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:24,890 - INFO - [3] get_judge_response(): Judge deepseek-chat Response: 2
+2026-01-02 10:42:26,621 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:26,623 - INFO - [3] get_judge_response(): Judge gemini-2.5-flash Response: 2
+2026-01-02 10:42:27,317 - INFO - [4] Low Similarity (0.639). Sending to Judges.
+2026-01-02 10:42:27,491 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:28,625 - INFO - [4] get_judge_response(): Judge deepseek-chat Response: 1
+2026-01-02 10:42:30,450 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:30,507 - INFO - [4] get_judge_response(): Judge gemini-2.5-flash Response: 2
+2026-01-02 10:42:31,012 - INFO - Saving progress at item 5...
+2026-01-02 10:42:31,112 - INFO - [7] Low Similarity (0.512). Sending to Judges.
+2026-01-02 10:42:31,280 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:32,145 - INFO - [7] get_judge_response(): Judge deepseek-chat Response: 1
+2026-01-02 10:42:33,936 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:34,009 - INFO - [7] get_judge_response(): Judge gemini-2.5-flash Response: 1
+2026-01-02 10:42:34,645 - INFO - [8] Low Similarity (0.808). Sending to Judges.
+2026-01-02 10:42:34,817 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:35,951 - INFO - [8] get_judge_response(): Judge deepseek-chat Response: 2
+2026-01-02 10:42:37,562 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:37,983 - INFO - [8] get_judge_response(): Judge gemini-2.5-flash Response: 2
+2026-01-02 10:42:38,628 - INFO - [10] Low Similarity (0.218). Sending to Judges.
+2026-01-02 10:42:38,825 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:39,833 - INFO - [10] get_judge_response(): Judge deepseek-chat Response: 1
+2026-01-02 10:42:41,345 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:41,407 - INFO - [10] get_judge_response(): Judge gemini-2.5-flash Response: 0
+2026-01-02 10:42:42,284 - INFO - [11] Low Similarity (0.512). Sending to Judges.
+2026-01-02 10:42:42,455 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:43,642 - INFO - [11] get_judge_response(): Judge deepseek-chat Response: 1
+2026-01-02 10:42:45,667 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:45,698 - INFO - [11] get_judge_response(): Judge gemini-2.5-flash Response: 1
+2026-01-02 10:42:46,323 - INFO - [14] Low Similarity (0.177). Sending to Judges.
+2026-01-02 10:42:46,492 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:48,094 - INFO - [14] get_judge_response(): Judge deepseek-chat Response: 1
+2026-01-02 10:42:49,824 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:42:49,889 - INFO - [14] get_judge_response(): Judge gemini-2.5-flash Response: 1
+2026-01-02 10:42:50,395 - INFO - Saving progress at item 15...
+2026-01-02 10:42:50,400 - INFO - Completed. Saved to data/3_scores/mistralai_mixtral-8x7b-instruct_scored_partial_final_answer.json
+2026-01-02 10:45:14,085 - INFO - --- Starting Evaluation Mode: RATIONALE ---
+2026-01-02 10:45:14,496 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:15,688 - INFO - [0] get_judge_response(): Judge deepseek-chat Response: Score: 0
+Code: E1
+2026-01-02 10:45:17,387 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:17,484 - INFO - [0] get_judge_response(): Judge gemini-2.5-flash Response: Score: 0
+Code: E2
+2026-01-02 10:45:18,171 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:19,270 - INFO - [1] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:45:21,004 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:21,104 - INFO - [1] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:45:21,785 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:22,844 - INFO - [2] get_judge_response(): Judge deepseek-chat Response: Score: 1
+Code: E3
+2026-01-02 10:45:24,523 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:24,618 - INFO - [2] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E3
+2026-01-02 10:45:25,305 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:26,609 - INFO - [3] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:45:28,109 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:28,212 - INFO - [3] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:45:28,894 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:30,313 - INFO - [4] get_judge_response(): Judge deepseek-chat Response: Score: 1
+Code: E5
+2026-01-02 10:45:32,164 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:32,169 - INFO - [4] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E5
+2026-01-02 10:45:32,674 - INFO - Saving progress at item 5...
+2026-01-02 10:45:32,888 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:34,244 - INFO - [5] get_judge_response(): Judge deepseek-chat Response: Score: 0
+Code: E1
+2026-01-02 10:45:35,804 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:35,907 - INFO - [5] get_judge_response(): Judge gemini-2.5-flash Response: Score: 0
+Code: E2
+2026-01-02 10:45:36,596 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:37,731 - INFO - [6] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:45:39,409 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:39,513 - INFO - [6] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:45:40,195 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:41,759 - INFO - [7] get_judge_response(): Judge deepseek-chat Response: Score: 1
+Code: E3
+2026-01-02 10:45:43,419 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:43,504 - INFO - [7] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E3
+2026-01-02 10:45:44,192 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:45,563 - INFO - [8] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:45:47,044 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:47,140 - INFO - [8] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:45:47,833 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:49,063 - INFO - [9] get_judge_response(): Judge deepseek-chat Response: Score: 0
+Code: E1
+2026-01-02 10:45:50,608 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:50,688 - INFO - [9] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E7
+2026-01-02 10:45:51,193 - INFO - Saving progress at item 10...
+2026-01-02 10:45:51,374 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:52,745 - INFO - [10] get_judge_response(): Judge deepseek-chat Response: Score: 0
+Code: E1
+2026-01-02 10:45:54,217 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:54,317 - INFO - [10] get_judge_response(): Judge gemini-2.5-flash Response: Score: 0
+Code: E2
+2026-01-02 10:45:55,057 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:56,456 - INFO - [11] get_judge_response(): Judge deepseek-chat Response: Score: 0
+Code: E1
+2026-01-02 10:45:58,173 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:45:58,286 - INFO - [11] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E3
+2026-01-02 10:45:58,974 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:00,235 - INFO - [12] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:46:02,167 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:02,170 - INFO - [12] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:46:02,847 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:03,969 - INFO - [13] get_judge_response(): Judge deepseek-chat Response: Score: 2
+Code: E0
+2026-01-02 10:46:05,762 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:05,839 - INFO - [13] get_judge_response(): Judge gemini-2.5-flash Response: Score: 2
+Code: E0
+2026-01-02 10:46:06,547 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:07,854 - INFO - [14] get_judge_response(): Judge deepseek-chat Response: Score: 1
+Code: E3
+2026-01-02 10:46:09,513 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-02 10:46:09,603 - INFO - [14] get_judge_response(): Judge gemini-2.5-flash Response: Score: 1
+Code: E3
+2026-01-02 10:46:10,109 - INFO - Saving progress at item 15...
+2026-01-02 10:46:10,115 - INFO - Completed. Saved to data/3_scores/mistralai_mixtral-8x7b-instruct_scored_partial_final_answer_final_rationale.json

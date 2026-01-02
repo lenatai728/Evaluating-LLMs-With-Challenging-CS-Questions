@@ -4,11 +4,11 @@
         "question_domain": "Computer Organization and Architecture",
         "question_type": "MC",
         "average_answer_score": 0.0,
-        "average_rationale_score": 0.5,
+        "average_rationale_score": 0.0,
         "wA": 0.0,
-        "wR": 0.25,
-        "Final Score": 10.0,
-        "Explanation Code": "E1, E3"
+        "wR": 0.0,
+        "Final Score": 0.0,
+        "Explanation Code": "E1, E2"
     },
     {
         "question_id": "2",
@@ -25,17 +25,6 @@
         "question_id": "3",
         "question_domain": "Data Structures & Algorithms",
         "question_type": "TF",
-        "average_answer_score": 0.0,
-        "average_rationale_score": 0.0,
-        "wA": 0.0,
-        "wR": 0.0,
-        "Final Score": 0.0,
-        "Explanation Code": "E1"
-    },
-    {
-        "question_id": "4",
-        "question_domain": "Software Engineering & AI Fundamentals",
-        "question_type": "FB",
         "average_answer_score": 2.0,
         "average_rationale_score": 1.0,
         "wA": 1.0,
@@ -44,26 +33,37 @@
         "Explanation Code": "E3"
     },
     {
+        "question_id": "4",
+        "question_domain": "Software Engineering & AI Fundamentals",
+        "question_type": "FB",
+        "average_answer_score": 2.0,
+        "average_rationale_score": 2.0,
+        "wA": 1.0,
+        "wR": 1.0,
+        "Final Score": 100.0,
+        "Explanation Code": "E0"
+    },
+    {
         "question_id": "5",
         "question_domain": "Computer Security",
         "question_type": "OE",
-        "average_answer_score": 1.0,
-        "average_rationale_score": 2.0,
-        "wA": 0.5,
-        "wR": 1.0,
-        "Final Score": 70.0,
-        "Explanation Code": "E0"
+        "average_answer_score": 1.5,
+        "average_rationale_score": 1.0,
+        "wA": 0.75,
+        "wR": 0.5,
+        "Final Score": 50.0,
+        "Explanation Code": "E5"
     },
     {
         "question_id": "6",
         "question_domain": "Computer Organization and Architecture",
         "question_type": "MC",
-        "average_answer_score": 2.0,
+        "average_answer_score": 0.0,
         "average_rationale_score": 0.0,
-        "wA": 1.0,
+        "wA": 0.0,
         "wR": 0.0,
         "Final Score": 0.0,
-        "Explanation Code": "E1, E3"
+        "Explanation Code": "E1, E2"
     },
     {
         "question_id": "7",
@@ -91,42 +91,42 @@
         "question_id": "9",
         "question_domain": "Software Engineering & AI Fundamentals",
         "question_type": "OE",
-        "average_answer_score": 1.0,
+        "average_answer_score": 2.0,
         "average_rationale_score": 2.0,
-        "wA": 0.5,
+        "wA": 1.0,
         "wR": 1.0,
-        "Final Score": 70.0,
+        "Final Score": 100.0,
         "Explanation Code": "E0"
     },
     {
         "question_id": "10",
         "question_domain": "Computer Security",
         "question_type": "MC",
-        "average_answer_score": 0.0,
-        "average_rationale_score": 2.0,
-        "wA": 0.0,
-        "wR": 1.0,
-        "Final Score": 40.0,
-        "Explanation Code": "E0"
+        "average_answer_score": 2.0,
+        "average_rationale_score": 0.5,
+        "wA": 1.0,
+        "wR": 0.25,
+        "Final Score": 25.0,
+        "Explanation Code": "E1, E7"
     },
     {
         "question_id": "11",
         "question_domain": "Computer Organization and Architecture",
         "question_type": "FB",
-        "average_answer_score": 1.5,
-        "average_rationale_score": 2.0,
-        "wA": 0.75,
-        "wR": 1.0,
-        "Final Score": 85.0,
-        "Explanation Code": "E0"
+        "average_answer_score": 0.5,
+        "average_rationale_score": 0.0,
+        "wA": 0.25,
+        "wR": 0.0,
+        "Final Score": 0.0,
+        "Explanation Code": "E1, E2"
     },
     {
         "question_id": "12",
         "question_domain": "Database Systems & Information Systems",
         "question_type": "OE",
-        "average_answer_score": 0.5,
+        "average_answer_score": 1.0,
         "average_rationale_score": 0.5,
-        "wA": 0.25,
+        "wA": 0.5,
         "wR": 0.25,
         "Final Score": 25.0,
         "Explanation Code": "E1, E3"
@@ -147,21 +147,21 @@
         "question_domain": "Software Engineering & AI Fundamentals",
         "question_type": "TF",
         "average_answer_score": 2.0,
-        "average_rationale_score": 0.0,
+        "average_rationale_score": 2.0,
         "wA": 1.0,
-        "wR": 0.0,
-        "Final Score": 0.0,
-        "Explanation Code": "E1"
+        "wR": 1.0,
+        "Final Score": 100.0,
+        "Explanation Code": "E0"
     },
     {
         "question_id": "15",
         "question_domain": "Computer Security",
         "question_type": "FB",
         "average_answer_score": 1.0,
-        "average_rationale_score": 0.5,
+        "average_rationale_score": 1.0,
         "wA": 0.5,
-        "wR": 0.25,
-        "Final Score": 25.0,
-        "Explanation Code": "E1, E3"
+        "wR": 0.5,
+        "Final Score": 50.0,
+        "Explanation Code": "E3"
     }
 ]

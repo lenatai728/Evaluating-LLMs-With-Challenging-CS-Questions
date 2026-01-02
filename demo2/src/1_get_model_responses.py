@@ -108,6 +108,9 @@ def get_llm_response(system_prompt, user_prompt, model_name, provider):
             )
             
             response = client.chat.completions.create(
+                extra_headers={
+                    "azureml-model-deployment": model_name
+                },
                 model=model_name,
                 messages=[
                     {"role": "system", "content": system_prompt},
