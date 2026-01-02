@@ -1,5 +1,5 @@
 
-# List of models to evaluate (matches your Proposal Table II)
+# List of models to evaluate
 CANDIDATE_MODELS = [
     "openai/gpt-4o-mini",
     # "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -12,6 +12,3 @@ CANDIDATE_MODELS = [
     "microsoft/phi-3-mini-128k-instruct", # openrouter API not work 
     "microsoft/phi-3.5-mini-128k-instruct" # openrouter API not work 
 ]
-
-# The model used to JUDGE the candidates (usually the strongest one)
-JUDGE_MODEL = "openai/gpt-4-turbo"

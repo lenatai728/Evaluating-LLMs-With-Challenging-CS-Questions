@@ -5,7 +5,6 @@ import os
 import logging
 import argparse
 from decimal import Decimal, ROUND_HALF_UP
-
 from datetime import datetime
 
 INPUT_DIR = os.path.join('data', '3_scores')
@@ -42,7 +41,7 @@ def generate_report(input_file, output_csv_q, output_csv_m):
         raw_ans = item.get('average_answer_score', item.get('answer_score', 0.0))
         raw_rat = item.get('average_rationale_score', item.get('rationale_score', 0.0))
             
-        # 2. Determine average rationale score
+        # 2. Determine average rationale score (Decimal)
         avg_ans_score = Decimal(str(raw_ans))
         avg_rat_score = Decimal(str(raw_rat))
 
@@ -55,24 +54,19 @@ def generate_report(input_file, output_csv_q, output_csv_m):
         
         # 4. Calculate Final Score
         # Formula: 0.3*wA + 0.7*wR - penalty * |wA - wR|
-        # Note: We use absolute difference subtraction for the penalty to punish inconsistency 
-        # (e.g., correct answer but poor rationale, or vice versa).
         score_val = (Decimal('0.3') * wA) + (Decimal('0.7') * wR) - (penalty * abs(wA - wR))
         
+        # Round to 2 decimal places
         final_score = (score_val * Decimal('100')).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
-        # final_score = score_val * 100
         
         # 5. Aggregate Explanation Codes
-        # Collect all values from keys ending in "_rationale_exCode"
         ex_codes = set()
         for key, value in item.items():
             if key.endswith('_rationale_exCode') and value:
-                # Handle cases where multiple codes might be in one string "E1, E2"
                 codes = [c.strip() for c in value.split(',')]
                 for c in codes:
                     ex_codes.add(c)
         
-        # Sort and join unique codes
         ex_code_str = ", ".join(sorted(list(ex_codes)))
         
         rows.append({
@@ -89,37 +83,67 @@ def generate_report(input_file, output_csv_q, output_csv_m):
         
     # Create first DataFrame (Results by Question)
     df_q = pd.DataFrame(rows)
-    # Ensure column order
     cols_q = ['question_id', 'question_domain', 'question_type', 
               'average_answer_score', 'average_rationale_score', 
               'wA', 'wR', 'Final Score', 'Explanation Code']
     df_q = df_q[cols_q]
     
+    # Ensure directory exists
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+
     df_q.to_csv(output_csv_q, index=False)
     print(f"Generated {output_csv_q}")
         
-    # Create second DataFrame (Results by Model)
-    # Assume model name is consistent across items or take from first item
+    # --- CALCULATE MODEL STATISTICS ---
     model_name = data[0].get('model', 'Unknown') if data else 'Unknown'
     num_questions = len(rows)
+    
+    # Calculate overall mean
     final_model_score = df_q['Final Score'].mean() if not df_q.empty else 0.0
+    
+    # Calculate means per Question Type
+    # Group by question_type and take the mean of 'Final Score'
+    if not df_q.empty:
+        type_means = df_q.groupby('question_type')['Final Score'].mean()
+    else:
+        type_means = pd.Series(dtype=float)
+
+    # Helper to safely get rounded score or 0.0
+    def get_type_score(qtype):
+        val = type_means.get(qtype, 0.0)
+        return round(val, 2)
+
+    mc_score = get_type_score('MC')
+    ms_score = get_type_score('MS')
+    tf_score = get_type_score('TF')
+    fb_score = get_type_score('FB')
+    oe_score = get_type_score('OE')
+    
     experiment_date = datetime.now().strftime('%Y-%m-%d')
     
     summary_rows = [{
         'Model Name': model_name,
         'Number of Question Samples': num_questions,
-        'Final Model Score': final_model_score,
+        'MC Score': mc_score,
+        'MS Score': ms_score,
+        'TF Score': tf_score,
+        'FB Score': fb_score,
+        'OE Score': oe_score,
+        'Final Model Score': round(final_model_score, 2),
         'Experiment Date': experiment_date
     }]
     
     df_m = pd.DataFrame(summary_rows)
-    cols_m = ['Model Name', 'Number of Question Samples', 'Final Model Score', 'Experiment Date']
+    cols_m = ['Model Name', 'Number of Question Samples', 
+              'MC Score', 'MS Score', 'TF Score', 'FB Score', 'OE Score', 'Final Model Score',
+              'Experiment Date']
     df_m = df_m[cols_m]
     
     df_m.to_csv(output_csv_m, index=False)
     print(f"Generated {output_csv_m}")
     
-    # output to 4_final_results
+    # Output to 4_final_results (JSON)
     json_output_path = os.path.join(OUTPUT_DIR, input_file.replace("_scored_partial_final_answer_final_rationale.json", "_final_report.json"))
     with open(json_output_path, 'w', encoding='utf-8') as f:
         json.dump(rows, f, indent=4)
@@ -133,7 +157,7 @@ def main():
 
     input_file = args.input_file 
     
-    # extract model_name from input_file: openai_gpt-4o-mini_scored_partial_final_answer_final_rationale.json and replace with _result_by_question.csv
+    # extract model_name from input_file
     model_name = input_file.replace("_scored_partial_final_answer_final_rationale.json", "")
     output_csv_q = os.path.join(OUTPUT_DIR, f"{model_name}_result_by_question.csv")
     output_csv_m = os.path.join(OUTPUT_DIR, f"{model_name}_result_by_model.csv")
@@ -143,3 +167,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
