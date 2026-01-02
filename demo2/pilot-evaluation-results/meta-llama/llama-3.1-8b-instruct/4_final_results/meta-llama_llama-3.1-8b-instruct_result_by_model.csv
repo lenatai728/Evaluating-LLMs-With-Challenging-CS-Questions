@@ -1,2 +1,2 @@
-Model Name,Number of Question Samples,Final Model Score,Experiment Date
-meta-llama/llama-3.1-8b-instruct,15,48.333333333333336,2026-01-01
+Model Name,Number of Question Samples,MC Score,MS Score,TF Score,FB Score,OE Score,Final Model Score,Experiment Date
+meta-llama/llama-3.1-8b-instruct,15,16.67,100.0,33.33,52.5,55.0,48.33,2026-01-02
