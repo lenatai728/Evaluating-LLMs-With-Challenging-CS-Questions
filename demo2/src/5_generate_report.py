@@ -99,20 +99,26 @@ def generate_report(input_file, output_csv_q, output_csv_m):
     model_name = data[0].get('model', 'Unknown') if data else 'Unknown'
     num_questions = len(rows)
     
-    # Calculate overall mean
+    # 1. Overall Mean Score
     final_model_score = df_q['Final Score'].mean() if not df_q.empty else 0.0
     
-    # Calculate means per Question Type
-    # Group by question_type and take the mean of 'Final Score'
+    # 2. Component Scores (Normalized to 100)
+    # wA and wR are already 0-1, so just mean() * 100
+    if not df_q.empty:
+        mean_ans_score = df_q['wA'].mean() * 100.0
+        mean_rat_score = df_q['wR'].mean() * 100.0
+    else:
+        mean_ans_score = 0.0
+        mean_rat_score = 0.0
+    
+    # 3. Question Type Scores
     if not df_q.empty:
         type_means = df_q.groupby('question_type')['Final Score'].mean()
     else:
         type_means = pd.Series(dtype=float)
 
-    # Helper to safely get rounded score or 0.0
     def get_type_score(qtype):
-        val = type_means.get(qtype, 0.0)
-        return round(val, 2)
+        return round(type_means.get(qtype, 0.0), 2)
 
     mc_score = get_type_score('MC')
     ms_score = get_type_score('MS')
@@ -130,13 +136,16 @@ def generate_report(input_file, output_csv_q, output_csv_m):
         'TF Score': tf_score,
         'FB Score': fb_score,
         'OE Score': oe_score,
+        'Final Answer Score': round(mean_ans_score, 2),
+        'Final Rationale Score': round(mean_rat_score, 2),
         'Final Model Score': round(final_model_score, 2),
         'Experiment Date': experiment_date
     }]
     
     df_m = pd.DataFrame(summary_rows)
     cols_m = ['Model Name', 'Number of Question Samples', 
-              'MC Score', 'MS Score', 'TF Score', 'FB Score', 'OE Score', 'Final Model Score',
+              'MC Score', 'MS Score', 'TF Score', 'FB Score', 'OE Score', 
+              'Final Answer Score', 'Final Rationale Score', 'Final Model Score',
               'Experiment Date']
     df_m = df_m[cols_m]
     
@@ -167,4 +176,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

@@ -18,8 +18,7 @@ source venv/bin/activate
 ```
 python3 1_get_model_responses.py --model openai/gpt-4o-mini   
 ```
-- One Args: 
-    - "--model <model-name>"
+- One Args: "--model [model-name]"
 ## 3. Separate LLMs response strings (Rationale:...Answer:...) to Answer & Rationale outputs
 ```
 python3 2_process_outputs.py
@@ -34,20 +33,19 @@ python3 4_eval_llm_judge.py --mode answer --input_file openai_gpt-4o-mini_scored
 ```
 - Two Args:
     - "--mode answer" : Evaluate on answers / "--mode rationale": Evaluate on rationales
-    - "--input_file <filename>"
+    - "--input_file [filename]"
 ## 6. Evaluate on rationales from ALL questions by semantic similarity & LLMs judge
 ```
 python3 4_eval_llm_judge.py --mode rationale --input_file openai_gpt-4o-mini_scored_partial_final_answer.json
 ```
 - Two Args:
     - "--mode answer" : Evaluate on answers / "--mode rationale": Evaluate on rationales
-    - "--input_file <filename>"
+    - "--input_file [filename]"
 ## 7. Generate reports for specific model
 ```
 python3 5_generate_report.py --input_file openai_gpt-4o-mini_scored_partial_final_answer_final_rationale.json
 ```
-- One Arg:
-    - "--input_file <filename>"
+- One Arg: "--input_file [filename]"
 # C. Note
 ## Terminal command to uninstall modules from requirements.txt
 ```
