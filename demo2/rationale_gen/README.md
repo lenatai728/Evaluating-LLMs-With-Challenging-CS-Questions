@@ -23,7 +23,7 @@ openpyxl
 
 Run the script with:
 ```
-python rationale_generator.py [--skip]
+python rationale_gen.py [--skip]
 ```
 
 - `--skip`: Optional flag to skip DeepSeek answer verification and generate rationales directly based on existing `gold_answer`. Useful if you trust the exist manual gold answers and want to force rationale generation.

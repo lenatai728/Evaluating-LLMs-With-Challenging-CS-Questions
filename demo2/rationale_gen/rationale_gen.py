@@ -15,28 +15,34 @@ client = OpenAI(
     api_key=api_key,
     base_url="https://api.deepseek.com"
 )
+
+system_prompt = "You are a Computer Science expert constructing gold-standard rationales for university-level exam questions. Given questions with correct answers, understand them thoroughly and then provide the gold-standard rationales. These gold-standard rationales is used to compare/match with student rationales for evaluating student understanding (on whether they truly know or just guess the answer, also their knowledge depth). Guidelines: Write in full sentences, no bullet points, no bold texts or header texts.\nUse LaTeX only when necessary; otherwise plain text.\nFocus on underlying why/how not just what — anticipate common misconceptions.\nMaintain objective, academic tone.\nBe concise but comprehensive, covering all relevant knowledge points and reasoning steps.\nAvoid unnecessary details or tangential information.\nEnsure rationales are clear, logical, and directly address the question and answer.\nUse examples or analogies if they enhance understanding, but keep them brief and relevant.\nRationales should be less than forty words for MC/MS/FB/OE questions, and less than twenty words for TF questions.\nFollow the additional instructions for each question type."
+
 # Prompts for rationale generation
 prompts_eng = {
     "MC": "Given this multiple-choice question: {q}, explain why the choice: {answer} is the correct answer while the others are incorrect, including necessary explanations and relevant information. Make it less than forty words.",
     "MS": "Given this multi-select question: {q}, explain why the choices: {answer} are the correct answers while the others are incorrect, including necessary explanations and relevant information. Make it less than forty words.",
-    "TF": "Given this True-or-False question: {q}, explain why this statement is {answer}, including necessary explanations and relevant information. Make it less than twenty words.",
+    "TF": "Given this True-or-False question: {q}, explain why this statement is {answer}, including necessary explanations and relevant information. Make it less than twenty words. Do not and no need to state True or False at the beginning of the rationale.",
     "FB": "Generate a rationale for this fill-in-blank question: {q}, the answer is {answer}, including necessary explanations and relevant information. Make it less than forty words.",
     "OE": "Generate a rationale for this open-ended question: {q}, indicate what kind of answer is satisfactory, including the coverage of knowledge points, necessary reasoning steps, well-rounded explanations, and relevant information. Make it less than forty words."
 }
 # Prompts for answer generation (if gold_answer is missing)
 answer_prompts_eng = {
     "MC": "Given this multiple-choice question: {q} Choose the correct answer option letter only without any explanation.",
-    "MS": "Given this multi-select question: {q} Choose all correct answer option letters, separated by commas and without any explanation.",
-    "TF": "Given this True-or-False question: {q} Answer True or False only.",
-    "FB": "Fill in the blank for this question: {q} Provide the answer, separated by commas if need and without any explanation.",
-    "OE": "Answer this open-ended question: {q} Provide a necessary insights. Make it less than forty words."
+    "MS": "Given this multi-select question: {q} Choose all correct answer option letters, separated by commas with ONE space (e.g. A, B, C) and without any explanation",
+    "TF": "Given this True-or-False question: {q} Answer T or F only.", 
+    "FB": "Fill in the blank for this question: {q} Provide the answer if need and without any explanation. Remove any Latex formats and use ASCII characters only if the answer contains any mathematical expressions.",
+    "OE": "Answer this open-ended question: {q} Provide necessary insights. Make it less than forty words."
 }
 
 def generate_text(prompt):
     try:
         response = client.chat.completions.create(
             model="deepseek-chat",
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}
+            ],
             temperature=0.0
         )
         return response.choices[0].message.content
