@@ -11,7 +11,7 @@ from openai import OpenAI
 from huggingface_hub import InferenceClient
 from google import genai
 from google.genai import types
-from config import HF_MODEL_MAP, OLLAMA_MODEL_MAP
+from config import HF_MODEL_MAP
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -445,54 +445,6 @@ def call_deepseek(client, model_name, system_prompt, user_prompt):
 
     return "ERROR_RESPONSE"
 
-def call_ollama(client, model_name, system_prompt, user_prompt):
-    """Call Ollama API with retry and exponential backoff.
-    
-    Returns the response content string, or "ERROR_RESPONSE" if all retries fail.
-    """
-    ollama_model = OLLAMA_MODEL_MAP.get(model_name)
-    if not ollama_model:
-        logger.warning(f"No Ollama mapping found for '{model_name}' in OLLAMA_MODEL_MAP. Ollama fallback disabled.")
-        return None
-    
-    for attempt in range(1, INLINE_RETRIES + 1):
-        try:
-            response = client.chat(
-                model=ollama_model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                options={
-                    "temperature": 0.0,
-                }
-            )
-            
-            content = response['message']['content']
-            
-            # Handle None/empty responses
-            if content is None or content.strip() == "":
-                logger.warning(f"[Ollama] Empty/None response for {model_name} (attempt {attempt}/{INLINE_RETRIES})")
-                if attempt < INLINE_RETRIES:
-                    wait_time = BACKOFF_BASE ** attempt
-                    logger.info(f"Retrying in {wait_time}s...")
-                    time.sleep(wait_time)
-                    continue
-                return "ERROR_RESPONSE"
-            
-            return content
-
-        except Exception as e:
-            logger.error(f"[Ollama] API Error for {model_name} (attempt {attempt}/{INLINE_RETRIES}): {e}")
-            if attempt < INLINE_RETRIES:
-                wait_time = BACKOFF_BASE ** attempt
-                logger.info(f"Retrying in {wait_time}s...")
-                time.sleep(wait_time)
-            else:
-                return "ERROR_RESPONSE"
-    
-    return "ERROR_RESPONSE"
-
 # =============================================================================
 # UNIFIED FUNCTION (Primary provider → optional HuggingFace fallback)
 # =============================================================================
@@ -518,8 +470,6 @@ def get_llm_response(system_prompt, user_prompt, model_name, primary_client, pro
         response = call_huggingface(primary_client, system_prompt, user_prompt)
     elif provider == "google":
         response = call_google(primary_client, model_name, system_prompt, user_prompt)
-    elif provider == "ollama":
-        response = call_ollama(primary_client, model_name, system_prompt, user_prompt)
     elif provider == "deepseek":
         response = call_deepseek(primary_client, model_name, system_prompt, user_prompt)
     else:
