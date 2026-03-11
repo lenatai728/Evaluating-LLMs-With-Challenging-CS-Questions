@@ -15,10 +15,23 @@ cd demo2/src
 source venv/bin/activate
 ```
 ## 2. Generate LLMs responses from input.json
+### Concurrent
 ```
-python3 1_get_model_responses.py --model openai/gpt-4o-mini   
+python3 1_get_model_responses.py --model [model-name] --provider [provider-name] --concurrent [number]
 ```
-- One Args: "--model [model-name]"
+### Sequential (by default)
+```
+python3 1_get_model_responses.py --model [model-name] --provider [provider-name]
+```
+### With HuggingFace fallback
+```
+python3 1_get_model_responses.py --model [model-name] --provider [provider-name] --fallback-hf
+```
+- Four Args: 
+    - "--model [model-name]"
+    - "--provider [provider-name]" (default: openrouter)
+    - "--concurrent [number]" : Number of concurrent requests 
+    - "--fallback-hf" : Use HuggingFace fallback
 ## 3. Separate LLMs response strings (Rationale:...Answer:...) to Answer & Rationale outputs
 ```
 python3 2_process_outputs.py
@@ -29,21 +42,29 @@ python3 3_eval_mc_ms_tf.py
 ```
 ## 5. Evaluate on answers from FB/OE questions by semantic similiarity & LLMs judge
 ```
-python3 4_eval_llm_judge.py --mode answer --input_file openai_gpt-4o-mini_scored_partial.json
+python3 4_eval_llm_judge.py --mode answer --input_file [filename] --judge_id [judge-id]
 ```
-- Two Args:
+- Three Args:
     - "--mode answer" : Evaluate on answers / "--mode rationale": Evaluate on rationales
     - "--input_file [filename]"
+    - "--judge_id [judge-id]" : Judge model to use (default: deepseek-reasoner)
 ## 6. Evaluate on rationales from ALL questions by semantic similarity & LLMs judge
+### Concurrent
 ```
-python3 4_eval_llm_judge.py --mode rationale --input_file openai_gpt-4o-mini_scored_partial_final_answer.json
+python 4_eval_llm_judge.py --mode rationale --input_file [filename] --judge_id [judge-id] --concurrent [number]
 ```
-- Two Args:
+### Sequential (by default)
+```
+python3 4_eval_llm_judge.py --mode rationale --input_file [filename] --judge_id [judge-id]
+```
+- Four Args:
     - "--mode answer" : Evaluate on answers / "--mode rationale": Evaluate on rationales
     - "--input_file [filename]"
+    - "--judge_id [judge-id]" : Judge model to use (default: deepseek-reasoner)
+    - "--concurrent [number]" : Number of concurrent requests
 ## 7. Generate reports for specific model
 ```
-python3 5_generate_report.py --input_file openai_gpt-4o-mini_scored_partial_final_answer_final_rationale.json
+python3 5_generate_report.py --input_file [filename]
 ```
 - One Arg: "--input_file [filename]"
 # C. Note
@@ -55,4 +76,8 @@ pip uninstall -y -r requirements.txt
 ```
 cd src
 mkdir -p data/0_raw data/1_model_outputs data/2_processed data/3_scores data/4_final_results src logs
+```
+### Read Logs Live
+```
+tail -f logs/xxx.log
 ```

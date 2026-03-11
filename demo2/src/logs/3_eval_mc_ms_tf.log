@@ -1,0 +1,4 @@
+2026-03-09 18:16:47,115 - INFO - Grading questions for: deepseek-chat
+2026-03-09 18:16:47,134 - INFO - Saved 1120 scores (Graded 261 MC, 196 MS, 220 True-or-False).
+2026-03-10 16:42:05,566 - INFO - Grading questions for: gemma-3-4b-it
+2026-03-10 16:42:05,584 - INFO - Saved 1120 scores (Graded 261 MC, 196 MS, 220 True-or-False).

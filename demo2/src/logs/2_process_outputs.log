@@ -1,0 +1,1189 @@
+2026-02-24 18:42:49,649 - INFO - Found 3 model files to process.
+2026-02-24 18:42:49,649 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 18:42:51,212 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 18:42:52,772 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:23:35,580 - INFO - Found 3 model files to process.
+2026-02-24 22:23:35,580 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:23:37,144 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:23:38,700 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:25:36,339 - INFO - Found 3 model files to process.
+2026-02-24 22:25:36,339 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:25:37,885 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:25:39,444 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:26:58,337 - INFO - Found 3 model files to process.
+2026-02-24 22:26:58,337 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:26:59,893 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:27:01,446 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:31:51,121 - INFO - Found 3 model files to process.
+2026-02-24 22:31:51,121 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:31:52,680 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:31:54,243 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:33:33,843 - INFO - Found 3 model files to process.
+2026-02-24 22:33:33,843 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:33:35,406 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:33:36,967 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:36:16,020 - INFO - Found 3 model files to process.
+2026-02-24 22:36:16,020 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:36:17,588 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:36:19,135 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:37:13,852 - INFO - Found 3 model files to process.
+2026-02-24 22:37:13,852 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:37:15,412 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:37:16,959 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-24 22:37:35,928 - INFO - Found 3 model files to process.
+2026-02-24 22:37:35,928 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-24 22:37:37,488 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-24 22:37:39,052 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-25 17:17:58,674 - INFO - Found 5 model files to process.
+2026-02-25 17:17:58,674 - INFO - Processing gemini-2.5-flash-lite...
+2026-02-25 17:18:00,242 - INFO - Processing google_gemma-3n-e4b-it:free...
+2026-02-25 17:18:00,553 - INFO - Processing google_gemma-3-4b-it:free...
+2026-02-25 17:18:01,177 - INFO - Processing google_gemma-3-27b-it:free...
+2026-02-25 17:18:02,736 - INFO - Processing openai_gpt-oss-120b:free...
+2026-02-25 20:56:36,420 - INFO - Found 1 model files to process.
+2026-02-25 20:56:36,420 - INFO - Processing gemma-3-1b-it...
+2026-02-25 21:21:44,298 - INFO - Found 1 model files to process.
+2026-02-25 21:21:44,298 - INFO - Processing gemma-3-1b-it...
+2026-02-25 21:33:57,976 - INFO - Found 1 model files to process.
+2026-02-25 21:33:57,976 - INFO - Processing gemma-3-1b-it...
+2026-02-25 21:51:27,208 - INFO - Found 1 model files to process.
+2026-02-25 21:51:27,208 - INFO - Processing gemma-3-1b-it...
+2026-02-25 21:51:27,213 - WARNING -   [gemma-3-1b-it] Q15 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Abstract data types (ADTs) offer flexibility and adaptability, while leftist heaps prioritize efficient insertion and deletion at the root, l...
+2026-02-25 21:51:27,214 - WARNING -   [gemma-3-1b-it] Q19 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The binary min heap will be constructed with the elements 77, 22, 9, 68, 16, 34, 13, 8.  Each element is inserted into the heap such that the...
+2026-02-25 21:51:27,215 - WARNING -   [gemma-3-1b-it] Q36 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:  I/O Addressing Schemes, Direct Addressing. Direct addressing maps I/O devices directly to memory addresses, offering efficient access but re...
+2026-02-25 21:51:27,216 - ERROR -   [gemma-3-1b-it] Q49 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: Systemd, launchd, and init are all daemon processes. They are background services that run without direct user interaction, providing system functionality.
+###Rationale:
+Systemd, launchd, and init are all daemon processes, meaning they operate silently in the background, executing tasks wit...
+2026-02-25 21:51:27,216 - WARNING -   [gemma-3-1b-it] Q53 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+FCFS has the lowest average waiting time due to its simplicity and sequential nature, followed by SJF, and then RR, which experiences the hig...
+2026-02-25 21:51:27,216 - WARNING -   [gemma-3-1b-it] Q54 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+FCFS is the most efficient due to its simplicity and lowest average response ratio. RR has a slightly higher average response ratio than FCFS...
+2026-02-25 21:51:27,219 - WARNING -   [gemma-3-1b-it] Q96 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Logical and physical data independence refer to distinct approaches to database design. Logical data independence ensures the database's stru...
+2026-02-25 21:51:27,219 - WARNING -   [gemma-3-1b-it] Q102 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The relational algebra expression is `Library.ID NOT IN (Stock.BookID)` followed by `Library.LibraryID NOT IN (Stock.LibraryID)`. This select...
+2026-02-25 21:51:27,220 - WARNING -   [gemma-3-1b-it] Q105 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Column-oriented databases offer improved query performance for analytical workloads due to data compression and efficient processing of large...
+2026-02-25 21:51:27,220 - WARNING -   [gemma-3-1b-it] Q116 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+One-to-one relationships involve a direct connection between two entities, while one-to-many represents a many-to-one connection. Many-to-man...
+2026-02-25 21:51:27,220 - WARNING -   [gemma-3-1b-it] Q117 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Breadth-first search (BFS) can be generalized to explore game trees, but it’s not guaranteed to find the optimal solution. BFS explores nodes...
+2026-02-25 21:51:27,220 - WARNING -   [gemma-3-1b-it] Q118 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Alpha-beta search can be generalized to explore game trees, but it’s not guaranteed to find the optimal solution. Its performance depends hea...
+2026-02-25 21:51:27,221 - WARNING -   [gemma-3-1b-it] Q119 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The A* search algorithm is suitable. It efficiently explores the solution space by prioritizing nodes with the highest estimated total cost, ...
+2026-02-25 21:51:27,221 - WARNING -   [gemma-3-1b-it] Q120 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The most appropriate algorithm is stochastic gradient descent (SGD) with momentum. SGD’s adaptive learning rate and momentum enhance converge...
+2026-02-25 21:51:27,221 - WARNING -   [gemma-3-1b-it] Q129 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Image and video analysis, computer vision, and object detection are the processes involved in extracting relevant data from visual inputs. Th...
+2026-02-25 21:51:27,222 - WARNING -   [gemma-3-1b-it] Q139 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Most constrained variables limit the search space, while least constraining values provide minimal influence on the solution.  A constrained ...
+2026-02-25 21:51:27,223 - WARNING -   [gemma-3-1b-it] Q143 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+MLP models struggle with noise due to their reliance on precise feature representations; kNN, conversely, is robust to noise as it partitions...
+2026-02-25 21:51:27,223 - WARNING -   [gemma-3-1b-it] Q144 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Convolutional Neural Networks (CNNs) excel in image recognition, utilizing convolutional layers to extract spatial features, while autoencode...
+2026-02-25 21:51:27,223 - WARNING -   [gemma-3-1b-it] Q147 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Supervised learning utilizes labeled data for training; unsupervised learning analyzes unlabeled data to discover patterns; reinforcement lea...
+2026-02-25 21:51:27,224 - WARNING -   [gemma-3-1b-it] Q153 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Bagging reduces variance by averaging multiple models, mitigating the impact of individual model biases. Boosting, conversely, directly addre...
+2026-02-25 21:51:27,225 - ERROR -   [gemma-3-1b-it] Q177 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: O(h)
+$Rationale: A quadtree's worst-case time complexity for range queries is proportional to the height of the tree, where 'h' represents the maximum number of nodes in the tree....
+2026-02-25 21:51:27,225 - ERROR -   [gemma-3-1b-it] Q181 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+T
+The adaptive dictionary in move-to-front transformation dynamically adjusts its entries based on the input data, ensuring efficient lookup and minimizing memory usage, a key characteristic of its performance....
+2026-02-25 21:51:27,226 - WARNING -   [gemma-3-1b-it] Q181 (TF): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+T
+The adaptive dictionary in move-to-front transformation dynamically adjusts its entries based on the input data, ensuring efficient lookup ...
+2026-02-25 21:51:27,226 - WARNING -   [gemma-3-1b-it] Q184 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Memory latency, leading to performance degradation and application crashes. Bufferbloat causes increased memory access times, hindering effic...
+2026-02-25 21:51:27,226 - WARNING -   [gemma-3-1b-it] Q185 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Network, CPU. Bufferbloat occurs when a processor attempts to access data that is located in a slower memory location (like RAM) instead of t...
+2026-02-25 21:51:27,226 - WARNING -   [gemma-3-1b-it] Q186 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: TCP, TCP responds more rapidly to network congestion. TCP’s congestion control algorithm dynamically adjusts the transmission rate based on n...
+2026-02-25 21:51:27,226 - WARNING -   [gemma-3-1b-it] Q188 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Reduced memory access latency...
+2026-02-25 21:51:27,227 - WARNING -   [gemma-3-1b-it] Q200 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: NO STEAL in the absence of UNDO logging. UNDO logging records actions taken by a user, providing a history of their operations. Without it, t...
+2026-02-25 21:51:27,228 - WARNING -   [gemma-3-1b-it] Q215 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The query should identify spells cast by good wizards that are offensive. The `count_evil_good_spells` CTE counts the number of offensive spe...
+2026-02-25 21:51:27,229 - ERROR -   [gemma-3-1b-it] Q237 (MC): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: E
+$Rationale: Redo-logging ensures the log entry reflects the rename operation, and the directory inode is updated accordingly. The log is used to record the rename, and the directory entry is updated to reflect the new inode....
+2026-02-25 21:51:27,231 - WARNING -   [gemma-3-1b-it] Q264 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+B) A "Main Success Scenario" describes the interaction if nothing fails. This scenario outlines the typical flow of the use case, ensuring a ...
+2026-02-25 21:51:27,232 - WARNING -   [gemma-3-1b-it] Q273 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Relational algebra operators can be composed because they represent operations on relations, allowing for the creation of new relations throu...
+2026-02-25 21:51:27,232 - WARNING -   [gemma-3-1b-it] Q277 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The query "Find all employees with age = 30" requires a clustered index on the `eid` attribute because the index will be used to quickly loca...
+2026-02-25 21:51:27,232 - ERROR -   [gemma-3-1b-it] Q280 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+The worst-case time complexity of searching in a binary search tree is O(log n), due to the potential for the tree to become unbalanced, leading to a logarithmic search path.
+...
+2026-02-25 21:51:27,232 - WARNING -   [gemma-3-1b-it] Q280 (TF): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The worst-case time complexity of searching in a binary search tree is O(log n), due to the potential for the tree to become unbalanced, lead...
+2026-02-25 21:51:27,233 - WARNING -   [gemma-3-1b-it] Q294 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+A, D
+A clustered B+tree index is optimized for range queries, while unclustered indexes are better for equality searches.  D retrieves a sing...
+2026-02-25 21:51:27,234 - ERROR -   [gemma-3-1b-it] Q313 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: Stepwise regression minimizes the squared error loss function, while the L0 penalty is a regularization term, resulting in a globally optimal solution.
+$Rationale: Stepwise regression iteratively adjusts model parameters to minimize the squared error, and the L0 penalty adds a term to preve...
+2026-02-25 21:51:27,235 - WARNING -   [gemma-3-1b-it] Q329 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Downgrades violate 2PL because they introduce a potential for a "split-brain" scenario, where multiple processes attempt to update the same d...
+2026-02-25 21:51:27,236 - ERROR -   [gemma-3-1b-it] Q341 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: O notation describes the efficiency of an algorithm, offering a theoretical upper limit on its execution time, irrespective of input size.
+$Rationale: Big O notation quantifies the growth rate of an algorithm's resource consumption as the input size increases, providing a benchmark for algo...
+2026-02-25 21:51:27,236 - ERROR -   [gemma-3-1b-it] Q345 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: Discrete logarithm problem in ECC is computationally intensive, requiring large exponents to find $k$, posing a challenge for efficient key generation and security analysis.*
+$Rationale: The discrete logarithm problem is a fundamental hurdle in ECC, demanding significant computational resou...
+2026-02-25 21:51:27,237 - WARNING -   [gemma-3-1b-it] Q356 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+A) No limited capacity constraints. Linked stacks allow for dynamic growth, while sequential stacks have fixed size limitations.
+B) Simplifie...
+2026-02-25 21:51:27,237 - WARNING -   [gemma-3-1b-it] Q358 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Theoretical data structure study is recommended to establish fundamental principles, while language-specific implementation focuses on practi...
+2026-02-25 21:51:27,238 - ERROR -   [gemma-3-1b-it] Q363 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: The Clock replacement algorithm’s reference bit approach offers a faster replacement than traditional LRU, minimizing queue overhead.
+$Rationale: The reference bit technique efficiently identifies and replaces the least recently used page, improving performance without the complexity of que...
+2026-02-25 21:51:27,238 - WARNING -   [gemma-3-1b-it] Q364 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The pipeline is failing due to the Pedestrian Detector (P) exhibiting high error rates. A visual inspection of the output images reveals inco...
+2026-02-25 21:51:27,238 - WARNING -   [gemma-3-1b-it] Q374 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Microprogramming was prevalent in early processors due to its ability to provide fine-grained control over hardware, enabling complex instruc...
+2026-02-25 21:51:27,239 - WARNING -   [gemma-3-1b-it] Q379 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Linked stacks and queues offer improved performance for certain operations compared to sequential data structures. Stacks provide O(1) for pu...
+2026-02-25 21:51:27,239 - WARNING -   [gemma-3-1b-it] Q380 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: I = 0, I = 1
+The addressing mode flag (I) determines whether the instruction is a read or write operation. I = 0 indicates a read operation, ...
+2026-02-25 21:51:27,240 - WARNING -   [gemma-3-1b-it] Q407 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+B, C. A describes a B+ Tree's leaf structure, while D describes a B-Tree's splitting mechanism.  B+ Trees prioritize leaf nodes, while B-Tree...
+2026-02-25 21:51:27,241 - WARNING -   [gemma-3-1b-it] Q422 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: LR and SVM are likely to be more severely affected. LR’s decision boundary is less sensitive to individual data points, while SVM’s margin is...
+2026-02-25 21:51:27,245 - WARNING -   [gemma-3-1b-it] Q470 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The best-case running time is the minimum number of operations required to solve the problem. The worst-case running time is the maximum numb...
+2026-02-25 21:51:27,245 - WARNING -   [gemma-3-1b-it] Q473 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Learning rate too large leads to instability, oscillations, and potentially divergence, hindering convergence. Conversely, a small learning r...
+2026-02-25 21:51:27,245 - WARNING -   [gemma-3-1b-it] Q474 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: RAD Software Process Model stands for the iterative, incremental approach used in software development, emphasizing continuous feedback and a...
+2026-02-25 21:51:27,246 - WARNING -   [gemma-3-1b-it] Q488 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Content Security Policy (CSP) should not use the '______' directive, as it enables inline script execution, potentially leading to XSS vulner...
+2026-02-25 21:51:27,246 - WARNING -   [gemma-3-1b-it] Q494 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Hardwired control utilizes a fixed, pre-programmed set of instructions, offering predictable performance but limited flexibility. Microprogra...
+2026-02-25 21:51:27,247 - WARNING -   [gemma-3-1b-it] Q511 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: i precedes j
+The topological sorting rule states that if Oi precedes Oj, then i must come before j. This implies a linear ordering where i ap...
+2026-02-25 21:51:27,248 - WARNING -   [gemma-3-1b-it] Q518 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+1.  Connect to a data source using `DataSource.getConnection()`.
+2.  Start, commit, and abort transactions using `DataSource.transactionManag...
+2026-02-25 21:51:27,249 - WARNING -   [gemma-3-1b-it] Q531 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Triggers are effective for enforcing business rules and data validation, offering immediate response to data changes. However, they can be sl...
+2026-02-25 21:51:27,249 - ERROR -   [gemma-3-1b-it] Q546 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: O(2^n) algorithms are less efficient than O(n^3) algorithms for large n due to exponential growth of the search space.
+$Rationale: The exponential nature of 2^n makes it significantly slower as n increases, while O(n^3) scales linearly, offering substantial performance gains....
+2026-02-25 21:51:27,249 - WARNING -   [gemma-3-1b-it] Q547 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Linear data structures (arrays, linked lists) store elements sequentially, while nonlinear structures (trees, graphs) utilize hierarchical re...
+2026-02-25 21:51:27,250 - WARNING -   [gemma-3-1b-it] Q554 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The approach is likely incorrect. High training loss suggests the model is underfitting the data. Increasing the number of training examples ...
+2026-02-25 21:51:27,251 - WARNING -   [gemma-3-1b-it] Q572 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Backtracking reduces search space by recursively exploring only the paths that potentially lead to a solution. It explores all possibilities,...
+2026-02-25 21:51:27,252 - WARNING -   [gemma-3-1b-it] Q580 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Circular linked lists offer potential for efficient insertion/deletion at both ends, while singly linked lists suffer from traversal complexi...
+2026-02-25 21:51:27,252 - WARNING -   [gemma-3-1b-it] Q589 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Software requirements processes involve eliciting, analyzing, specifying, validating, and managing requirements. Functional models depict sys...
+2026-02-25 21:51:27,252 - WARNING -   [gemma-3-1b-it] Q597 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Conflict equivalence implies view equivalence; schedule A and B are view equivalent if they both produce the same view. This necessitates a c...
+2026-02-25 21:51:27,253 - WARNING -   [gemma-3-1b-it] Q601 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Reusing an IV in AES-GCM with the same key creates a catastrophic failure due to the GCM’s internal state management. The MAC calculation rel...
+2026-02-25 21:51:27,253 - ERROR -   [gemma-3-1b-it] Q604 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: Graph-based semi-supervised learning leverages the graph Laplacian to promote label smoothness, facilitating node similarity through edge weights, thereby enhancing model performance.
+$Rationale: The graph Laplacian provides a measure of graph connectivity, enabling the model to identify an...
+2026-02-25 21:51:27,254 - WARNING -   [gemma-3-1b-it] Q614 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: The ratio of disk capacity is 2.  The ratio is determined by the radius of the innermost track (0.25 in) divided by the radius of the outermo...
+2026-02-25 21:51:27,254 - WARNING -   [gemma-3-1b-it] Q616 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: L1 and L2 regularization differ in their approach to model complexity. L1 adds a penalty proportional to the absolute value of the coefficien...
+2026-02-25 21:51:27,254 - WARNING -   [gemma-3-1b-it] Q617 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+A typical lock manager employs a process-based approach, utilizing multiple locks for concurrent access to shared resources. Atomic operation...
+2026-02-25 21:51:27,255 - WARNING -   [gemma-3-1b-it] Q635 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: AMAT of L1 cache is 124 cycles. The AMAT (Average Memory Access Time) is calculated as the sum of the access times of all cache levels divide...
+2026-02-25 21:51:27,256 - ERROR -   [gemma-3-1b-it] Q648 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+Recurrence relations describe the time complexity of recursive algorithms by showing the number of steps required to complete a recursive function.  They represent the growth rate of the problem's size as the input size increases.
+...
+2026-02-25 21:51:27,256 - WARNING -   [gemma-3-1b-it] Q648 (TF): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Recurrence relations describe the time complexity of recursive algorithms by showing the number of steps required to complete a recursive fun...
+2026-02-25 21:51:27,256 - ERROR -   [gemma-3-1b-it] Q651 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+PCA transforms data into a lower-dimensional space by projecting data points onto a set of orthogonal principal components, effectively reducing the number of variables while preserving most of the variance in the data.
+...
+2026-02-25 21:51:27,256 - WARNING -   [gemma-3-1b-it] Q651 (TF): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+PCA transforms data into a lower-dimensional space by projecting data points onto a set of orthogonal principal components, effectively reduc...
+2026-02-25 21:51:27,257 - WARNING -   [gemma-3-1b-it] Q657 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+A) Waterfall requires freezing requirements before design begins, which is unrealistic here.
+B) Prototyping allows the client to "play" with ...
+2026-02-25 21:51:27,257 - WARNING -   [gemma-3-1b-it] Q660 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Momentum-based algorithms, like Adam, accelerate learning by refining estimates of the gradient during each iteration, effectively reducing t...
+2026-02-25 21:51:27,257 - WARNING -   [gemma-3-1b-it] Q664 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Early stopping is a crucial technique for managing training in machine learning. It reduces the need for hyperparameter tuning, as the model'...
+2026-02-25 21:51:27,258 - WARNING -   [gemma-3-1b-it] Q684 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: 4...
+2026-02-25 21:51:27,260 - WARNING -   [gemma-3-1b-it] Q704 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Column, compression...
+2026-02-25 21:51:27,261 - WARNING -   [gemma-3-1b-it] Q732 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+B) Adding Batch Normalization layers. Batch normalization helps stabilize gradients by normalizing the activations of each layer, reducing th...
+2026-02-25 21:51:27,262 - WARNING -   [gemma-3-1b-it] Q753 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Sparse, doubly-linked...
+2026-02-25 21:51:27,263 - WARNING -   [gemma-3-1b-it] Q757 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Memory-mapped I/O allows the system to directly access memory locations associated with I/O devices, providing near-instantaneous response ti...
+2026-02-25 21:51:27,264 - WARNING -   [gemma-3-1b-it] Q775 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Polynomial time algorithms are generally more efficient than exponential time algorithms, offering practical advantages for large datasets du...
+2026-02-25 21:51:27,264 - WARNING -   [gemma-3-1b-it] Q783 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Fault-based testing. Fault-based testing involves systematically identifying defects by examining the behavior of software under various faul...
+2026-02-25 21:51:27,265 - WARNING -   [gemma-3-1b-it] Q797 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Sequential data structures, like linked lists, face challenges with access patterns – requiring traversal of the entire list for each element...
+2026-02-25 21:51:27,267 - WARNING -   [gemma-3-1b-it] Q822 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: Miss rate measures cache hit rate, which reflects the frequency of data access. A high miss rate indicates frequent cache misses, suggesting ...
+2026-02-25 21:51:27,267 - WARNING -   [gemma-3-1b-it] Q835 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+B) Manpower ramp-up typically follows a Rayleigh curve, meaning peak staffing is only needed during the "build" phase, not the start. This in...
+2026-02-25 21:51:27,269 - WARNING -   [gemma-3-1b-it] Q868 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+A stack follows LIFO (Last-In, First-Out) principle, ideal for function calls and expression evaluation, while a queue operates on FIFO (Firs...
+2026-02-25 21:51:27,270 - WARNING -   [gemma-3-1b-it] Q876 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: The expected complete log-likelihood is a reasonable objective function for unsupervised learning because it directly measures the model’s ab...
+2026-02-25 21:51:27,272 - ERROR -   [gemma-3-1b-it] Q910 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: RAID 10 offers superior write performance compared to RAID 5 for random I/O due to its striping and mirroring techniques, minimizing data transfer overhead.*
+$Rationale: RAID 10 achieves high performance through striping and mirroring, reducing the impact of random disk access, which is cru...
+2026-02-25 21:51:27,273 - ERROR -   [gemma-3-1b-it] Q921 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: O(log n)
+$Rationale: Binary search repeatedly divides the search interval in half, resulting in logarithmic time complexity....
+2026-02-25 21:51:27,273 - WARNING -   [gemma-3-1b-it] Q926 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+B) It doesn’t need hand crafted features. End-to-end learning eliminates the need for manual feature engineering, reducing the reliance on hu...
+2026-02-25 21:51:27,273 - WARNING -   [gemma-3-1b-it] Q927 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: 2PL protocol requires exclusive locks to be held until transaction commits. This ensures data consistency and prevents cascading aborts....
+2026-02-25 21:51:27,275 - WARNING -   [gemma-3-1b-it] Q957 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+L1 regularization offers explainability by creating sparse models, reducing irrelevant covariates.  It’s preferable to L2 regularization even...
+2026-02-25 21:51:27,275 - ERROR -   [gemma-3-1b-it] Q958 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: The softmax function accurately transforms real-valued vectors into probability vectors by exponentiating and normalizing, ensuring a valid probability distribution.
+$Rationale: The softmax function’s core operation – exponentiation – directly generates probabilities, and normalization by t...
+2026-02-25 21:51:27,276 - ERROR -   [gemma-3-1b-it] Q983 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+T
+Skip lists offer logarithmic search time, contrasting with balanced trees' O(log n) average case, making them a viable alternative.
+...
+2026-02-25 21:51:27,276 - WARNING -   [gemma-3-1b-it] Q983 (TF): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+T
+Skip lists offer logarithmic search time, contrasting with balanced trees' O(log n) average case, making them a viable alternative.
+...
+2026-02-25 21:51:27,277 - WARNING -   [gemma-3-1b-it] Q993 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: TOCTOU condition
+The TOCTOU condition describes a security vulnerability where a system's state changes during a check, leading to potential ...
+2026-02-25 21:51:27,277 - WARNING -   [gemma-3-1b-it] Q1003 (MS): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+PKCE mitigates authorization code interception and client secret leakage on public clients. CSRF is not addressed by PKCE. Cross-site request...
+2026-02-25 21:51:27,279 - WARNING -   [gemma-3-1b-it] Q1021 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+The isolation level should be READ COMMITTED. This is necessary to ensure data consistency, as the assignment operation could potentially mod...
+2026-02-25 21:51:27,279 - ERROR -   [gemma-3-1b-it] Q1029 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer:
+The worst-case time complexity of the Tower of Hanoi recursive algorithm is O(n²), due to the repeated rotations required to move the disks, leading to a quadratic number of operations.
+Rationale: The algorithm's inefficiency stems from the nested loops, where each move involves a rotation ...
+2026-02-25 21:51:27,279 - ERROR -   [gemma-3-1b-it] Q1032 (TF): Empty answer_output but 'Answer' keyword EXISTS in output. PARSER BUG — needs regex fix. Raw output:
+$Answer: Space complexity refers to the memory usage of an algorithm, growing proportionally with the input size. It’s a measure of how much memory the algorithm needs to store data and operations.
+### $Rationale: Space complexity is defined as the memory footprint of an algorithm, directly proporti...
+2026-02-25 21:51:27,282 - WARNING -   [gemma-3-1b-it] Q1080 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Logarithmic loops offer improved efficiency by reducing the number of iterations required for a given task, especially when dealing with larg...
+2026-02-25 21:51:27,283 - WARNING -   [gemma-3-1b-it] Q1086 (OE): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer:
+Average-case complexity is preferred in critical systems due to its robustness against inevitable fluctuations; analyzing it presents challen...
+2026-02-25 21:51:27,284 - WARNING -   [gemma-3-1b-it] Q1106 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: The ciphertext is the average of the two plaintexts. ChaCha20 and RC4 are designed to be reversible, so the average is a common method to rec...
+2026-02-25 21:51:27,284 - WARNING -   [gemma-3-1b-it] Q1116 (FB): Empty rationale_output — model never wrote 'Rationale' keyword. Raw output preview: $Answer: The computation takes place on a twist curve, allowing the attacker to solve the Discrete Logarithm problem easily. ECDH relies on the correc...
+2026-02-25 21:51:27,285 - INFO -   gemma-3-1b-it: 1120 questions processed. Empty answers: 19, Empty rationales: 87
+2026-02-25 21:51:27,298 - INFO - 
+============================================================
+SUMMARY
+============================================================
+Total entries processed: 1120
+Total empty answers:     19
+Total empty rationales:  87
+============================================================
+2026-02-25 21:51:27,298 - ERROR - 
+============================================================
+PARSE FAILURES (keyword exists but extraction failed)
+These need regex fixes!
+============================================================
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q49 (TF), Field: answer_output
+  Raw output preview: $Answer: Systemd, launchd, and init are all daemon processes. They are background services that run without direct user interaction, providing system functionality.
+###Rationale:
+Systemd, launchd, and...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q177 (TF), Field: answer_output
+  Raw output preview: $Answer: O(h)
+$Rationale: A quadtree's worst-case time complexity for range queries is proportional to the height of the tree, where 'h' represents the maximum number of nodes in the tree....
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q181 (TF), Field: answer_output
+  Raw output preview: $Answer:
+T
+The adaptive dictionary in move-to-front transformation dynamically adjusts its entries based on the input data, ensuring efficient lookup and minimizing memory usage, a key characteristic ...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q237 (MC), Field: answer_output
+  Raw output preview: $Answer: E
+$Rationale: Redo-logging ensures the log entry reflects the rename operation, and the directory inode is updated accordingly. The log is used to record the rename, and the directory entry i...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q280 (TF), Field: answer_output
+  Raw output preview: $Answer:
+The worst-case time complexity of searching in a binary search tree is O(log n), due to the potential for the tree to become unbalanced, leading to a logarithmic search path.
+...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q313 (TF), Field: answer_output
+  Raw output preview: $Answer: Stepwise regression minimizes the squared error loss function, while the L0 penalty is a regularization term, resulting in a globally optimal solution.
+$Rationale: Stepwise regression iterati...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q341 (TF), Field: answer_output
+  Raw output preview: $Answer: O notation describes the efficiency of an algorithm, offering a theoretical upper limit on its execution time, irrespective of input size.
+$Rationale: Big O notation quantifies the growth rat...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q345 (TF), Field: answer_output
+  Raw output preview: $Answer: Discrete logarithm problem in ECC is computationally intensive, requiring large exponents to find $k$, posing a challenge for efficient key generation and security analysis.*
+$Rationale: The ...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q363 (TF), Field: answer_output
+  Raw output preview: $Answer: The Clock replacement algorithm’s reference bit approach offers a faster replacement than traditional LRU, minimizing queue overhead.
+$Rationale: The reference bit technique efficiently ident...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q546 (TF), Field: answer_output
+  Raw output preview: $Answer: O(2^n) algorithms are less efficient than O(n^3) algorithms for large n due to exponential growth of the search space.
+$Rationale: The exponential nature of 2^n makes it significantly slower ...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q604 (TF), Field: answer_output
+  Raw output preview: $Answer: Graph-based semi-supervised learning leverages the graph Laplacian to promote label smoothness, facilitating node similarity through edge weights, thereby enhancing model performance.
+$Ration...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q648 (TF), Field: answer_output
+  Raw output preview: $Answer:
+Recurrence relations describe the time complexity of recursive algorithms by showing the number of steps required to complete a recursive function.  They represent the growth rate of the prob...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q651 (TF), Field: answer_output
+  Raw output preview: $Answer:
+PCA transforms data into a lower-dimensional space by projecting data points onto a set of orthogonal principal components, effectively reducing the number of variables while preserving most ...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q910 (TF), Field: answer_output
+  Raw output preview: $Answer: RAID 10 offers superior write performance compared to RAID 5 for random I/O due to its striping and mirroring techniques, minimizing data transfer overhead.*
+$Rationale: RAID 10 achieves high...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q921 (TF), Field: answer_output
+  Raw output preview: $Answer: O(log n)
+$Rationale: Binary search repeatedly divides the search interval in half, resulting in logarithmic time complexity....
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q958 (TF), Field: answer_output
+  Raw output preview: $Answer: The softmax function accurately transforms real-valued vectors into probability vectors by exponentiating and normalizing, ensuring a valid probability distribution.
+$Rationale: The softmax f...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q983 (TF), Field: answer_output
+  Raw output preview: $Answer:
+T
+Skip lists offer logarithmic search time, contrasting with balanced trees' O(log n) average case, making them a viable alternative.
+...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q1029 (TF), Field: answer_output
+  Raw output preview: $Answer:
+The worst-case time complexity of the Tower of Hanoi recursive algorithm is O(n²), due to the repeated rotations required to move the disks, leading to a quadratic number of operations.
+Ratio...
+
+2026-02-25 21:51:27,298 - ERROR -   Model: gemma-3-1b-it, Q1032 (TF), Field: answer_output
+  Raw output preview: $Answer: Space complexity refers to the memory usage of an algorithm, growing proportionally with the input size. It’s a measure of how much memory the algorithm needs to store data and operations.
+##...
+
+2026-02-25 21:51:27,299 - ERROR -   Parse failures saved to: data/2_processed/_parse_failures.json
+2026-02-25 21:56:30,255 - INFO - Found 1 model files to process.
+2026-02-25 21:56:30,255 - INFO - Processing gemma-3-1b-it...
+2026-02-25 21:56:30,260 - WARNING -   [gemma-3-1b-it] Q15 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Abstract data types (ADTs) offer flexibility and adaptability, while leftist heaps prioritize efficient insertion and deletion at the root, l...
+2026-02-25 21:56:30,261 - WARNING -   [gemma-3-1b-it] Q19 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The binary min heap will be constructed with the elements 77, 22, 9, 68, 16, 34, 13, 8.  Each element is inserted into the heap such that the...
+2026-02-25 21:56:30,262 - WARNING -   [gemma-3-1b-it] Q36 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:  I/O Addressing Schemes, Direct Addressing. Direct addressing maps I/O devices directly to memory addresses, offering efficient access but re...
+2026-02-25 21:56:30,263 - ERROR -   [gemma-3-1b-it] Q49 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: Systemd, launchd, and init are all daemon processes. They are background services that run without direct user interaction, providing system functionality.
+###Rationale:
+Systemd, launchd, and init are all daemon processes, meaning they operate silently in the background, executing tasks wit...
+2026-02-25 21:56:30,263 - WARNING -   [gemma-3-1b-it] Q53 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+FCFS has the lowest average waiting time due to its simplicity and sequential nature, followed by SJF, and then RR, which experiences the hig...
+2026-02-25 21:56:30,263 - WARNING -   [gemma-3-1b-it] Q54 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+FCFS is the most efficient due to its simplicity and lowest average response ratio. RR has a slightly higher average response ratio than FCFS...
+2026-02-25 21:56:30,266 - WARNING -   [gemma-3-1b-it] Q96 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Logical and physical data independence refer to distinct approaches to database design. Logical data independence ensures the database's stru...
+2026-02-25 21:56:30,266 - WARNING -   [gemma-3-1b-it] Q102 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The relational algebra expression is `Library.ID NOT IN (Stock.BookID)` followed by `Library.LibraryID NOT IN (Stock.LibraryID)`. This select...
+2026-02-25 21:56:30,267 - WARNING -   [gemma-3-1b-it] Q105 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Column-oriented databases offer improved query performance for analytical workloads due to data compression and efficient processing of large...
+2026-02-25 21:56:30,267 - WARNING -   [gemma-3-1b-it] Q116 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+One-to-one relationships involve a direct connection between two entities, while one-to-many represents a many-to-one connection. Many-to-man...
+2026-02-25 21:56:30,267 - WARNING -   [gemma-3-1b-it] Q117 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Breadth-first search (BFS) can be generalized to explore game trees, but it’s not guaranteed to find the optimal solution. BFS explores nodes...
+2026-02-25 21:56:30,267 - WARNING -   [gemma-3-1b-it] Q118 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Alpha-beta search can be generalized to explore game trees, but it’s not guaranteed to find the optimal solution. Its performance depends hea...
+2026-02-25 21:56:30,268 - WARNING -   [gemma-3-1b-it] Q119 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The A* search algorithm is suitable. It efficiently explores the solution space by prioritizing nodes with the highest estimated total cost, ...
+2026-02-25 21:56:30,268 - WARNING -   [gemma-3-1b-it] Q120 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The most appropriate algorithm is stochastic gradient descent (SGD) with momentum. SGD’s adaptive learning rate and momentum enhance converge...
+2026-02-25 21:56:30,268 - WARNING -   [gemma-3-1b-it] Q129 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Image and video analysis, computer vision, and object detection are the processes involved in extracting relevant data from visual inputs. Th...
+2026-02-25 21:56:30,269 - WARNING -   [gemma-3-1b-it] Q139 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Most constrained variables limit the search space, while least constraining values provide minimal influence on the solution.  A constrained ...
+2026-02-25 21:56:30,270 - WARNING -   [gemma-3-1b-it] Q143 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+MLP models struggle with noise due to their reliance on precise feature representations; kNN, conversely, is robust to noise as it partitions...
+2026-02-25 21:56:30,270 - WARNING -   [gemma-3-1b-it] Q144 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Convolutional Neural Networks (CNNs) excel in image recognition, utilizing convolutional layers to extract spatial features, while autoencode...
+2026-02-25 21:56:30,270 - WARNING -   [gemma-3-1b-it] Q147 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Supervised learning utilizes labeled data for training; unsupervised learning analyzes unlabeled data to discover patterns; reinforcement lea...
+2026-02-25 21:56:30,271 - WARNING -   [gemma-3-1b-it] Q153 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Bagging reduces variance by averaging multiple models, mitigating the impact of individual model biases. Boosting, conversely, directly addre...
+2026-02-25 21:56:30,272 - ERROR -   [gemma-3-1b-it] Q177 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: O(h)
+$Rationale: A quadtree's worst-case time complexity for range queries is proportional to the height of the tree, where 'h' represents the maximum number of nodes in the tree....
+2026-02-25 21:56:30,272 - ERROR -   [gemma-3-1b-it] Q181 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+T
+The adaptive dictionary in move-to-front transformation dynamically adjusts its entries based on the input data, ensuring efficient lookup and minimizing memory usage, a key characteristic of its performance....
+2026-02-25 21:56:30,272 - WARNING -   [gemma-3-1b-it] Q181 (TF): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+T
+The adaptive dictionary in move-to-front transformation dynamically adjusts its entries based on the input data, ensuring efficient lookup ...
+2026-02-25 21:56:30,272 - WARNING -   [gemma-3-1b-it] Q184 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Memory latency, leading to performance degradation and application crashes. Bufferbloat causes increased memory access times, hindering effic...
+2026-02-25 21:56:30,272 - WARNING -   [gemma-3-1b-it] Q185 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Network, CPU. Bufferbloat occurs when a processor attempts to access data that is located in a slower memory location (like RAM) instead of t...
+2026-02-25 21:56:30,272 - WARNING -   [gemma-3-1b-it] Q186 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: TCP, TCP responds more rapidly to network congestion. TCP’s congestion control algorithm dynamically adjusts the transmission rate based on n...
+2026-02-25 21:56:30,273 - WARNING -   [gemma-3-1b-it] Q188 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Reduced memory access latency...
+2026-02-25 21:56:30,273 - WARNING -   [gemma-3-1b-it] Q200 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: NO STEAL in the absence of UNDO logging. UNDO logging records actions taken by a user, providing a history of their operations. Without it, t...
+2026-02-25 21:56:30,274 - WARNING -   [gemma-3-1b-it] Q215 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The query should identify spells cast by good wizards that are offensive. The `count_evil_good_spells` CTE counts the number of offensive spe...
+2026-02-25 21:56:30,275 - ERROR -   [gemma-3-1b-it] Q237 (MC): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: E
+$Rationale: Redo-logging ensures the log entry reflects the rename operation, and the directory inode is updated accordingly. The log is used to record the rename, and the directory entry is updated to reflect the new inode....
+2026-02-25 21:56:30,277 - WARNING -   [gemma-3-1b-it] Q264 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+B) A "Main Success Scenario" describes the interaction if nothing fails. This scenario outlines the typical flow of the use case, ensuring a ...
+2026-02-25 21:56:30,277 - WARNING -   [gemma-3-1b-it] Q273 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Relational algebra operators can be composed because they represent operations on relations, allowing for the creation of new relations throu...
+2026-02-25 21:56:30,278 - WARNING -   [gemma-3-1b-it] Q277 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The query "Find all employees with age = 30" requires a clustered index on the `eid` attribute because the index will be used to quickly loca...
+2026-02-25 21:56:30,278 - ERROR -   [gemma-3-1b-it] Q280 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+The worst-case time complexity of searching in a binary search tree is O(log n), due to the potential for the tree to become unbalanced, leading to a logarithmic search path.
+...
+2026-02-25 21:56:30,278 - WARNING -   [gemma-3-1b-it] Q280 (TF): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The worst-case time complexity of searching in a binary search tree is O(log n), due to the potential for the tree to become unbalanced, lead...
+2026-02-25 21:56:30,279 - WARNING -   [gemma-3-1b-it] Q294 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+A, D
+A clustered B+tree index is optimized for range queries, while unclustered indexes are better for equality searches.  D retrieves a sing...
+2026-02-25 21:56:30,280 - ERROR -   [gemma-3-1b-it] Q313 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: Stepwise regression minimizes the squared error loss function, while the L0 penalty is a regularization term, resulting in a globally optimal solution.
+$Rationale: Stepwise regression iteratively adjusts model parameters to minimize the squared error, and the L0 penalty adds a term to preve...
+2026-02-25 21:56:30,281 - WARNING -   [gemma-3-1b-it] Q329 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Downgrades violate 2PL because they introduce a potential for a "split-brain" scenario, where multiple processes attempt to update the same d...
+2026-02-25 21:56:30,282 - ERROR -   [gemma-3-1b-it] Q341 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: O notation describes the efficiency of an algorithm, offering a theoretical upper limit on its execution time, irrespective of input size.
+$Rationale: Big O notation quantifies the growth rate of an algorithm's resource consumption as the input size increases, providing a benchmark for algo...
+2026-02-25 21:56:30,282 - ERROR -   [gemma-3-1b-it] Q345 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: Discrete logarithm problem in ECC is computationally intensive, requiring large exponents to find $k$, posing a challenge for efficient key generation and security analysis.*
+$Rationale: The discrete logarithm problem is a fundamental hurdle in ECC, demanding significant computational resou...
+2026-02-25 21:56:30,283 - WARNING -   [gemma-3-1b-it] Q356 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+A) No limited capacity constraints. Linked stacks allow for dynamic growth, while sequential stacks have fixed size limitations.
+B) Simplifie...
+2026-02-25 21:56:30,283 - WARNING -   [gemma-3-1b-it] Q358 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Theoretical data structure study is recommended to establish fundamental principles, while language-specific implementation focuses on practi...
+2026-02-25 21:56:30,283 - ERROR -   [gemma-3-1b-it] Q363 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: The Clock replacement algorithm’s reference bit approach offers a faster replacement than traditional LRU, minimizing queue overhead.
+$Rationale: The reference bit technique efficiently identifies and replaces the least recently used page, improving performance without the complexity of que...
+2026-02-25 21:56:30,283 - WARNING -   [gemma-3-1b-it] Q364 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The pipeline is failing due to the Pedestrian Detector (P) exhibiting high error rates. A visual inspection of the output images reveals inco...
+2026-02-25 21:56:30,284 - WARNING -   [gemma-3-1b-it] Q374 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Microprogramming was prevalent in early processors due to its ability to provide fine-grained control over hardware, enabling complex instruc...
+2026-02-25 21:56:30,284 - WARNING -   [gemma-3-1b-it] Q379 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Linked stacks and queues offer improved performance for certain operations compared to sequential data structures. Stacks provide O(1) for pu...
+2026-02-25 21:56:30,284 - WARNING -   [gemma-3-1b-it] Q380 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: I = 0, I = 1
+The addressing mode flag (I) determines whether the instruction is a read or write operation. I = 0 indicates a read operation, ...
+2026-02-25 21:56:30,286 - WARNING -   [gemma-3-1b-it] Q407 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+B, C. A describes a B+ Tree's leaf structure, while D describes a B-Tree's splitting mechanism.  B+ Trees prioritize leaf nodes, while B-Tree...
+2026-02-25 21:56:30,286 - WARNING -   [gemma-3-1b-it] Q422 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: LR and SVM are likely to be more severely affected. LR’s decision boundary is less sensitive to individual data points, while SVM’s margin is...
+2026-02-25 21:56:30,289 - WARNING -   [gemma-3-1b-it] Q470 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The best-case running time is the minimum number of operations required to solve the problem. The worst-case running time is the maximum numb...
+2026-02-25 21:56:30,289 - WARNING -   [gemma-3-1b-it] Q473 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Learning rate too large leads to instability, oscillations, and potentially divergence, hindering convergence. Conversely, a small learning r...
+2026-02-25 21:56:30,289 - WARNING -   [gemma-3-1b-it] Q474 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: RAD Software Process Model stands for the iterative, incremental approach used in software development, emphasizing continuous feedback and a...
+2026-02-25 21:56:30,290 - WARNING -   [gemma-3-1b-it] Q488 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Content Security Policy (CSP) should not use the '______' directive, as it enables inline script execution, potentially leading to XSS vulner...
+2026-02-25 21:56:30,291 - WARNING -   [gemma-3-1b-it] Q494 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Hardwired control utilizes a fixed, pre-programmed set of instructions, offering predictable performance but limited flexibility. Microprogra...
+2026-02-25 21:56:30,292 - WARNING -   [gemma-3-1b-it] Q511 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: i precedes j
+The topological sorting rule states that if Oi precedes Oj, then i must come before j. This implies a linear ordering where i ap...
+2026-02-25 21:56:30,292 - WARNING -   [gemma-3-1b-it] Q518 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+1.  Connect to a data source using `DataSource.getConnection()`.
+2.  Start, commit, and abort transactions using `DataSource.transactionManag...
+2026-02-25 21:56:30,293 - WARNING -   [gemma-3-1b-it] Q531 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Triggers are effective for enforcing business rules and data validation, offering immediate response to data changes. However, they can be sl...
+2026-02-25 21:56:30,294 - ERROR -   [gemma-3-1b-it] Q546 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: O(2^n) algorithms are less efficient than O(n^3) algorithms for large n due to exponential growth of the search space.
+$Rationale: The exponential nature of 2^n makes it significantly slower as n increases, while O(n^3) scales linearly, offering substantial performance gains....
+2026-02-25 21:56:30,294 - WARNING -   [gemma-3-1b-it] Q547 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Linear data structures (arrays, linked lists) store elements sequentially, while nonlinear structures (trees, graphs) utilize hierarchical re...
+2026-02-25 21:56:30,294 - WARNING -   [gemma-3-1b-it] Q554 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The approach is likely incorrect. High training loss suggests the model is underfitting the data. Increasing the number of training examples ...
+2026-02-25 21:56:30,295 - WARNING -   [gemma-3-1b-it] Q572 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Backtracking reduces search space by recursively exploring only the paths that potentially lead to a solution. It explores all possibilities,...
+2026-02-25 21:56:30,296 - WARNING -   [gemma-3-1b-it] Q580 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Circular linked lists offer potential for efficient insertion/deletion at both ends, while singly linked lists suffer from traversal complexi...
+2026-02-25 21:56:30,296 - WARNING -   [gemma-3-1b-it] Q589 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Software requirements processes involve eliciting, analyzing, specifying, validating, and managing requirements. Functional models depict sys...
+2026-02-25 21:56:30,297 - WARNING -   [gemma-3-1b-it] Q597 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Conflict equivalence implies view equivalence; schedule A and B are view equivalent if they both produce the same view. This necessitates a c...
+2026-02-25 21:56:30,297 - WARNING -   [gemma-3-1b-it] Q601 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Reusing an IV in AES-GCM with the same key creates a catastrophic failure due to the GCM’s internal state management. The MAC calculation rel...
+2026-02-25 21:56:30,297 - ERROR -   [gemma-3-1b-it] Q604 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: Graph-based semi-supervised learning leverages the graph Laplacian to promote label smoothness, facilitating node similarity through edge weights, thereby enhancing model performance.
+$Rationale: The graph Laplacian provides a measure of graph connectivity, enabling the model to identify an...
+2026-02-25 21:56:30,298 - WARNING -   [gemma-3-1b-it] Q614 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: The ratio of disk capacity is 2.  The ratio is determined by the radius of the innermost track (0.25 in) divided by the radius of the outermo...
+2026-02-25 21:56:30,298 - WARNING -   [gemma-3-1b-it] Q616 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: L1 and L2 regularization differ in their approach to model complexity. L1 adds a penalty proportional to the absolute value of the coefficien...
+2026-02-25 21:56:30,298 - WARNING -   [gemma-3-1b-it] Q617 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+A typical lock manager employs a process-based approach, utilizing multiple locks for concurrent access to shared resources. Atomic operation...
+2026-02-25 21:56:30,299 - WARNING -   [gemma-3-1b-it] Q635 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: AMAT of L1 cache is 124 cycles. The AMAT (Average Memory Access Time) is calculated as the sum of the access times of all cache levels divide...
+2026-02-25 21:56:30,300 - ERROR -   [gemma-3-1b-it] Q648 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+Recurrence relations describe the time complexity of recursive algorithms by showing the number of steps required to complete a recursive function.  They represent the growth rate of the problem's size as the input size increases.
+...
+2026-02-25 21:56:30,300 - WARNING -   [gemma-3-1b-it] Q648 (TF): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Recurrence relations describe the time complexity of recursive algorithms by showing the number of steps required to complete a recursive fun...
+2026-02-25 21:56:30,300 - ERROR -   [gemma-3-1b-it] Q651 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+PCA transforms data into a lower-dimensional space by projecting data points onto a set of orthogonal principal components, effectively reducing the number of variables while preserving most of the variance in the data.
+...
+2026-02-25 21:56:30,300 - WARNING -   [gemma-3-1b-it] Q651 (TF): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+PCA transforms data into a lower-dimensional space by projecting data points onto a set of orthogonal principal components, effectively reduc...
+2026-02-25 21:56:30,300 - WARNING -   [gemma-3-1b-it] Q657 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+A) Waterfall requires freezing requirements before design begins, which is unrealistic here.
+B) Prototyping allows the client to "play" with ...
+2026-02-25 21:56:30,300 - WARNING -   [gemma-3-1b-it] Q660 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Momentum-based algorithms, like Adam, accelerate learning by refining estimates of the gradient during each iteration, effectively reducing t...
+2026-02-25 21:56:30,301 - WARNING -   [gemma-3-1b-it] Q664 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Early stopping is a crucial technique for managing training in machine learning. It reduces the need for hyperparameter tuning, as the model'...
+2026-02-25 21:56:30,302 - WARNING -   [gemma-3-1b-it] Q684 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: 4...
+2026-02-25 21:56:30,303 - WARNING -   [gemma-3-1b-it] Q704 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Column, compression...
+2026-02-25 21:56:30,305 - WARNING -   [gemma-3-1b-it] Q732 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+B) Adding Batch Normalization layers. Batch normalization helps stabilize gradients by normalizing the activations of each layer, reducing th...
+2026-02-25 21:56:30,306 - WARNING -   [gemma-3-1b-it] Q753 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Sparse, doubly-linked...
+2026-02-25 21:56:30,306 - WARNING -   [gemma-3-1b-it] Q757 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Memory-mapped I/O allows the system to directly access memory locations associated with I/O devices, providing near-instantaneous response ti...
+2026-02-25 21:56:30,307 - WARNING -   [gemma-3-1b-it] Q775 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Polynomial time algorithms are generally more efficient than exponential time algorithms, offering practical advantages for large datasets du...
+2026-02-25 21:56:30,307 - WARNING -   [gemma-3-1b-it] Q783 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Fault-based testing. Fault-based testing involves systematically identifying defects by examining the behavior of software under various faul...
+2026-02-25 21:56:30,308 - WARNING -   [gemma-3-1b-it] Q797 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Sequential data structures, like linked lists, face challenges with access patterns – requiring traversal of the entire list for each element...
+2026-02-25 21:56:30,310 - WARNING -   [gemma-3-1b-it] Q822 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: Miss rate measures cache hit rate, which reflects the frequency of data access. A high miss rate indicates frequent cache misses, suggesting ...
+2026-02-25 21:56:30,310 - WARNING -   [gemma-3-1b-it] Q835 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+B) Manpower ramp-up typically follows a Rayleigh curve, meaning peak staffing is only needed during the "build" phase, not the start. This in...
+2026-02-25 21:56:30,312 - WARNING -   [gemma-3-1b-it] Q868 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+A stack follows LIFO (Last-In, First-Out) principle, ideal for function calls and expression evaluation, while a queue operates on FIFO (Firs...
+2026-02-25 21:56:30,313 - WARNING -   [gemma-3-1b-it] Q876 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: The expected complete log-likelihood is a reasonable objective function for unsupervised learning because it directly measures the model’s ab...
+2026-02-25 21:56:30,315 - ERROR -   [gemma-3-1b-it] Q910 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: RAID 10 offers superior write performance compared to RAID 5 for random I/O due to its striping and mirroring techniques, minimizing data transfer overhead.*
+$Rationale: RAID 10 achieves high performance through striping and mirroring, reducing the impact of random disk access, which is cru...
+2026-02-25 21:56:30,315 - ERROR -   [gemma-3-1b-it] Q921 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: O(log n)
+$Rationale: Binary search repeatedly divides the search interval in half, resulting in logarithmic time complexity....
+2026-02-25 21:56:30,316 - WARNING -   [gemma-3-1b-it] Q926 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+B) It doesn’t need hand crafted features. End-to-end learning eliminates the need for manual feature engineering, reducing the reliance on hu...
+2026-02-25 21:56:30,316 - WARNING -   [gemma-3-1b-it] Q927 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: 2PL protocol requires exclusive locks to be held until transaction commits. This ensures data consistency and prevents cascading aborts....
+2026-02-25 21:56:30,317 - WARNING -   [gemma-3-1b-it] Q957 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+L1 regularization offers explainability by creating sparse models, reducing irrelevant covariates.  It’s preferable to L2 regularization even...
+2026-02-25 21:56:30,317 - ERROR -   [gemma-3-1b-it] Q958 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: The softmax function accurately transforms real-valued vectors into probability vectors by exponentiating and normalizing, ensuring a valid probability distribution.
+$Rationale: The softmax function’s core operation – exponentiation – directly generates probabilities, and normalization by t...
+2026-02-25 21:56:30,319 - ERROR -   [gemma-3-1b-it] Q983 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+T
+Skip lists offer logarithmic search time, contrasting with balanced trees' O(log n) average case, making them a viable alternative.
+...
+2026-02-25 21:56:30,319 - WARNING -   [gemma-3-1b-it] Q983 (TF): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+T
+Skip lists offer logarithmic search time, contrasting with balanced trees' O(log n) average case, making them a viable alternative.
+...
+2026-02-25 21:56:30,319 - WARNING -   [gemma-3-1b-it] Q993 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: TOCTOU condition
+The TOCTOU condition describes a security vulnerability where a system's state changes during a check, leading to potential ...
+2026-02-25 21:56:30,320 - WARNING -   [gemma-3-1b-it] Q1003 (MS): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+PKCE mitigates authorization code interception and client secret leakage on public clients. CSRF is not addressed by PKCE. Cross-site request...
+2026-02-25 21:56:30,321 - WARNING -   [gemma-3-1b-it] Q1021 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+The isolation level should be READ COMMITTED. This is necessary to ensure data consistency, as the assignment operation could potentially mod...
+2026-02-25 21:56:30,321 - ERROR -   [gemma-3-1b-it] Q1029 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer:
+The worst-case time complexity of the Tower of Hanoi recursive algorithm is O(n²), due to the repeated rotations required to move the disks, leading to a quadratic number of operations.
+Rationale: The algorithm's inefficiency stems from the nested loops, where each move involves a rotation ...
+2026-02-25 21:56:30,322 - ERROR -   [gemma-3-1b-it] Q1032 (TF): Empty answer_output but 'Answer' keyword EXISTS. PARSER BUG. Raw output:
+$Answer: Space complexity refers to the memory usage of an algorithm, growing proportionally with the input size. It’s a measure of how much memory the algorithm needs to store data and operations.
+### $Rationale: Space complexity is defined as the memory footprint of an algorithm, directly proporti...
+2026-02-25 21:56:30,324 - WARNING -   [gemma-3-1b-it] Q1080 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Logarithmic loops offer improved efficiency by reducing the number of iterations required for a given task, especially when dealing with larg...
+2026-02-25 21:56:30,325 - WARNING -   [gemma-3-1b-it] Q1086 (OE): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer:
+Average-case complexity is preferred in critical systems due to its robustness against inevitable fluctuations; analyzing it presents challen...
+2026-02-25 21:56:30,326 - WARNING -   [gemma-3-1b-it] Q1106 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: The ciphertext is the average of the two plaintexts. ChaCha20 and RC4 are designed to be reversible, so the average is a common method to rec...
+2026-02-25 21:56:30,326 - WARNING -   [gemma-3-1b-it] Q1116 (FB): Empty rationale_output — model never wrote 'Rationale'. Raw: $Answer: The computation takes place on a twist curve, allowing the attacker to solve the Discrete Logarithm problem easily. ECDH relies on the correc...
+2026-02-25 21:56:30,327 - INFO -   gemma-3-1b-it: 1120 processed. Empty answers: 19, Empty rationales: 87
+2026-02-25 22:00:04,875 - INFO - Found 1 model files to process.
+2026-02-25 22:00:04,876 - INFO - Processing gemma-3-1b-it...
+2026-02-25 22:15:05,067 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:15:05,067 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:15:05,091 - INFO -   -> Saved data/2_processed/gemma-3-1b-it_processed.json  (1120 Qs | empty rat: 88 | empty ans: 19 | both: 5)
+2026-02-25 22:15:05,091 - INFO - ======================================================================
+2026-02-25 22:15:05,091 - INFO - PROCESSING SUMMARY REPORT
+2026-02-25 22:15:05,091 - INFO - ======================================================================
+2026-02-25 22:15:05,091 - INFO - Total questions processed:                           1120
+2026-02-25 22:15:05,091 - INFO - 
+2026-02-25 22:15:05,091 - INFO - Empty rationale_output:                              88
+2026-02-25 22:15:05,091 - INFO -   > model_output has NO 'Rationale' keyword:        87
+2026-02-25 22:15:05,091 - INFO -   > model_output HAS 'Rationale' but still empty:   1
+2026-02-25 22:15:05,091 - INFO - 
+2026-02-25 22:15:05,091 - INFO - Empty answer_output:                                 19
+2026-02-25 22:15:05,091 - INFO -   > model_output has NO 'Answer' keyword:           0
+2026-02-25 22:15:05,091 - INFO -   > model_output HAS 'Answer' but still empty:      19
+2026-02-25 22:15:05,091 - INFO - 
+2026-02-25 22:15:05,091 - INFO - Both rationale AND answer empty:                     5
+2026-02-25 22:15:05,092 - INFO -   > model_output has NEITHER keyword:               0
+2026-02-25 22:15:05,092 - INFO -   > model_output HAS keyword(s) but both empty:     5
+2026-02-25 22:15:05,092 - INFO - ======================================================================
+2026-02-25 22:30:42,440 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:30:42,440 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:30:42,465 - INFO - 
+2026-02-25 22:30:42,465 - INFO - ======================================================================
+2026-02-25 22:30:42,465 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:30:42,465 - INFO - ======================================================================
+2026-02-25 22:30:42,465 - INFO -   Total questions: 1120
+2026-02-25 22:30:42,465 - INFO -   Saved to: data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:30:42,465 - INFO - 
+2026-02-25 22:30:42,465 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:30:42,465 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:30:42,465 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:30:42,465 - INFO - 
+2026-02-25 22:30:42,465 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:30:42,465 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:30:42,465 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:30:42,465 - INFO - 
+2026-02-25 22:30:42,465 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:30:42,465 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:30:42,465 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:30:42,465 - INFO - ======================================================================
+2026-02-25 22:30:42,465 - INFO - 
+2026-02-25 22:41:02,027 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:41:02,027 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:41:02,053 - INFO - ======================================================================
+2026-02-25 22:41:02,053 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:41:02,053 - INFO - ======================================================================
+2026-02-25 22:41:02,053 - INFO -   Total questions: 1120
+2026-02-25 22:41:02,053 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:41:02,053 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:41:02,053 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:41:02,053 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:41:02,053 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:41:02,053 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:41:02,053 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:41:02,053 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:41:02,053 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:41:02,053 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:41:02,053 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:41:02,053 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:41:02,053 - INFO -   Empty rationale:    88
+2026-02-25 22:41:02,053 - INFO -   Empty answer:       19
+2026-02-25 22:41:02,053 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:41:02,053 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:41:02,053 - INFO -   Saved 102 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:41:02,053 - INFO - ======================================================================
+2026-02-25 22:41:02,053 - INFO - 
+2026-02-25 22:42:32,525 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:42:32,525 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:42:32,552 - INFO - 
+2026-02-25 22:42:32,552 - INFO - ======================================================================
+2026-02-25 22:42:32,552 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:42:32,552 - INFO - ======================================================================
+2026-02-25 22:42:32,552 - INFO -   Total questions: 1120
+2026-02-25 22:42:32,552 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:42:32,552 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:42:32,553 - INFO - 
+2026-02-25 22:42:32,553 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:42:32,553 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:42:32,553 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:42:32,553 - INFO - 
+2026-02-25 22:42:32,553 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:42:32,553 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:42:32,553 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:42:32,553 - INFO - 
+2026-02-25 22:42:32,553 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:42:32,553 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:42:32,553 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:42:32,553 - INFO - 
+2026-02-25 22:42:32,553 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:42:32,553 - INFO -   Empty rationale:    88
+2026-02-25 22:42:32,553 - INFO -   Empty answer:       19
+2026-02-25 22:42:32,553 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:42:32,553 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:42:32,553 - INFO -   Saved 0 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:42:32,553 - INFO - ======================================================================
+2026-02-25 22:42:32,553 - INFO - 
+2026-02-25 22:42:57,678 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:42:57,678 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:42:57,702 - INFO - 
+2026-02-25 22:42:57,702 - INFO - ======================================================================
+2026-02-25 22:42:57,702 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:42:57,702 - INFO - ======================================================================
+2026-02-25 22:42:57,702 - INFO -   Total questions: 1120
+2026-02-25 22:42:57,702 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:42:57,702 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:42:57,702 - INFO - 
+2026-02-25 22:42:57,702 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:42:57,702 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:42:57,702 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:42:57,702 - INFO - 
+2026-02-25 22:42:57,702 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:42:57,702 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:42:57,702 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:42:57,702 - INFO - 
+2026-02-25 22:42:57,702 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:42:57,702 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:42:57,702 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:42:57,702 - INFO - 
+2026-02-25 22:42:57,702 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:42:57,702 - INFO -   Empty rationale:    88
+2026-02-25 22:42:57,702 - INFO -   Empty answer:       19
+2026-02-25 22:42:57,702 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:42:57,702 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:42:57,702 - INFO -   Saved 0 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:42:57,702 - INFO - ======================================================================
+2026-02-25 22:42:57,703 - INFO - 
+2026-02-25 22:43:08,259 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:43:08,259 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:43:08,285 - INFO - 
+2026-02-25 22:43:08,286 - INFO - ======================================================================
+2026-02-25 22:43:08,286 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:43:08,286 - INFO - ======================================================================
+2026-02-25 22:43:08,286 - INFO -   Total questions: 1120
+2026-02-25 22:43:08,286 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:43:08,286 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:43:08,286 - INFO - 
+2026-02-25 22:43:08,286 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:43:08,286 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:43:08,286 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:43:08,286 - INFO - 
+2026-02-25 22:43:08,286 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:43:08,286 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:43:08,286 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:43:08,286 - INFO - 
+2026-02-25 22:43:08,286 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:43:08,286 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:43:08,286 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:43:08,286 - INFO - 
+2026-02-25 22:43:08,286 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:43:08,286 - INFO -   Empty rationale:    88
+2026-02-25 22:43:08,286 - INFO -   Empty answer:       19
+2026-02-25 22:43:08,286 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:43:08,286 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:43:08,286 - INFO -   Saved 102 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:43:08,286 - INFO - ======================================================================
+2026-02-25 22:43:08,286 - INFO - 
+2026-02-25 22:43:23,175 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:43:23,175 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:43:23,179 - ERROR - Failed to process gemma-3-1b-it_output.json: build_problematic_entry() missing 2 required positional arguments: 'issue_type' and 'issue_detail'
+Traceback (most recent call last):
+  File "/Users/lena/Desktop/GITHUB/Evaluating-LLMs-With-Challenging-CS-Questions/demo2/src/2_process_outputs.py", line 336, in main
+    prob_entry = build_problematic_entry(
+TypeError: build_problematic_entry() missing 2 required positional arguments: 'issue_type' and 'issue_detail'
+2026-02-25 22:43:39,122 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:43:39,122 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:43:39,148 - INFO - 
+2026-02-25 22:43:39,149 - INFO - ======================================================================
+2026-02-25 22:43:39,149 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:43:39,149 - INFO - ======================================================================
+2026-02-25 22:43:39,149 - INFO -   Total questions: 1120
+2026-02-25 22:43:39,149 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:43:39,149 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:43:39,149 - INFO - 
+2026-02-25 22:43:39,149 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:43:39,149 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:43:39,149 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:43:39,149 - INFO - 
+2026-02-25 22:43:39,149 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:43:39,149 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:43:39,149 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:43:39,149 - INFO - 
+2026-02-25 22:43:39,149 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:43:39,149 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:43:39,149 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:43:39,149 - INFO - 
+2026-02-25 22:43:39,149 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:43:39,149 - INFO -   Empty rationale:    88
+2026-02-25 22:43:39,149 - INFO -   Empty answer:       19
+2026-02-25 22:43:39,149 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:43:39,149 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:43:39,149 - INFO -   Saved 102 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:43:39,149 - INFO - ======================================================================
+2026-02-25 22:43:39,149 - INFO - 
+2026-02-25 22:45:54,303 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:45:54,304 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:45:54,328 - INFO - 
+2026-02-25 22:45:54,329 - INFO - ======================================================================
+2026-02-25 22:45:54,329 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:45:54,329 - INFO - ======================================================================
+2026-02-25 22:45:54,329 - INFO -   Total questions: 1120
+2026-02-25 22:45:54,329 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:45:54,329 - INFO -   Saved problematic: data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:45:54,329 - INFO - 
+2026-02-25 22:45:54,329 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:45:54,329 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:45:54,329 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:45:54,329 - INFO - 
+2026-02-25 22:45:54,329 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:45:54,329 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:45:54,329 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:45:54,329 - INFO - 
+2026-02-25 22:45:54,329 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:45:54,329 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:45:54,329 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:45:54,329 - INFO - 
+2026-02-25 22:45:54,329 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:45:54,329 - INFO -   Empty rationale:    88
+2026-02-25 22:45:54,329 - INFO -   Empty answer:       19
+2026-02-25 22:45:54,329 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:45:54,329 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:45:54,329 - INFO -   Saved 102 entries to data/2_problematic/gemma-3-1b-it_problematic.json
+2026-02-25 22:45:54,329 - INFO - ======================================================================
+2026-02-25 22:45:54,329 - INFO - 
+2026-02-25 22:46:55,133 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:46:55,133 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:46:55,160 - INFO - ======================================================================
+2026-02-25 22:46:55,160 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:46:55,160 - INFO - ======================================================================
+2026-02-25 22:46:55,160 - INFO -   Total questions: 1120
+2026-02-25 22:46:55,160 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:46:55,160 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_problematic.json
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:46:55,160 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:46:55,160 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:46:55,160 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:46:55,160 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:46:55,160 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:46:55,160 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:46:55,160 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:46:55,160 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:46:55,160 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:46:55,160 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:46:55,160 - INFO -   Empty rationale:    88
+2026-02-25 22:46:55,160 - INFO -   Empty answer:       19
+2026-02-25 22:46:55,160 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:46:55,160 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:46:55,160 - INFO -   Saved 102 entries to data/2_fallback/gemma-3-1b-it_problematic.json
+2026-02-25 22:46:55,160 - INFO - ======================================================================
+2026-02-25 22:46:55,160 - INFO - 
+2026-02-25 22:52:57,109 - INFO - Found 1 model file(s) to process.
+2026-02-25 22:52:57,109 - INFO - Processing: gemma-3-1b-it
+2026-02-25 22:52:57,134 - INFO - 
+2026-02-25 22:52:57,134 - INFO - ======================================================================
+2026-02-25 22:52:57,135 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 22:52:57,135 - INFO - ======================================================================
+2026-02-25 22:52:57,135 - INFO -   Total questions: 1120
+2026-02-25 22:52:57,135 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 22:52:57,135 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 22:52:57,135 - INFO - 
+2026-02-25 22:52:57,135 - INFO - ─── EMPTY RATIONALE (88 total) ───
+2026-02-25 22:52:57,135 - INFO -   model_output has NO 'Rationale' keyword (87):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 120, 129, 139
+    143, 144, 147, 153, 181, 184, 185, 186, 188, 200, 215, 264, 273, 277, 280
+    294, 329, 356, 358, 364, 374, 379, 380, 407, 422, 470, 473, 474, 488, 494
+    511, 518, 531, 547, 554, 572, 580, 589, 597, 601, 614, 616, 617, 635, 648
+    651, 657, 660, 664, 684, 704, 732, 753, 757, 775, 783, 797, 822, 835, 868
+    876, 926, 927, 957, 983, 993, 1003, 1021, 1080, 1086, 1106, 1116
+2026-02-25 22:52:57,135 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 22:52:57,135 - INFO - 
+2026-02-25 22:52:57,135 - INFO - ─── EMPTY ANSWER (19 total) ───
+2026-02-25 22:52:57,135 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 22:52:57,135 - INFO -   model_output HAS 'Answer' keyword but answer still empty (19):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 604, 648, 651, 910, 921
+    958, 983, 1029, 1032
+2026-02-25 22:52:57,135 - INFO - 
+2026-02-25 22:52:57,135 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 22:52:57,135 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 22:52:57,135 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 22:52:57,135 - INFO - 
+2026-02-25 22:52:57,135 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 22:52:57,135 - INFO -   Empty rationale:    88
+2026-02-25 22:52:57,135 - INFO -   Empty answer:       19
+2026-02-25 22:52:57,135 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 22:52:57,135 - INFO -   Unique problematic: 102 (88 + 19 - 5 overlap)
+2026-02-25 22:52:57,135 - INFO -   Saved 102 entries to data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 22:52:57,135 - INFO - ======================================================================
+2026-02-25 22:52:57,135 - INFO - 
+2026-02-25 23:12:15,066 - INFO - Found 1 model file(s) to process.
+2026-02-25 23:12:15,067 - INFO - Processing: gemma-3-1b-it
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:12:15,072 - INFO - ======================================================================
+2026-02-25 23:12:15,072 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 23:12:15,072 - INFO - ======================================================================
+2026-02-25 23:12:15,072 - INFO -   Total questions: 102
+2026-02-25 23:12:15,072 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 23:12:15,072 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:12:15,072 - INFO - ─── EMPTY RATIONALE (72 total) ───
+2026-02-25 23:12:15,072 - INFO -   model_output has NO 'Rationale' keyword (71):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 139, 143, 144
+    147, 153, 181, 184, 186, 200, 215, 264, 273, 277, 280, 294, 329, 356, 358
+    364, 374, 379, 407, 422, 470, 473, 474, 488, 494, 511, 531, 572, 580, 597
+    614, 616, 617, 648, 651, 657, 660, 664, 684, 732, 753, 775, 797, 835, 876
+    926, 927, 957, 983, 993, 1003, 1021, 1029, 1086, 1106, 1116
+2026-02-25 23:12:15,072 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:12:15,072 - INFO - ─── EMPTY ANSWER (18 total) ───
+2026-02-25 23:12:15,072 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 23:12:15,072 - INFO -   model_output HAS 'Answer' keyword but answer still empty (18):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 648, 651, 910, 921, 958
+    983, 1029, 1032
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:12:15,072 - INFO - ─── BOTH EMPTY (6 total) ───
+2026-02-25 23:12:15,072 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 23:12:15,072 - INFO -   model_output HAS keyword(s) but both still empty (6):
+    181, 280, 648, 651, 983, 1029
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:12:15,072 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 23:12:15,072 - INFO -   Empty rationale:    72
+2026-02-25 23:12:15,072 - INFO -   Empty answer:       18
+2026-02-25 23:12:15,072 - INFO -   Both empty:         6 (overlap, already counted above)
+2026-02-25 23:12:15,072 - INFO -   Unique problematic: 84 (72 + 18 - 6 overlap)
+2026-02-25 23:12:15,072 - INFO -   Saved 84 entries to data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:12:15,072 - INFO - ======================================================================
+2026-02-25 23:12:15,072 - INFO - 
+2026-02-25 23:32:45,328 - INFO - Found 1 model file(s) to process.
+2026-02-25 23:32:45,328 - INFO - Processing: gemma-3-1b-it
+2026-02-25 23:32:45,354 - INFO - 
+2026-02-25 23:32:45,354 - INFO - ======================================================================
+2026-02-25 23:32:45,354 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 23:32:45,354 - INFO - ======================================================================
+2026-02-25 23:32:45,354 - INFO -   Total questions: 1120
+2026-02-25 23:32:45,354 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 23:32:45,354 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:32:45,354 - INFO - 
+2026-02-25 23:32:45,354 - INFO - ─── EMPTY RATIONALE (71 total) ───
+2026-02-25 23:32:45,354 - INFO -   model_output has NO 'Rationale' keyword (70):
+    15, 19, 36, 53, 54, 96, 102, 105, 116, 117, 118, 119, 139, 143, 144
+    147, 153, 181, 184, 186, 200, 215, 264, 273, 277, 280, 294, 329, 356, 358
+    364, 374, 379, 407, 422, 470, 473, 474, 488, 494, 511, 531, 572, 580, 597
+    614, 616, 617, 648, 651, 657, 660, 664, 684, 732, 753, 775, 797, 835, 876
+    926, 927, 957, 983, 993, 1003, 1021, 1086, 1106, 1116
+2026-02-25 23:32:45,354 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (1):
+    492
+2026-02-25 23:32:45,355 - INFO - 
+2026-02-25 23:32:45,355 - INFO - ─── EMPTY ANSWER (18 total) ───
+2026-02-25 23:32:45,355 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 23:32:45,355 - INFO -   model_output HAS 'Answer' keyword but answer still empty (18):
+    49, 177, 181, 237, 280, 313, 341, 345, 363, 546, 648, 651, 910, 921, 958
+    983, 1029, 1032
+2026-02-25 23:32:45,355 - INFO - 
+2026-02-25 23:32:45,355 - INFO - ─── BOTH EMPTY (5 total) ───
+2026-02-25 23:32:45,355 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 23:32:45,355 - INFO -   model_output HAS keyword(s) but both still empty (5):
+    181, 280, 648, 651, 983
+2026-02-25 23:32:45,355 - INFO - 
+2026-02-25 23:32:45,355 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 23:32:45,355 - INFO -   Empty rationale:    71
+2026-02-25 23:32:45,355 - INFO -   Empty answer:       18
+2026-02-25 23:32:45,355 - INFO -   Both empty:         5 (overlap, already counted above)
+2026-02-25 23:32:45,355 - INFO -   Unique problematic: 84 (71 + 18 - 5 overlap)
+2026-02-25 23:32:45,355 - INFO -   Saved 84 entries to data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:32:45,355 - INFO - ======================================================================
+2026-02-25 23:32:45,355 - INFO - 
+2026-02-25 23:50:39,063 - INFO - Found 1 model file(s) to process.
+2026-02-25 23:50:39,063 - INFO - Processing: gemma-3-1b-it
+2026-02-25 23:50:39,067 - INFO - 
+2026-02-25 23:50:39,067 - INFO - ======================================================================
+2026-02-25 23:50:39,067 - INFO -   REPORT: gemma-3-1b-it
+2026-02-25 23:50:39,067 - INFO - ======================================================================
+2026-02-25 23:50:39,067 - INFO -   Total questions: 84
+2026-02-25 23:50:39,067 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-25 23:50:39,067 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:50:39,067 - INFO - 
+2026-02-25 23:50:39,067 - INFO - ─── EMPTY RATIONALE (0 total) ───
+2026-02-25 23:50:39,067 - INFO -   model_output has NO 'Rationale' keyword (0):
+    (none)
+2026-02-25 23:50:39,067 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (0):
+    (none)
+2026-02-25 23:50:39,067 - INFO - 
+2026-02-25 23:50:39,067 - INFO - ─── EMPTY ANSWER (17 total) ───
+2026-02-25 23:50:39,067 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-25 23:50:39,067 - INFO -   model_output HAS 'Answer' keyword but answer still empty (17):
+    49, 177, 181, 280, 313, 341, 345, 363, 546, 648, 651, 910, 921, 958, 983
+    1029, 1032
+2026-02-25 23:50:39,067 - INFO - 
+2026-02-25 23:50:39,067 - INFO - ─── BOTH EMPTY (0 total) ───
+2026-02-25 23:50:39,068 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-25 23:50:39,068 - INFO -   model_output HAS keyword(s) but both still empty (0):
+    (none)
+2026-02-25 23:50:39,068 - INFO - 
+2026-02-25 23:50:39,068 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-25 23:50:39,068 - INFO -   Empty rationale:    0
+2026-02-25 23:50:39,068 - INFO -   Empty answer:       17
+2026-02-25 23:50:39,068 - INFO -   Both empty:         0 (overlap, already counted above)
+2026-02-25 23:50:39,068 - INFO -   Unique problematic: 17 (0 + 17 - 0 overlap)
+2026-02-25 23:50:39,068 - INFO -   Saved 17 entries to data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-25 23:50:39,068 - INFO - ======================================================================
+2026-02-25 23:50:39,068 - INFO - 
+2026-02-25 23:51:25,327 - INFO - Found 1 model files to process.
+2026-02-25 23:51:25,327 - INFO - Processing gemma-3-1b-it...
+2026-02-27 18:12:32,803 - INFO - Found 1 model files to process.
+2026-02-27 18:12:32,804 - INFO - Processing gemma-3-12b-it...
+2026-02-27 18:14:10,138 - INFO - Found 1 model files to process.
+2026-02-27 18:14:10,138 - INFO - Processing gemma-3-12b-it...
+2026-02-27 18:50:55,679 - INFO - Found 1 model files to process.
+2026-02-27 18:50:55,679 - INFO - Processing gemma-3-1b-it...
+2026-02-27 18:52:02,245 - INFO - Found 1 model file(s) to process.
+2026-02-27 18:52:02,245 - INFO - Processing: gemma-3-1b-it
+2026-02-27 18:52:02,271 - INFO - 
+2026-02-27 18:52:02,272 - INFO - ======================================================================
+2026-02-27 18:52:02,272 - INFO -   REPORT: gemma-3-1b-it
+2026-02-27 18:52:02,272 - INFO - ======================================================================
+2026-02-27 18:52:02,272 - INFO -   Total questions: 1120
+2026-02-27 18:52:02,272 - INFO -   Saved processed : data/2_processed/gemma-3-1b-it_processed.json
+2026-02-27 18:52:02,272 - INFO -   Saved problematic: data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-27 18:52:02,272 - INFO - 
+2026-02-27 18:52:02,272 - INFO - ─── EMPTY RATIONALE (0 total) ───
+2026-02-27 18:52:02,272 - INFO -   model_output has NO 'Rationale' keyword (0):
+    (none)
+2026-02-27 18:52:02,272 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (0):
+    (none)
+2026-02-27 18:52:02,272 - INFO - 
+2026-02-27 18:52:02,272 - INFO - ─── EMPTY ANSWER (16 total) ───
+2026-02-27 18:52:02,272 - INFO -   model_output has NO 'Answer' keyword (0):
+    (none)
+2026-02-27 18:52:02,272 - INFO -   model_output HAS 'Answer' keyword but answer still empty (16):
+    49, 181, 280, 313, 341, 345, 363, 546, 648, 651, 910, 921, 958, 983, 1029
+    1032
+2026-02-27 18:52:02,272 - INFO - 
+2026-02-27 18:52:02,272 - INFO - ─── BOTH EMPTY (0 total) ───
+2026-02-27 18:52:02,272 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-27 18:52:02,272 - INFO -   model_output HAS keyword(s) but both still empty (0):
+    (none)
+2026-02-27 18:52:02,272 - INFO - 
+2026-02-27 18:52:02,272 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-27 18:52:02,272 - INFO -   Empty rationale:    0
+2026-02-27 18:52:02,272 - INFO -   Empty answer:       16
+2026-02-27 18:52:02,272 - INFO -   Both empty:         0 (overlap, already counted above)
+2026-02-27 18:52:02,272 - INFO -   Unique problematic: 16 (0 + 16 - 0 overlap)
+2026-02-27 18:52:02,272 - INFO -   Saved 16 entries to data/2_fallback/gemma-3-1b-it_fallback.json
+2026-02-27 18:52:02,272 - INFO - ======================================================================
+2026-02-27 18:52:02,272 - INFO - 
+2026-02-27 22:24:33,709 - INFO - Found 1 model file(s) to process.
+2026-02-27 22:24:33,710 - INFO - Processing: deepseek-chat
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:24:33,754 - INFO - ======================================================================
+2026-02-27 22:24:33,754 - INFO -   REPORT: deepseek-chat
+2026-02-27 22:24:33,754 - INFO - ======================================================================
+2026-02-27 22:24:33,754 - INFO -   Total questions: 1120
+2026-02-27 22:24:33,754 - INFO -   Saved processed : data/2_processed/deepseek-chat_processed.json
+2026-02-27 22:24:33,754 - INFO -   Saved problematic: data/2_fallback/deepseek-chat_fallback.json
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:24:33,754 - INFO - ─── EMPTY RATIONALE (0 total) ───
+2026-02-27 22:24:33,754 - INFO -   model_output has NO 'Rationale' keyword (0):
+    (none)
+2026-02-27 22:24:33,754 - INFO -   model_output HAS 'Rationale' keyword but rationale still empty (0):
+    (none)
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:24:33,754 - INFO - ─── EMPTY ANSWER (4 total) ───
+2026-02-27 22:24:33,754 - INFO -   model_output has NO 'Answer' keyword (1):
+    226
+2026-02-27 22:24:33,754 - INFO -   model_output HAS 'Answer' keyword but answer still empty (3):
+    198, 199, 227
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:24:33,754 - INFO - ─── BOTH EMPTY (0 total) ───
+2026-02-27 22:24:33,754 - INFO -   model_output has NEITHER keyword (0):
+    (none)
+2026-02-27 22:24:33,754 - INFO -   model_output HAS keyword(s) but both still empty (0):
+    (none)
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:24:33,754 - INFO - ─── PROBLEMATIC SUMMARY ───
+2026-02-27 22:24:33,754 - INFO -   Empty rationale:    0
+2026-02-27 22:24:33,754 - INFO -   Empty answer:       4
+2026-02-27 22:24:33,754 - INFO -   Both empty:         0 (overlap, already counted above)
+2026-02-27 22:24:33,754 - INFO -   Unique problematic: 4 (0 + 4 - 0 overlap)
+2026-02-27 22:24:33,754 - INFO -   Saved 4 entries to data/2_fallback/deepseek-chat_fallback.json
+2026-02-27 22:24:33,754 - INFO - ======================================================================
+2026-02-27 22:24:33,754 - INFO - 
+2026-02-27 22:25:23,582 - INFO - Found 1 model files to process.
+2026-02-27 22:25:23,582 - INFO - Processing deepseek-chat...
+2026-02-28 17:14:12,198 - INFO - Found 2 model files to process.
+2026-02-28 17:14:12,199 - INFO - Processing gemma-3-4b-it...
+2026-02-28 17:16:08,113 - INFO - Processing deepseek-reasoner...
+2026-03-02 10:19:28,046 - INFO - Found 2 model files to process.
+2026-03-02 10:19:28,046 - INFO - Processing deepseek-reasoner...
+2026-03-02 10:21:23,929 - INFO - Processing gemma-3-27b-it...

@@ -1,2 +1,2 @@
 Model Name,Number of Question Samples,MC Score,MS Score,TF Score,FB Score,OE Score,Final Answer Score,Final Rationale Score,Final Model Score,Experiment Date
-openai/gpt-4o-mini,15,56.67,100.0,70.0,100.0,75.0,76.67,88.33,80.33,2026-01-03
+deepseek-chat,1120,88.43,80.92,87.41,82.25,84.2,83.93,89.96,84.84,2026-03-10
