@@ -8,11 +8,13 @@ import asyncio
 from dotenv import load_dotenv
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer, util
-from openai import AsyncOpenAI
 from llm_clients import (
     create_deepseek_client,
     create_openrouter_client,
+    create_async_openrouter_client,
+    create_async_deepseek_client,
     get_llm_response,
+    async_call_openai,
 )
 
 # --- CONFIGURATION ---
@@ -20,8 +22,6 @@ INPUT_DIR = os.path.join('data', '3_scores')
 OUTPUT_DIR = os.path.join('data', '3_scores')
 SEMANTIC_THRESHOLD = 0.90
 MAX_RETRIES = 3  # For retry phase
-ASYNC_RETRIES = 3
-ASYNC_BACKOFF_BASE = 2
 load_dotenv()
 
 # --- JUDGE CONFIGURATION (Add API keys here) ---
@@ -73,22 +73,16 @@ def create_client_for_judge(judge_config):
 
 
 def create_async_client_for_judge(judge_config):
-    """Create an AsyncOpenAI client for a judge (used in --concurrent mode)."""
-    base_url = judge_config.get("base_url", "https://openrouter.ai/api/v1")
+    """Create an async client for a judge (used in --concurrent mode).
+    Uses shared async client creators from llm_clients."""
     provider = get_provider_for_judge(judge_config)
     model_name = judge_config["model_name"]
 
     if provider == "deepseek":
-        key_str = f"{model_name.split('/')[-1].upper()}-API-KEY"
-    else:
-        key_str = f"{model_name.split('/')[-1].upper()}-OPENROUTER-API-KEY"
-
-    api_key = os.getenv(key_str)
-    if not api_key:
-        logger.error(f"API key '{key_str}' not found in .env for async client.")
-        return None
-
-    return AsyncOpenAI(base_url=base_url, api_key=api_key)
+        return create_async_deepseek_client(model_name)
+    elif provider == "openrouter":
+        return create_async_openrouter_client(model_name)
+    return None
 
 
 # =============================================================================
@@ -287,47 +281,9 @@ def retry_failed_evaluations(data, output_path, eval_mode, active_judges, judge_
 # ASYNC / CONCURRENT MODE
 # =============================================================================
 
-async def async_call_judge(async_client, model_name, system_prompt, user_prompt):
-    """
-    Single async API call with retry + exponential backoff.
-    Returns raw response text or "ERROR_RESPONSE".
-    """
-    for attempt in range(1, ASYNC_RETRIES + 1):
-        try:
-            response = await async_client.chat.completions.create(
-                model=model_name,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                temperature=0.0,
-            )
-            content = response.choices[0].message.content
-
-            if content is None or content.strip() == "":
-                logger.warning(f"[Async] Empty response for {model_name} (attempt {attempt}/{ASYNC_RETRIES})")
-                if attempt < ASYNC_RETRIES:
-                    wait = ASYNC_BACKOFF_BASE ** attempt
-                    await asyncio.sleep(wait)
-                    continue
-                return "ERROR_RESPONSE"
-
-            return content
-
-        except Exception as e:
-            logger.error(f"[Async] API Error for {model_name} (attempt {attempt}/{ASYNC_RETRIES}): {e}")
-            if attempt < ASYNC_RETRIES:
-                wait = ASYNC_BACKOFF_BASE ** attempt
-                await asyncio.sleep(wait)
-            else:
-                return "ERROR_RESPONSE"
-
-    return "ERROR_RESPONSE"
-
-
 async def async_get_judge_response(q_id, judge_config, async_client, system_prompt, user_prompt, eval_mode):
-    """Async version of get_judge_response: call API then parse score."""
-    raw = await async_call_judge(async_client, judge_config["model_name"], system_prompt, user_prompt)
+    """Async version of get_judge_response: call shared async API then parse score."""
+    raw = await async_call_openai(async_client, judge_config["model_name"], system_prompt, user_prompt)
 
     if raw == "ERROR_RESPONSE":
         logger.error(f"[Async][{q_id}] Judge {judge_config['id']} returned ERROR_RESPONSE")

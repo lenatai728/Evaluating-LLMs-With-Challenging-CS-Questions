@@ -6,14 +6,17 @@ import time
 import asyncio
 from dotenv import load_dotenv
 from tqdm import tqdm
-from openai import AsyncOpenAI
 from config import CANDIDATE_MODELS
 from llm_clients import (
     create_openrouter_client,
     create_huggingface_client,
     create_google_client,
     create_deepseek_client,
+    create_async_openrouter_client,
+    create_async_deepseek_client,
+    create_async_google_client,
     get_llm_response,
+    async_get_llm_response,
 )
 
 # --- LOGGING SETUP (file only, terminal stays clean) ---
@@ -30,8 +33,6 @@ load_dotenv()
 INPUT_PATH = os.path.join('data', '0_raw', 'input.json')
 OUTPUT_DIR = os.path.join('data', '1_model_outputs')
 
-ASYNC_RETRIES = 3
-ASYNC_BACKOFF_BASE = 2
 MAX_RETRIES = 3
 
 def get_type_specific_instructions(question_type):
@@ -158,66 +159,8 @@ def retry_failed_questions(results, out_file, current_model, primary_client, pro
 # ASYNC / CONCURRENT MODE
 # =============================================================================
 
-def create_async_client(model_name, provider):
-    """Create an AsyncOpenAI client based on provider. Supports openrouter and deepseek."""
-    if provider == "deepseek":
-        key_str = f"{model_name.split('/')[-1].upper()}-API-KEY"
-        base_url = "https://api.deepseek.com"
-    elif provider == "openrouter":
-        key_str = f"{model_name.split('/')[-1].upper()}-OPENROUTER-API-KEY"
-        base_url = "https://openrouter.ai/api/v1"
-    else:
-        logger.error(f"Async concurrent mode is only supported for 'openrouter' and 'deepseek' providers, not '{provider}'.")
-        return None
-
-    api_key = os.getenv(key_str)
-    if not api_key:
-        logger.error(f"API key '{key_str}' not found in .env for async client.")
-        return None
-
-    return AsyncOpenAI(base_url=base_url, api_key=api_key)
-
-
-async def async_call_llm(async_client, model_name, system_prompt, user_prompt):
-    """
-    Single async API call with retry + exponential backoff.
-    Returns raw response text or "ERROR_RESPONSE".
-    """
-    for attempt in range(1, ASYNC_RETRIES + 1):
-        try:
-            response = await async_client.chat.completions.create(
-                model=model_name,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                temperature=0.0,
-            )
-            content = response.choices[0].message.content
-
-            if content is None or content.strip() == "":
-                logger.warning(f"[Async] Empty response for {model_name} (attempt {attempt}/{ASYNC_RETRIES})")
-                if attempt < ASYNC_RETRIES:
-                    wait = ASYNC_BACKOFF_BASE ** attempt
-                    await asyncio.sleep(wait)
-                    continue
-                return "ERROR_RESPONSE"
-
-            return content
-
-        except Exception as e:
-            logger.error(f"[Async] API Error for {model_name} (attempt {attempt}/{ASYNC_RETRIES}): {e}")
-            if attempt < ASYNC_RETRIES:
-                wait = ASYNC_BACKOFF_BASE ** attempt
-                await asyncio.sleep(wait)
-            else:
-                return "ERROR_RESPONSE"
-
-    return "ERROR_RESPONSE"
-
-
 async def async_process_question(sem, save_lock, q, idx, current_model, async_client,
-                                  results, results_by_id, out_file, pbar, counters):
+                                  provider, results, results_by_id, out_file, pbar, counters):
     """
     Process a single question asynchronously with semaphore rate-limiting.
     Acquires the semaphore before making the API call.
@@ -226,7 +169,9 @@ async def async_process_question(sem, save_lock, q, idx, current_model, async_cl
         q_id = q.get('question_id')
         system_prompt, user_prompt = construct_prompt(q)
 
-        response = await async_call_llm(async_client, current_model, system_prompt, user_prompt)
+        response = await async_get_llm_response(
+            system_prompt, user_prompt, current_model, async_client, provider
+        )
 
         output_entry = q.copy()
         output_entry['model'] = current_model
@@ -258,7 +203,7 @@ async def async_process_question(sem, save_lock, q, idx, current_model, async_cl
 
 
 async def run_concurrent_inference(data, to_process_questions, current_model, async_client,
-                                    results, results_by_id, out_file, max_concurrent):
+                                    provider, results, results_by_id, out_file, max_concurrent):
     """Top-level async orchestrator: gather all tasks with semaphore rate-limiting."""
     sem = asyncio.Semaphore(max_concurrent)
     save_lock = asyncio.Lock()
@@ -276,7 +221,7 @@ async def run_concurrent_inference(data, to_process_questions, current_model, as
             task = asyncio.create_task(
                 async_process_question(
                     sem, save_lock, q, idx, current_model, async_client,
-                    results, results_by_id, out_file, pbar, counters
+                    provider, results, results_by_id, out_file, pbar, counters
                 )
             )
             tasks.append(task)
@@ -308,7 +253,7 @@ def main():
     parser.add_argument("--fallback-hf", action="store_true", help="Enable HuggingFace as fallback when primary fails")
     parser.add_argument("--concurrent", type=int, default=None, metavar="N",
                         help="Enable async concurrent mode with N max simultaneous requests. "
-                             "If omitted, runs sequentially (default). Supports openrouter and deepseek providers.")
+                             "If omitted, runs sequentially (default). Supports openrouter, deepseek, and google providers.")
     args = parser.parse_args()
     
     # Get Args
@@ -357,8 +302,18 @@ def main():
     # CONCURRENT MODE
     # =========================================================================
     if concurrent is not None and concurrent > 0:
-        # Create async client
-        async_client = create_async_client(current_model, provider)
+        # Create async client based on provider
+        async_client = None
+        if provider == "openrouter":
+            async_client = create_async_openrouter_client(current_model)
+        elif provider == "deepseek":
+            async_client = create_async_deepseek_client(current_model)
+        elif provider == "google":
+            async_client = create_async_google_client()
+        else:
+            print(f"❌ Provider '{provider}' is not supported in concurrent mode.")
+            return
+
         if not async_client:
             print(f"❌ Failed to create async client for provider '{provider}'. Aborting.")
             return
@@ -375,7 +330,7 @@ def main():
             asyncio.run(
                 run_concurrent_inference(
                     data, to_process_questions, current_model, async_client,
-                    results, results_by_id, out_file, concurrent
+                    provider, results, results_by_id, out_file, concurrent
                 )
             )
         except KeyboardInterrupt:
@@ -393,6 +348,8 @@ def main():
             primary_client = create_openrouter_client(current_model)
         elif provider == "deepseek":
             primary_client = create_deepseek_client(current_model)
+        elif provider == "google":
+            primary_client = create_google_client()
 
         if primary_client:
             results = retry_failed_questions(results, out_file, current_model, primary_client, provider)

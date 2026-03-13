@@ -1,13 +1,15 @@
 """
-Shared LLM client module for OpenRouter, HuggingFace, Google AI Studio, and Ollama.
+Shared LLM client module for OpenRouter, HuggingFace, Google AI Studio, and DeepSeek.
 Provides reusable client creation and API call functions with retry/backoff.
+Includes both synchronous and async (concurrent) variants.
 """
 
 import os
 import time
+import asyncio
 import logging
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 from huggingface_hub import InferenceClient
 from google import genai
 from google.genai import types
@@ -22,7 +24,7 @@ BACKOFF_BASE = 2         # Exponential backoff base (seconds)
 RPM_COOLDOWN = 4.1       # Essential to stay under 15 RPM (for Google API only)
 
 # =============================================================================
-# CLIENT CREATION
+# SYNC CLIENT CREATION
 # =============================================================================
 
 def create_openrouter_client(model_name):
@@ -92,83 +94,45 @@ def create_google_clients():
     logger.info(f"Google client pool: {len(clients)} key(s) available for rotation.")
     return clients
 
-# def call_google(clients, model_name, system_prompt, user_prompt):
-#     """Call Google AI Studio API with retry, exponential backoff, and key rotation.
+# =============================================================================
+# ASYNC CLIENT CREATION
+# =============================================================================
+
+def create_async_openrouter_client(model_name):
+    """Create an AsyncOpenAI client for OpenRouter (used in --concurrent mode)."""
+    key_str = f"{model_name.split('/')[-1].upper()}-OPENROUTER-API-KEY"
+    api_key = os.getenv(key_str)
+    if not api_key:
+        logger.error(f"API key '{key_str}' not found in .env for async OpenRouter client.")
+        return None
+    return AsyncOpenAI(base_url="https://openrouter.ai/api/v1", api_key=api_key)
+
+
+def create_async_deepseek_client(model_name):
+    """Create an AsyncOpenAI client for DeepSeek (used in --concurrent mode)."""
+    key_str = f"{model_name.split('/')[-1].upper()}-API-KEY"
+    api_key = os.getenv(key_str)
+    if not api_key:
+        logger.error(f"API key '{key_str}' not found in .env for async DeepSeek client.")
+        return None
+    return AsyncOpenAI(base_url="https://api.deepseek.com", api_key=api_key)
+
+
+def create_async_google_client():
+    """Create and return a Google GenAI client for async usage.
     
-#     On each failure (API error OR empty response), the next attempt switches
-#     to the other API key:
-#         attempt 1 → key 1
-#         attempt 2 → key 2  (switched after error)
-#         attempt 3 → key 1  (switched back)
-#         ...
-    
-#     If only one key is available, all attempts use that same key.
-    
-#     Returns the response content string, or "ERROR_RESPONSE" if all retries fail.
-#     """
-#     config = types.GenerateContentConfig(
-#         temperature=0.0,
-#     )
+    Uses client.aio.models.generate_content() for async calls.
+    The same genai.Client supports both sync and async via .aio accessor.
+    """
+    api_key = os.getenv("GOOGLE-API-KEY")
+    if not api_key:
+        logger.warning("GOOGLE-API-KEY not found in .env. Async Google provider unavailable.")
+        return None
+    return genai.Client(api_key=api_key)
 
-#     num_clients = len(clients)
-
-#     for attempt in range(1, INLINE_RETRIES + 1):
-#         # ── Rotate key each attempt: 0, 1, 0, 1, ... ──
-#         client_idx = (attempt - 1) % num_clients
-#         key_name, client = clients[client_idx]
-
-#         try:
-#             logger.debug(
-#                 f"[Google] {model_name} attempt {attempt}/{INLINE_RETRIES} "
-#                 f"using {key_name}"
-#             )
-
-#             response = client.models.generate_content(
-#                 model=model_name,
-#                 contents=f"{system_prompt}\n\n{user_prompt}",
-#                 config=config,
-#             )
-
-#             content = response.text
-
-#             # Handle None/empty responses
-#             if content is None or content.strip() == "":
-#                 logger.warning(
-#                     f"[Google] Empty/None response for {model_name} "
-#                     f"using {key_name} (attempt {attempt}/{INLINE_RETRIES})"
-#                 )
-#                 if attempt < INLINE_RETRIES:
-#                     wait_time = BACKOFF_BASE ** attempt
-#                     next_key = clients[attempt % num_clients][0]
-#                     logger.info(
-#                         f"Switching to {next_key}, retrying in {wait_time}s..."
-#                     )
-#                     time.sleep(wait_time)
-#                     continue
-#                 return "ERROR_RESPONSE"
-
-#             # MANDATORY: Sleep after success to maintain RPM for the next call
-#             time.sleep(RPM_COOLDOWN)
-#             return content
-
-#         except Exception as e:
-#             logger.error(
-#                 f"[Google] API Error for {model_name} "
-#                 f"using {key_name} (attempt {attempt}/{INLINE_RETRIES}): {e}"
-#             )
-#             if attempt < INLINE_RETRIES:
-#                 wait_time = BACKOFF_BASE ** attempt
-#                 next_key = clients[attempt % num_clients][0]
-#                 logger.info(
-#                     f"Switching to {next_key}, retrying in {wait_time}s..."
-#                 )
-#                 time.sleep(wait_time)
-#             else:
-#                 return "ERROR_RESPONSE"
-#     return "ERROR_RESPONSE"
 
 # =============================================================================
-# API CALL FUNCTIONS (with retry + exponential backoff)
+# SYNC API CALL FUNCTIONS (with retry + exponential backoff)
 # =============================================================================
 
 def call_openrouter(client, model_name, system_prompt, user_prompt):
@@ -268,7 +232,6 @@ def call_google(client, model_name, system_prompt, user_prompt):
     Returns the response content string, or "ERROR_RESPONSE" if all retries fail.
     """
     config = types.GenerateContentConfig(
-        # system_instruction=system_prompt,
         temperature=0.0,
     )
     for attempt in range(1, INLINE_RETRIES + 1):
@@ -307,93 +270,12 @@ def call_google(client, model_name, system_prompt, user_prompt):
     
     return "ERROR_RESPONSE"
 
-# def call_google(clients, model_name, system_prompt, user_prompt):
-#     """Call Google AI Studio API with retry, exponential backoff, and key rotation.
-    
-#     On each failure (API error OR empty response), the next attempt switches
-#     to the other API key:
-#         attempt 1 → key 1
-#         attempt 2 → key 2  (switched after error)
-#         attempt 3 → key 1  (switched back)
-#         ...
-    
-#     If only one key is available, all attempts use that same key.
-    
-#     Returns the response content string, or "ERROR_RESPONSE" if all retries fail.
-#     """
-#     config = types.GenerateContentConfig(
-#         temperature=0.0,
-#     )
-
-#     num_clients = len(clients)
-
-#     for attempt in range(1, INLINE_RETRIES + 1):
-#         # ── Rotate key each attempt: 0, 1, 0, 1, ... ──
-#         client_idx = (attempt - 1) % num_clients
-#         key_name, client = clients[client_idx]
-
-#         try:
-#             logger.debug(
-#                 f"[Google] {model_name} attempt {attempt}/{INLINE_RETRIES} "
-#                 f"using {key_name}"
-#             )
-
-#             response = client.models.generate_content(
-#                 model=model_name,
-#                 contents=f"{system_prompt}\n\n{user_prompt}",
-#                 config=config,
-#             )
-
-#             content = response.text
-
-#             # Handle None/empty responses
-#             if content is None or content.strip() == "":
-#                 logger.warning(
-#                     f"[Google] Empty/None response for {model_name} "
-#                     f"using {key_name} (attempt {attempt}/{INLINE_RETRIES})"
-#                 )
-#                 if attempt < INLINE_RETRIES:
-#                     wait_time = BACKOFF_BASE ** attempt
-#                     next_key = clients[attempt % num_clients][0]
-#                     logger.info(
-#                         f"Switching to {next_key}, retrying in {wait_time}s..."
-#                     )
-#                     time.sleep(wait_time)
-#                     continue
-#                 return "ERROR_RESPONSE"
-
-#             # MANDATORY: Sleep after success to maintain RPM for the next call
-#             time.sleep(RPM_COOLDOWN)
-#             return content
-
-#         except Exception as e:
-#             logger.error(
-#                 f"[Google] API Error for {model_name} "
-#                 f"using {key_name} (attempt {attempt}/{INLINE_RETRIES}): {e}"
-#             )
-#             if attempt < INLINE_RETRIES:
-#                 wait_time = BACKOFF_BASE ** attempt
-#                 next_key = clients[attempt % num_clients][0]
-#                 logger.info(
-#                     f"Switching to {next_key}, retrying in {wait_time}s..."
-#                 )
-#                 time.sleep(wait_time)
-#             else:
-#                 return "ERROR_RESPONSE"
-
-#     return "ERROR_RESPONSE"
 
 def call_deepseek(client, model_name, system_prompt, user_prompt):
     """Call DeepSeek API (OpenAI-compatible) with retry and exponential backoff.
     
     DeepSeek API uses the same chat completions format as OpenAI.
     Supported models: deepseek-chat, deepseek-reasoner, etc.
-    
-    Args:
-        client: OpenAI client instance pointed at https://api.deepseek.com
-        model_name: "deepseek-chat" / "deepseek-reasoner"
-        system_prompt: System prompt string
-        user_prompt: User prompt string
     
     Returns:
         Response content string, or "ERROR_RESPONSE" if all retries fail.
@@ -446,7 +328,112 @@ def call_deepseek(client, model_name, system_prompt, user_prompt):
     return "ERROR_RESPONSE"
 
 # =============================================================================
-# UNIFIED FUNCTION (Primary provider → optional HuggingFace fallback)
+# ASYNC API CALL FUNCTIONS (with retry + exponential backoff)
+# =============================================================================
+
+async def async_call_openai(async_client, model_name, system_prompt, user_prompt):
+    """Async API call via AsyncOpenAI (works for OpenRouter & DeepSeek).
+    
+    Returns raw response text or "ERROR_RESPONSE".
+    """
+    for attempt in range(1, INLINE_RETRIES + 1):
+        try:
+            response = await async_client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.0,
+            )
+            content = response.choices[0].message.content
+
+            if content is None or content.strip() == "":
+                logger.warning(f"[Async] Empty response for {model_name} (attempt {attempt}/{INLINE_RETRIES})")
+                if attempt < INLINE_RETRIES:
+                    wait = BACKOFF_BASE ** attempt
+                    await asyncio.sleep(wait)
+                    continue
+                return "ERROR_RESPONSE"
+
+            return content
+
+        except Exception as e:
+            logger.error(f"[Async] API Error for {model_name} (attempt {attempt}/{INLINE_RETRIES}): {e}")
+            if attempt < INLINE_RETRIES:
+                wait = BACKOFF_BASE ** attempt
+                await asyncio.sleep(wait)
+            else:
+                return "ERROR_RESPONSE"
+
+    return "ERROR_RESPONSE"
+
+
+async def async_call_google(client, model_name, system_prompt, user_prompt):
+    """Async API call via Google GenAI client.aio.models.generate_content().
+    
+    Returns raw response text or "ERROR_RESPONSE".
+    """
+    config = types.GenerateContentConfig(
+        temperature=0.0,
+    )
+    for attempt in range(1, INLINE_RETRIES + 1):
+        try:
+            response = await client.aio.models.generate_content(
+                model=model_name,
+                contents=f"{system_prompt}\n\n{user_prompt}",
+                config=config,
+            )
+
+            content = response.text
+
+            if content is None or content.strip() == "":
+                logger.warning(f"[Async Google] Empty response for {model_name} (attempt {attempt}/{INLINE_RETRIES})")
+                if attempt < INLINE_RETRIES:
+                    wait = BACKOFF_BASE ** attempt
+                    await asyncio.sleep(wait)
+                    continue
+                return "ERROR_RESPONSE"
+
+            return content
+
+        except Exception as e:
+            logger.error(f"[Async Google] API Error for {model_name} (attempt {attempt}/{INLINE_RETRIES}): {e}")
+            if attempt < INLINE_RETRIES:
+                wait = BACKOFF_BASE ** attempt
+                await asyncio.sleep(wait)
+            else:
+                return "ERROR_RESPONSE"
+
+    return "ERROR_RESPONSE"
+
+
+async def async_get_llm_response(system_prompt, user_prompt, model_name, async_client, provider="openrouter"):
+    """Unified async LLM response function.
+    
+    Routes to the appropriate async call function based on provider.
+    
+    Args:
+        system_prompt: System prompt string
+        user_prompt: User prompt string
+        model_name: Model name for the API call
+        async_client: AsyncOpenAI client or Google GenAI client
+        provider: "openrouter", "deepseek", or "google"
+    
+    Returns:
+        Response content string, or "ERROR_RESPONSE" if all attempts fail.
+    """
+    if provider in ("openrouter", "deepseek"):
+        return await async_call_openai(async_client, model_name, system_prompt, user_prompt)
+    elif provider == "google":
+        return await async_call_google(async_client, model_name, system_prompt, user_prompt)
+    else:
+        logger.error(f"[Async] Unknown provider: {provider}")
+        return "ERROR_RESPONSE"
+
+
+# =============================================================================
+# SYNC UNIFIED FUNCTION (Primary provider → optional HuggingFace fallback)
 # =============================================================================
 
 def get_llm_response(system_prompt, user_prompt, model_name, primary_client, provider="openrouter", hf_client=None):
@@ -457,7 +444,7 @@ def get_llm_response(system_prompt, user_prompt, model_name, primary_client, pro
         user_prompt: User prompt string
         model_name: Model name for the API call
         primary_client: Client instance for the primary provider
-        provider: Primary provider name ("openrouter", "hf", "google", or "ollama")
+        provider: Primary provider name ("openrouter", "hf", "google", or "deepseek")
         hf_client: Optional HuggingFace InferenceClient for fallback
     
     Returns:
