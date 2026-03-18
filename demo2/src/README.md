@@ -41,13 +41,18 @@ python3 2_process_outputs.py
 python3 3_eval_mc_ms_tf.py
 ```
 ## 5. Evaluate on answers from FB/OE questions by semantic similiarity & LLMs judge
+### Concurrent 
+```
+python3 4_eval_llm_judge.py --mode answer --input_file [filename] --judge_id [judge-id] --concurrent [number]
+```
+### Sequential (by default)
 ```
 python3 4_eval_llm_judge.py --mode answer --input_file [filename] --judge_id [judge-id]
 ```
 - Three Args:
     - "--mode answer" : Evaluate on answers / "--mode rationale": Evaluate on rationales
     - "--input_file [filename]"
-    - "--judge_id [judge-id]" : Judge model to use (default: deepseek-reasoner)
+    - "--judge_id [judge-id]" : Judge model to use (default: deepseek-reasoner & gpt-4o-mini)
 ## 6. Evaluate on rationales from ALL questions by semantic similarity & LLMs judge
 ### Concurrent
 ```
