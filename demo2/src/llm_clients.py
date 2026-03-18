@@ -1,5 +1,5 @@
 """
-Shared LLM client module for OpenRouter, HuggingFace, Google AI Studio, and DeepSeek.
+Shared LLM client module for OpenAI, OpenRouter, HuggingFace, Google AI Studio, and DeepSeek.
 Provides reusable client creation and API call functions with retry/backoff.
 Includes both synchronous and async (concurrent) variants.
 """
@@ -34,6 +34,17 @@ def create_openrouter_client(model_name):
         base_url="https://openrouter.ai/api/v1",
         api_key=os.getenv(key_str)
     )
+
+def create_openai_client():
+    """Create and return a reusable OpenAI client for native OpenAI API.
+    Uses OPENAI_API_KEY env var. No base_url (defaults to https://api.openai.com/v1).
+    """
+    api_key = os.getenv("OPENAI-API-KEY")
+    if not api_key:
+        logger.warning("OPENAI-API-KEY not found in .env. OpenAI provider unavailable.")
+        return None
+    return OpenAI(api_key=api_key)
+
 
 def create_deepseek_client(model_name):
     """Create and return a reusable OpenAI client for DeepSeek."""
@@ -116,6 +127,17 @@ def create_async_deepseek_client(model_name):
         logger.error(f"API key '{key_str}' not found in .env for async DeepSeek client.")
         return None
     return AsyncOpenAI(base_url="https://api.deepseek.com", api_key=api_key)
+
+
+def create_async_openai_client():
+    """Create an AsyncOpenAI client for native OpenAI API (used in --concurrent mode).
+    Uses OPENAI_API_KEY env var. No base_url (defaults to https://api.openai.com/v1).
+    """
+    api_key = os.getenv("OPENAI-API-KEY")
+    if not api_key:
+        logger.error("OPENAI-API-KEY not found in .env for async OpenAI client.")
+        return None
+    return AsyncOpenAI(api_key=api_key)
 
 
 def create_async_google_client():
@@ -327,12 +349,67 @@ def call_deepseek(client, model_name, system_prompt, user_prompt):
 
     return "ERROR_RESPONSE"
 
+
+def call_openai(client, model_name, system_prompt, user_prompt):
+    """Call native OpenAI API with retry and exponential backoff.
+    
+    Uses standard chat completions format.
+    
+    Returns:
+        Response content string, or "ERROR_RESPONSE" if all retries fail.
+    """
+    for attempt in range(1, INLINE_RETRIES + 1):
+        try:
+            logger.debug(
+                f"[OpenAI] {model_name} attempt {attempt}/{INLINE_RETRIES}"
+            )
+
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user",   "content": user_prompt}
+                ],
+                temperature=0.0,
+            )
+
+            content = response.choices[0].message.content
+
+            # Handle None/empty responses
+            if content is None or content.strip() == "":
+                logger.warning(
+                    f"[OpenAI] Empty/None response for {model_name} "
+                    f"(attempt {attempt}/{INLINE_RETRIES})"
+                )
+                if attempt < INLINE_RETRIES:
+                    wait_time = BACKOFF_BASE ** attempt
+                    logger.info(f"Retrying in {wait_time}s...")
+                    time.sleep(wait_time)
+                    continue
+                return "ERROR_RESPONSE"
+
+            return content
+
+        except Exception as e:
+            logger.error(
+                f"[OpenAI] API Error for {model_name} "
+                f"(attempt {attempt}/{INLINE_RETRIES}): {e}"
+            )
+            if attempt < INLINE_RETRIES:
+                wait_time = BACKOFF_BASE ** attempt
+                logger.info(f"Retrying in {wait_time}s...")
+                time.sleep(wait_time)
+            else:
+                return "ERROR_RESPONSE"
+
+    return "ERROR_RESPONSE"
+
 # =============================================================================
 # ASYNC API CALL FUNCTIONS (with retry + exponential backoff)
 # =============================================================================
 
 async def async_call_openai(async_client, model_name, system_prompt, user_prompt):
-    """Async API call via AsyncOpenAI (works for OpenRouter & DeepSeek).
+    """Async API call via AsyncOpenAI (works for OpenAI, OpenRouter & DeepSeek).
     
     Returns raw response text or "ERROR_RESPONSE".
     """
@@ -423,7 +500,7 @@ async def async_get_llm_response(system_prompt, user_prompt, model_name, async_c
     Returns:
         Response content string, or "ERROR_RESPONSE" if all attempts fail.
     """
-    if provider in ("openrouter", "deepseek"):
+    if provider in ("openai", "openrouter", "deepseek"):
         return await async_call_openai(async_client, model_name, system_prompt, user_prompt)
     elif provider == "google":
         return await async_call_google(async_client, model_name, system_prompt, user_prompt)
@@ -451,7 +528,9 @@ def get_llm_response(system_prompt, user_prompt, model_name, primary_client, pro
         Response content string, or "ERROR_RESPONSE" if all attempts fail.
     """
     # Try primary provider
-    if provider == "openrouter":
+    if provider == "openai":
+        response = call_openai(primary_client, model_name, system_prompt, user_prompt)
+    elif provider == "openrouter":
         response = call_openrouter(primary_client, model_name, system_prompt, user_prompt)
     elif provider == "hf":
         response = call_huggingface(primary_client, system_prompt, user_prompt)

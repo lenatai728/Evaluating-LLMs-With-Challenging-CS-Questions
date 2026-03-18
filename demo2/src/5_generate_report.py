@@ -50,12 +50,17 @@ def generate_report(input_file, output_csv_q, output_csv_m):
         wA = avg_ans_score / Decimal('2.0')
         wR = avg_rat_score / Decimal('2.0')
         
-        penalty = Decimal('0.3')
+        # penalty = Decimal('0.3')
+        penalty = Decimal('0.85')
         
         # 4. Calculate Final Score
         # Formula: 0.3*wA + 0.7*wR - penalty * |wA - wR|
-        score_val = (Decimal('0.3') * wA) + (Decimal('0.7') * wR) - (penalty * abs(wA - wR))
+        # score_val = (Decimal('0.3') * wA) + (Decimal('0.7') * wR) - (penalty * abs(wA - wR))
+        score_val = (Decimal('0.5') * wA) + (Decimal('0.5') * wR) - (penalty * abs(wA - wR))
         
+        # Prevent negative scores
+        score_val = Decimal(0.0) if score_val < Decimal(0.0) else score_val
+
         # Round to 2 decimal places
         final_score = (score_val * Decimal('100')).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
         

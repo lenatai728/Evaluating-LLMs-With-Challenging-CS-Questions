@@ -9,8 +9,10 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer, util
 from llm_clients import (
+    create_openai_client,
     create_deepseek_client,
     create_openrouter_client,
+    create_async_openai_client,
     create_async_openrouter_client,
     create_async_deepseek_client,
     get_llm_response,
@@ -24,18 +26,18 @@ SEMANTIC_THRESHOLD = 0.90
 MAX_RETRIES = 3  # For retry phase
 load_dotenv()
 
-# --- JUDGE CONFIGURATION (Add API keys here) ---
+# --- JUDGE CONFIGURATION ---
 JUDGE_CONFIGS = [
     {
         "id": "deepseek-reasoner", 
         "model_name": "deepseek-reasoner", 
         "base_url": "https://api.deepseek.com"
     },
-    # {
-    #     "id": "gpt_4o_mini", 
-    #     "model_name": "openai/gpt-4o-mini", 
-    #     "base_url": "https://openrouter.ai/api/v1"
-    # },
+    {
+        "id": "gpt-4o-mini", 
+        "model_name": "gpt-4o-mini", 
+        "base_url": None
+    },
 ]
 
 # --- LOGGING (file only, terminal stays clean for tqdm) ---
@@ -53,7 +55,9 @@ logger = logging.getLogger(__name__)
 
 def get_provider_for_judge(judge_config):
     """Determine the llm_clients provider string from a judge's base_url."""
-    base_url = judge_config.get("base_url", "")
+    base_url = judge_config.get("base_url")
+    if base_url is None:
+        return "openai"
     if "deepseek" in base_url:
         return "deepseek"
     elif "openrouter" in base_url:
@@ -65,7 +69,9 @@ def create_client_for_judge(judge_config):
     """Create the appropriate llm_clients client for a judge."""
     provider = get_provider_for_judge(judge_config)
     model_name = judge_config["model_name"]
-    if provider == "deepseek":
+    if provider == "openai":
+        return create_openai_client()
+    elif provider == "deepseek":
         return create_deepseek_client(model_name)
     elif provider == "openrouter":
         return create_openrouter_client(model_name)
@@ -78,7 +84,9 @@ def create_async_client_for_judge(judge_config):
     provider = get_provider_for_judge(judge_config)
     model_name = judge_config["model_name"]
 
-    if provider == "deepseek":
+    if provider == "openai":
+        return create_async_openai_client()
+    elif provider == "deepseek":
         return create_async_deepseek_client(model_name)
     elif provider == "openrouter":
         return create_async_openrouter_client(model_name)
@@ -485,6 +493,32 @@ def main():
                         entry[key] = val
         logger.info(f"Resumed: merged scores from {output_path} ({len(existing_data)} entries)")
         print(f"📂 Resuming from existing output with {len(existing_data)} entries")
+
+    # 2.5 Recalculate average scores for ALL entries upfront.
+    #     This ensures that scores from judges added in previous runs
+    #     are reflected in the average, even if all entries are "already done".
+    recalc_count = 0
+    for entry in data:
+        for mode in ["answer", "rationale"]:
+            # MC/MS/TF exact_match entries have no per-judge answer scores.
+            # Their average_answer_score should equal answer_score directly.
+            if mode == "answer":
+                qt = entry.get("question_type", "")
+                aem = entry.get("answer_eval_method", "")
+                if qt.lower() in ("mc", "ms", "tf") and aem == "exact_match":
+                    correct_val = entry.get("answer_score")
+                    if correct_val is not None and entry.get("average_answer_score") != correct_val:
+                        entry["average_answer_score"] = correct_val
+                        recalc_count += 1
+                    continue
+            old_avg = entry.get(f"average_{mode}_score")
+            update_average_score(entry, mode)
+            if entry.get(f"average_{mode}_score") != old_avg:
+                recalc_count += 1
+    if recalc_count > 0:
+        save_results(data, output_path)
+        logger.info(f"Recalculated {recalc_count} average score(s) and saved.")
+        print(f"🔄 Recalculated {recalc_count} average score(s)")
 
     # 3. Load RoBERTa if needed
     similarity_model = None

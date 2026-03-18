@@ -2,6 +2,7 @@
 # List of models to evaluate
 CANDIDATE_MODELS = [
     "openai/gpt-4o-mini",
+    "gpt-4o-mini",
     "mistralai/mixtral-8x7b-instruct",
     "openai/gpt-oss-120b:free",
     "gemma-3-1b-it",

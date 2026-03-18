@@ -8,10 +8,12 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 from config import CANDIDATE_MODELS
 from llm_clients import (
+    create_openai_client,
     create_openrouter_client,
     create_huggingface_client,
     create_google_client,
     create_deepseek_client,
+    create_async_openai_client,
     create_async_openrouter_client,
     create_async_deepseek_client,
     create_async_google_client,
@@ -248,7 +250,7 @@ def main():
     # Config Args
     parser = argparse.ArgumentParser(description="Run inference for a specific LLM.")
     parser.add_argument("--model", type=str, required=True, help="Name of the model to run")
-    parser.add_argument("--provider", type=str, default="openrouter", choices=["openrouter", "hf", "google", "deepseek"],
+    parser.add_argument("--provider", type=str, default="openrouter", choices=["openai", "openrouter", "hf", "google", "deepseek"],
                         help="Primary API provider (default: openrouter)")
     parser.add_argument("--fallback-hf", action="store_true", help="Enable HuggingFace as fallback when primary fails")
     parser.add_argument("--concurrent", type=int, default=None, metavar="N",
@@ -304,7 +306,9 @@ def main():
     if concurrent is not None and concurrent > 0:
         # Create async client based on provider
         async_client = None
-        if provider == "openrouter":
+        if provider == "openai":
+            async_client = create_async_openai_client()
+        elif provider == "openrouter":
             async_client = create_async_openrouter_client(current_model)
         elif provider == "deepseek":
             async_client = create_async_deepseek_client(current_model)
@@ -344,7 +348,9 @@ def main():
 
         # Retry phase (sequential — simple and safe)
         primary_client = None
-        if provider == "openrouter":
+        if provider == "openai":
+            primary_client = create_openai_client()
+        elif provider == "openrouter":
             primary_client = create_openrouter_client(current_model)
         elif provider == "deepseek":
             primary_client = create_deepseek_client(current_model)
@@ -363,7 +369,12 @@ def main():
 
     # Create primary client based on provider
     primary_client = None
-    if provider == "openrouter":
+    if provider == "openai":
+        primary_client = create_openai_client()
+        if not primary_client:
+            print(f"❌ OpenAI client creation failed (no OPENAI-API-KEY). Aborting.")
+            return
+    elif provider == "openrouter":
         primary_client = create_openrouter_client(current_model)
     elif provider == "hf":
         primary_client = create_huggingface_client(current_model)
