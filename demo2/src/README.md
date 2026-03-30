@@ -72,6 +72,11 @@ python3 4_eval_llm_judge.py --mode rationale --input_file [filename] --judge_id 
 python3 5_generate_report.py --input_file [filename]
 ```
 - One Arg: "--input_file [filename]"
+## 8. Generate graphs from reports
+```
+python3 6_visualize.py --input_files data/4_final_results/*_result_by_model.csv
+```
+- One Arg: "--input_files [filename]"
 # C. Note
 ## Terminal command to uninstall modules from requirements.txt
 ```

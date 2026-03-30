@@ -1,0 +1,1121 @@
+question_id,question_domain,question_type,average_answer_score,average_rationale_score,wA,wR,Final Score,Explanation Code
+1,Data Structures and Algorithms,OE,2.0,1.0,1.0,0.5,32.5,E3
+2,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,E3
+3,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,E3
+4,Data Structures and Algorithms,OE,0.5,1.5,0.25,0.75,7.5,"E0, E3"
+5,Data Structures and Algorithms,OE,1.5,1.0,0.75,0.5,41.25,E3
+6,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,E3
+7,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E1
+8,Data Structures and Algorithms,OE,0.5,0.5,0.25,0.25,25.0,"E1, E3"
+9,Data Structures and Algorithms,TF,0.0,0.5,0.0,0.25,0.0,E1
+10,Data Structures and Algorithms,TF,0.0,0.5,0.0,0.25,0.0,E1
+11,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+12,Data Structures and Algorithms,TF,0.0,0.0,0.0,0.0,0.0,E1
+13,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+14,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,E1
+15,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+16,Data Structures and Algorithms,OE,2.0,1.0,1.0,0.5,32.5,E3
+17,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+18,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+19,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,E3
+20,Data Structures and Algorithms,OE,0.5,1.0,0.25,0.5,16.25,E3
+21,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+22,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+23,Data Structures and Algorithms,OE,0.0,0.5,0.0,0.25,0.0,E1
+24,Data Structures and Algorithms,OE,1.5,1.0,0.75,0.5,41.25,"E1, E3"
+25,Data Structures and Algorithms,OE,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+26,Data Structures and Algorithms,OE,1.5,0.5,0.75,0.25,7.5,"E1, E3"
+27,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E3
+28,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+29,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,E1
+30,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+31,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+32,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+33,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+34,Data Structures and Algorithms,OE,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+35,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+36,Computer Systems and Architecture,FB,0.0,0.0,0.0,0.0,0.0,E1
+37,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+38,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+39,Data Structures and Algorithms,MS,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+40,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+41,Data Structures and Algorithms,MS,0.0,0.0,0.0,0.0,0.0,E1
+42,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+43,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+44,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,E1
+45,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+46,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+47,Computer Systems and Architecture,TF,2.0,2.0,1.0,1.0,100.0,E0
+48,Computer Systems and Architecture,FB,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+49,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+50,Computer Systems and Architecture,FB,1.0,1.0,0.5,0.5,50.0,"E1, E8"
+51,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,E1
+52,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+53,Data Structures and Algorithms,OE,0.0,2.0,0.0,1.0,0.0,E0
+54,Data Structures and Algorithms,OE,1.0,0.5,0.5,0.25,16.25,E1
+55,Data Structures and Algorithms,OE,2.0,2.0,1.0,1.0,100.0,E0
+56,Data Structures and Algorithms,OE,2.0,2.0,1.0,1.0,100.0,E0
+57,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+58,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+59,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+60,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+61,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+62,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+63,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+64,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+65,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+66,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+67,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+68,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+69,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+70,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,E3
+71,Data Structures and Algorithms,MC,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+72,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E3, E9"
+73,Data Structures and Algorithms,MC,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+74,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+75,Data Structures and Algorithms,MS,0.0,0.5,0.0,0.25,0.0,E1
+76,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+77,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E3
+78,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+79,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+80,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+81,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+82,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E5"
+83,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+84,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+85,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E5"
+86,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+87,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+88,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E3, E7"
+89,Data Structures and Algorithms,FB,0.0,0.0,0.0,0.0,0.0,E1
+90,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E3
+91,Data Structures and Algorithms,MS,0.0,0.5,0.0,0.25,0.0,E1
+92,Data Structures and Algorithms,OE,1.0,2.0,0.5,1.0,32.5,E0
+93,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+94,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E9"
+95,Databases and Information Systems,OE,2.0,2.0,1.0,1.0,100.0,E0
+96,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E1
+97,Databases and Information Systems,FB,1.0,1.0,0.5,0.5,50.0,E3
+98,Databases and Information Systems,FB,1.5,2.0,0.75,1.0,66.25,E0
+99,Databases and Information Systems,OE,2.0,2.0,1.0,1.0,100.0,E0
+100,Databases and Information Systems,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+101,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+102,Databases and Information Systems,OE,0.0,1.0,0.0,0.5,0.0,E3
+103,Databases and Information Systems,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+104,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E3
+105,Databases and Information Systems,OE,2.0,2.0,1.0,1.0,100.0,E0
+106,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+107,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+108,Databases and Information Systems,TF,2.0,0.0,1.0,0.0,0.0,"E4, E7"
+109,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+110,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+111,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+112,Databases and Information Systems,TF,2.0,1.0,1.0,0.5,32.5,E3
+113,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+114,Databases and Information Systems,OE,0.5,0.5,0.25,0.25,25.0,E1
+115,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E3
+116,Databases and Information Systems,OE,2.0,2.0,1.0,1.0,100.0,E0
+117,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+118,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+119,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+120,Software Engineering and AI Fundamentals,OE,1.0,0.5,0.5,0.25,16.25,E1
+121,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+122,Software Engineering and AI Fundamentals,OE,1.5,2.0,0.75,1.0,66.25,E0
+123,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+124,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+125,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+126,Software Engineering and AI Fundamentals,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+127,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+128,Software Engineering and AI Fundamentals,MS,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+129,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+130,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+131,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,E1
+132,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+133,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+134,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+135,Software Engineering and AI Fundamentals,MS,0.0,2.0,0.0,1.0,0.0,E0
+136,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+137,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+138,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+139,Software Engineering and AI Fundamentals,OE,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+140,Software Engineering and AI Fundamentals,OE,1.0,2.0,0.5,1.0,32.5,E0
+141,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+142,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+143,Software Engineering and AI Fundamentals,OE,1.5,1.0,0.75,0.5,41.25,E1
+144,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+145,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+146,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+147,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+148,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,E1
+149,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+150,Software Engineering and AI Fundamentals,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+151,Software Engineering and AI Fundamentals,OE,2.0,1.0,1.0,0.5,32.5,E3
+152,Software Engineering and AI Fundamentals,OE,2.0,1.0,1.0,0.5,32.5,"E3, E9"
+153,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+154,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E1, E2"
+155,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+156,Software Engineering and AI Fundamentals,OE,1.5,2.0,0.75,1.0,66.25,E0
+157,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E2, E3"
+158,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+159,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,E3
+160,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+161,Software Engineering and AI Fundamentals,OE,0.0,0.5,0.0,0.25,0.0,E1
+162,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+163,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+164,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+165,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+166,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+167,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+168,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+169,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+170,Computer Systems and Architecture,TF,0.0,0.0,0.0,0.0,0.0,E1
+171,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+172,Computer Systems and Architecture,TF,0.0,0.0,0.0,0.0,0.0,E1
+173,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,E3
+174,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+175,Data Structures and Algorithms,TF,2.0,0.0,1.0,0.0,0.0,E1
+176,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,E1
+177,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+178,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E11"
+179,Data Structures and Algorithms,TF,2.0,0.0,1.0,0.0,0.0,"E1, E2"
+180,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+181,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+182,Computer Systems and Architecture,MS,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+183,Computer Systems and Architecture,MS,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+184,Computer Systems and Architecture,FB,1.0,1.0,0.5,0.5,50.0,E3
+185,Computer Systems and Architecture,FB,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+186,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+187,Computer Systems and Architecture,FB,1.0,2.0,0.5,1.0,32.5,E0
+188,Computer Systems and Architecture,FB,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+189,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+190,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+191,Computer Systems and Architecture,FB,1.0,2.0,0.5,1.0,32.5,E0
+192,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,E3
+193,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,"E3, E7"
+194,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E3
+195,Databases and Information Systems,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+196,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+197,Computer Systems and Architecture,FB,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+198,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+199,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+200,Databases and Information Systems,FB,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+201,Databases and Information Systems,FB,0.5,1.0,0.25,0.5,16.25,E1
+202,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+203,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+204,Databases and Information Systems,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+205,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+206,Databases and Information Systems,FB,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+207,Databases and Information Systems,TF,2.0,1.0,1.0,0.5,32.5,E3
+208,Databases and Information Systems,TF,0.0,0.0,0.0,0.0,0.0,E1
+209,Databases and Information Systems,TF,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+210,Databases and Information Systems,FB,1.0,1.0,0.5,0.5,50.0,E1
+211,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,E3
+212,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+213,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+214,Databases and Information Systems,MS,2.0,2.0,1.0,1.0,100.0,E0
+215,Databases and Information Systems,FB,0.5,1.5,0.25,0.75,7.5,"E0, E1"
+216,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+217,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+218,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+219,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+220,Data Structures and Algorithms,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+221,Data Structures and Algorithms,MS,0.0,0.5,0.0,0.25,0.0,E1
+222,Data Structures and Algorithms,MS,1.0,2.0,0.5,1.0,32.5,E0
+223,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+224,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E1
+225,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+226,Data Structures and Algorithms,MC,2.0,0.5,1.0,0.25,0.0,"E3, E7"
+227,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+228,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,E1
+229,Data Structures and Algorithms,FB,1.5,1.0,0.75,0.5,41.25,"E1, E3"
+230,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+231,Data Structures and Algorithms,FB,1.0,2.0,0.5,1.0,32.5,E0
+232,Data Structures and Algorithms,MS,0.0,2.0,0.0,1.0,0.0,E0
+233,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+234,Data Structures and Algorithms,MS,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+235,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+236,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,E3
+237,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+238,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+239,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+240,Computer Systems and Architecture,MS,0.0,0.5,0.0,0.25,0.0,E1
+241,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+242,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+243,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+244,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+245,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+246,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+247,Computer Systems and Architecture,MS,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+248,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+249,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+250,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+251,Computer Systems and Architecture,FB,0.5,0.5,0.25,0.25,25.0,"E1, E8"
+252,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+253,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,E5
+254,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+255,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+256,Databases and Information Systems,FB,0.5,1.0,0.25,0.5,16.25,"E1, E8"
+257,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+258,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+259,Software Engineering and AI Fundamentals,OE,1.0,0.5,0.5,0.25,16.25,"E1, E3"
+260,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+261,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+262,Data Structures and Algorithms,TF,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+263,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+264,Software Engineering and AI Fundamentals,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+265,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+266,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+267,Computer Systems and Architecture,TF,2.0,2.0,1.0,1.0,100.0,E0
+268,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,E1
+269,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+270,Databases and Information Systems,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+271,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+272,Data Structures and Algorithms,MC,2.0,0.5,1.0,0.25,0.0,E1
+273,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E1
+274,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+275,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,E3
+276,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+277,Databases and Information Systems,OE,0.0,2.0,0.0,1.0,0.0,E0
+278,Databases and Information Systems,MC,0.0,1.0,0.0,0.5,0.0,E1
+279,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+280,Data Structures and Algorithms,TF,0.0,2.0,0.0,1.0,0.0,E0
+281,Software Engineering and AI Fundamentals,MS,0.0,2.0,0.0,1.0,0.0,E0
+282,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+283,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+284,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+285,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+286,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+287,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+288,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+289,Data Structures and Algorithms,FB,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+290,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E3
+291,Software Engineering and AI Fundamentals,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+292,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+293,Databases and Information Systems,MC,2.0,2.0,1.0,1.0,100.0,E0
+294,Databases and Information Systems,MS,2.0,2.0,1.0,1.0,100.0,E0
+295,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+296,Software Engineering and AI Fundamentals,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+297,Data Structures and Algorithms,FB,0.5,0.5,0.25,0.25,25.0,E1
+298,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+299,Cybersecurity,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+300,Software Engineering and AI Fundamentals,MS,0.0,2.0,0.0,1.0,0.0,E0
+301,Data Structures and Algorithms,TF,2.0,0.5,1.0,0.25,0.0,E1
+302,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,E1
+303,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+304,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,"E0, E1"
+305,Cybersecurity,FB,2.0,1.0,1.0,0.5,32.5,E3
+306,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+307,Databases and Information Systems,MS,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+308,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+309,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+310,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+311,Software Engineering and AI Fundamentals,TF,0.0,1.0,0.0,0.5,0.0,E1
+312,Computer Systems and Architecture,FB,0.5,0.5,0.25,0.25,25.0,E1
+313,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+314,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,E3
+315,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+316,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+317,Databases and Information Systems,MS,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+318,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+319,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,E1
+320,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+321,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+322,Software Engineering and AI Fundamentals,OE,1.0,2.0,0.5,1.0,32.5,E0
+323,Databases and Information Systems,MC,2.0,2.0,1.0,1.0,100.0,E0
+324,Software Engineering and AI Fundamentals,MS,0.0,0.5,0.0,0.25,0.0,"E1, E7"
+325,Software Engineering and AI Fundamentals,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+326,Software Engineering and AI Fundamentals,MS,1.0,1.5,0.5,0.75,41.25,"E0, E2"
+327,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+328,Software Engineering and AI Fundamentals,TF,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+329,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+330,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+331,Databases and Information Systems,FB,2.0,2.0,1.0,1.0,100.0,E0
+332,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E11, E3"
+333,Databases and Information Systems,FB,0.5,2.0,0.25,1.0,0.0,E0
+334,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+335,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+336,Databases and Information Systems,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+337,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+338,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+339,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+340,Computer Systems and Architecture,MC,2.0,0.5,1.0,0.25,0.0,E1
+341,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+342,Databases and Information Systems,FB,0.5,1.5,0.25,0.75,7.5,"E0, E1"
+343,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+344,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+345,Cybersecurity,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+346,Computer Systems and Architecture,MS,2.0,2.0,1.0,1.0,100.0,E0
+347,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+348,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+349,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E2"
+350,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+351,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,E1
+352,Software Engineering and AI Fundamentals,FB,1.0,2.0,0.5,1.0,32.5,E0
+353,Computer Systems and Architecture,TF,2.0,2.0,1.0,1.0,100.0,E0
+354,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+355,Cybersecurity,MC,0.0,1.0,0.0,0.5,0.0,E3
+356,Data Structures and Algorithms,MS,0.0,2.0,0.0,1.0,0.0,E0
+357,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+358,Data Structures and Algorithms,OE,1.0,2.0,0.5,1.0,32.5,E0
+359,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+360,Software Engineering and AI Fundamentals,OE,1.5,2.0,0.75,1.0,66.25,E0
+361,Software Engineering and AI Fundamentals,MS,2.0,1.0,1.0,0.5,32.5,E1
+362,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+363,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+364,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+365,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+366,Software Engineering and AI Fundamentals,OE,1.0,2.0,0.5,1.0,32.5,E0
+367,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,E3
+368,Cybersecurity,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+369,Software Engineering and AI Fundamentals,OE,1.5,1.0,0.75,0.5,41.25,E3
+370,Data Structures and Algorithms,OE,2.0,2.0,1.0,1.0,100.0,E0
+371,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+372,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+373,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+374,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+375,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+376,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+377,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+378,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,"E3, E5"
+379,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+380,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+381,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+382,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+383,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+384,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+385,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+386,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+387,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+388,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+389,Cybersecurity,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+390,Computer Systems and Architecture,MS,2.0,2.0,1.0,1.0,100.0,E0
+391,Databases and Information Systems,FB,0.5,1.0,0.25,0.5,16.25,E3
+392,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+393,Software Engineering and AI Fundamentals,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+394,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+395,Computer Systems and Architecture,FB,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+396,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+397,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+398,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+399,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+400,Computer Systems and Architecture,TF,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+401,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+402,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+403,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+404,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+405,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+406,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+407,Databases and Information Systems,MS,0.0,2.0,0.0,1.0,0.0,E0
+408,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+409,Databases and Information Systems,TF,2.0,1.5,1.0,0.75,66.25,"E0, E11"
+410,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+411,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+412,Software Engineering and AI Fundamentals,FB,0.5,1.0,0.25,0.5,16.25,E3
+413,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+414,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,"E11, E3"
+415,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+416,Data Structures and Algorithms,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+417,Cybersecurity,MC,2.0,0.0,1.0,0.0,0.0,E1
+418,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+419,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+420,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+421,Software Engineering and AI Fundamentals,TF,0.0,1.0,0.0,0.5,0.0,E3
+422,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+423,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+424,Computer Systems and Architecture,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+425,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+426,Software Engineering and AI Fundamentals,OE,0.5,1.0,0.25,0.5,16.25,E3
+427,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,E3
+428,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+429,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,E3
+430,Software Engineering and AI Fundamentals,MS,2.0,1.0,1.0,0.5,32.5,E3
+431,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+432,Databases and Information Systems,MS,2.0,2.0,1.0,1.0,100.0,E0
+433,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+434,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+435,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+436,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+437,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,E1
+438,Data Structures and Algorithms,TF,0.0,0.5,0.0,0.25,0.0,E1
+439,Computer Systems and Architecture,OE,0.0,0.5,0.0,0.25,0.0,E1
+440,Databases and Information Systems,OE,0.5,0.5,0.25,0.25,25.0,E1
+441,Databases and Information Systems,FB,2.0,2.0,1.0,1.0,100.0,E0
+442,Computer Systems and Architecture,TF,2.0,0.5,1.0,0.25,0.0,E1
+443,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+444,Software Engineering and AI Fundamentals,OE,0.0,0.5,0.0,0.25,0.0,E1
+445,Computer Systems and Architecture,TF,0.0,0.5,0.0,0.25,0.0,E1
+446,Computer Systems and Architecture,TF,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+447,Software Engineering and AI Fundamentals,MS,2.0,1.0,1.0,0.5,32.5,E3
+448,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,E1
+449,Cybersecurity,FB,0.0,0.5,0.0,0.25,0.0,E1
+450,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+451,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+452,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,E1
+453,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+454,Computer Systems and Architecture,MS,2.0,2.0,1.0,1.0,100.0,E0
+455,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+456,Software Engineering and AI Fundamentals,OE,0.5,1.0,0.25,0.5,16.25,E3
+457,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,E3
+458,Software Engineering and AI Fundamentals,FB,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+459,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+460,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+461,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+462,Software Engineering and AI Fundamentals,MS,0.0,2.0,0.0,1.0,0.0,E0
+463,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+464,Cybersecurity,MC,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+465,Cybersecurity,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+466,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,"E1, E11"
+467,Databases and Information Systems,OE,0.5,0.5,0.25,0.25,25.0,E1
+468,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+469,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+470,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+471,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+472,Software Engineering and AI Fundamentals,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+473,Software Engineering and AI Fundamentals,OE,1.0,2.0,0.5,1.0,32.5,E0
+474,Software Engineering and AI Fundamentals,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+475,Cybersecurity,MC,0.0,1.0,0.0,0.5,0.0,E3
+476,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+477,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+478,Software Engineering and AI Fundamentals,TF,0.0,1.0,0.0,0.5,0.0,E1
+479,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+480,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+481,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+482,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E3, E8"
+483,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+484,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,E1
+485,Cybersecurity,MS,0.0,0.5,0.0,0.25,0.0,E1
+486,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+487,Cybersecurity,MC,2.0,1.0,1.0,0.5,32.5,E3
+488,Cybersecurity,FB,2.0,2.0,1.0,1.0,100.0,E0
+489,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E3
+490,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+491,Software Engineering and AI Fundamentals,OE,0.5,0.5,0.25,0.25,25.0,"E1, E3"
+492,Software Engineering and AI Fundamentals,OE,0.0,0.5,0.0,0.25,0.0,E1
+493,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+494,Computer Systems and Architecture,OE,1.0,2.0,0.5,1.0,32.5,E0
+495,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+496,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+497,Databases and Information Systems,MS,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+498,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,"E2, E3"
+499,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+500,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+501,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+502,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+503,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+504,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+505,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,E1
+506,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+507,Data Structures and Algorithms,FB,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+508,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+509,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,"E11, E3"
+510,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+511,Data Structures and Algorithms,FB,1.0,1.0,0.5,0.5,50.0,E3
+512,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+513,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,"E1, E8"
+514,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+515,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+516,Data Structures and Algorithms,TF,0.0,0.5,0.0,0.25,0.0,E1
+517,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+518,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E3
+519,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+520,Databases and Information Systems,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+521,Computer Systems and Architecture,MC,2.0,0.5,1.0,0.25,0.0,"E3, E7"
+522,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+523,Data Structures and Algorithms,TF,0.0,0.5,0.0,0.25,0.0,E1
+524,Software Engineering and AI Fundamentals,FB,0.5,0.5,0.25,0.25,25.0,E1
+525,Software Engineering and AI Fundamentals,OE,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+526,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+527,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+528,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+529,Computer Systems and Architecture,TF,0.0,2.0,0.0,1.0,0.0,E0
+530,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+531,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E3
+532,Computer Systems and Architecture,TF,0.0,2.0,0.0,1.0,0.0,E0
+533,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+534,Cybersecurity,MS,2.0,1.5,1.0,0.75,66.25,"E0, E11"
+535,Software Engineering and AI Fundamentals,TF,2.0,0.5,1.0,0.25,0.0,E1
+536,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+537,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,E3
+538,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,"E0, E11"
+539,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+540,Software Engineering and AI Fundamentals,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+541,Databases and Information Systems,MS,2.0,1.0,1.0,0.5,32.5,E1
+542,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+543,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+544,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+545,Databases and Information Systems,TF,0.0,0.0,0.0,0.0,0.0,E1
+546,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+547,Data Structures and Algorithms,OE,1.5,2.0,0.75,1.0,66.25,E0
+548,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+549,Computer Systems and Architecture,MS,2.0,2.0,1.0,1.0,100.0,E0
+550,Cybersecurity,MS,0.0,1.0,0.0,0.5,0.0,E3
+551,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+552,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+553,Cybersecurity,TF,0.0,0.5,0.0,0.25,0.0,E1
+554,Software Engineering and AI Fundamentals,OE,0.5,1.0,0.25,0.5,16.25,E1
+555,Cybersecurity,FB,0.5,1.0,0.25,0.5,16.25,"E1, E8"
+556,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+557,Computer Systems and Architecture,MC,0.0,2.0,0.0,1.0,0.0,E0
+558,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+559,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+560,Computer Systems and Architecture,FB,1.5,2.0,0.75,1.0,66.25,E0
+561,Software Engineering and AI Fundamentals,MC,0.0,0.0,0.0,0.0,0.0,E1
+562,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E9"
+563,Data Structures and Algorithms,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+564,Software Engineering and AI Fundamentals,OE,0.0,0.5,0.0,0.25,0.0,E1
+565,Data Structures and Algorithms,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+566,Cybersecurity,FB,2.0,2.0,1.0,1.0,100.0,E0
+567,Databases and Information Systems,FB,0.0,0.0,0.0,0.0,0.0,"E1, E4"
+568,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+569,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+570,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,E3
+571,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+572,Data Structures and Algorithms,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+573,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+574,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+575,Cybersecurity,FB,2.0,1.0,1.0,0.5,32.5,"E3, E9"
+576,Databases and Information Systems,MS,2.0,1.0,1.0,0.5,32.5,E1
+577,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+578,Data Structures and Algorithms,OE,0.0,0.0,0.0,0.0,0.0,"E4, E7"
+579,Computer Systems and Architecture,MS,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+580,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+581,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+582,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+583,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+584,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+585,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+586,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,E3
+587,Data Structures and Algorithms,MC,2.0,0.5,1.0,0.25,0.0,E1
+588,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+589,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+590,Cybersecurity,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+591,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+592,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+593,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,E1
+594,Computer Systems and Architecture,OE,0.0,1.0,0.0,0.5,0.0,E3
+595,Databases and Information Systems,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+596,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+597,Databases and Information Systems,OE,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+598,Cybersecurity,FB,1.0,1.5,0.5,0.75,41.25,"E0, E8"
+599,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+600,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+601,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,E3
+602,Software Engineering and AI Fundamentals,TF,2.0,0.5,1.0,0.25,0.0,E1
+603,Databases and Information Systems,FB,0.0,0.5,0.0,0.25,0.0,E1
+604,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+605,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+606,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+607,Data Structures and Algorithms,FB,1.5,2.0,0.75,1.0,66.25,E0
+608,Computer Systems and Architecture,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+609,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+610,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,E1
+611,Databases and Information Systems,FB,0.0,0.5,0.0,0.25,0.0,"E1, E7"
+612,Data Structures and Algorithms,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+613,Software Engineering and AI Fundamentals,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+614,Computer Systems and Architecture,OE,0.0,0.5,0.0,0.25,0.0,"E1, E7"
+615,Data Structures and Algorithms,FB,1.0,1.5,0.5,0.75,41.25,"E0, E8"
+616,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+617,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+618,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+619,Data Structures and Algorithms,FB,0.0,2.0,0.0,1.0,0.0,E0
+620,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+621,Software Engineering and AI Fundamentals,FB,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+622,Computer Systems and Architecture,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+623,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+624,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+625,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+626,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+627,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+628,Cybersecurity,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+629,Software Engineering and AI Fundamentals,MC,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+630,Software Engineering and AI Fundamentals,TF,0.0,2.0,0.0,1.0,0.0,E0
+631,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E7"
+632,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+633,Software Engineering and AI Fundamentals,FB,1.0,2.0,0.5,1.0,32.5,E0
+634,Computer Systems and Architecture,MS,0.0,2.0,0.0,1.0,0.0,E0
+635,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+636,Computer Systems and Architecture,TF,0.0,0.0,0.0,0.0,0.0,E1
+637,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+638,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+639,Data Structures and Algorithms,TF,0.0,2.0,0.0,1.0,0.0,E0
+640,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+641,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+642,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+643,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+644,Cybersecurity,FB,1.0,1.0,0.5,0.5,50.0,E3
+645,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+646,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+647,Computer Systems and Architecture,OE,2.0,2.0,1.0,1.0,100.0,E0
+648,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+649,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+650,Computer Systems and Architecture,TF,2.0,0.5,1.0,0.25,0.0,E1
+651,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+652,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+653,Data Structures and Algorithms,FB,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+654,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E1
+655,Cybersecurity,OE,1.0,2.0,0.5,1.0,32.5,E0
+656,Databases and Information Systems,MS,1.0,1.0,0.5,0.5,50.0,E1
+657,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E3
+658,Computer Systems and Architecture,TF,0.0,0.5,0.0,0.25,0.0,E1
+659,Cybersecurity,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+660,Software Engineering and AI Fundamentals,OE,2.0,1.0,1.0,0.5,32.5,E3
+661,Software Engineering and AI Fundamentals,OE,1.0,0.5,0.5,0.25,16.25,E1
+662,Computer Systems and Architecture,FB,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+663,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+664,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,E1
+665,Computer Systems and Architecture,OE,1.5,1.5,0.75,0.75,75.0,"E0, E8"
+666,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+667,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+668,Computer Systems and Architecture,TF,2.0,2.0,1.0,1.0,100.0,E0
+669,Databases and Information Systems,MC,2.0,0.5,1.0,0.25,0.0,E1
+670,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+671,Data Structures and Algorithms,FB,1.5,2.0,0.75,1.0,66.25,E0
+672,Data Structures and Algorithms,TF,2.0,0.5,1.0,0.25,0.0,E1
+673,Computer Systems and Architecture,FB,1.0,2.0,0.5,1.0,32.5,E0
+674,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+675,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+676,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+677,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+678,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,E1
+679,Computer Systems and Architecture,MC,2.0,0.5,1.0,0.25,0.0,"E1, E2"
+680,Software Engineering and AI Fundamentals,OE,2.0,1.0,1.0,0.5,32.5,E3
+681,Computer Systems and Architecture,FB,0.0,0.0,0.0,0.0,0.0,E1
+682,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E1, E6"
+683,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,"E1, E8"
+684,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+685,Cybersecurity,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+686,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+687,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+688,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+689,Software Engineering and AI Fundamentals,FB,0.0,0.0,0.0,0.0,0.0,E1
+690,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+691,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+692,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+693,Software Engineering and AI Fundamentals,OE,1.5,2.0,0.75,1.0,66.25,E0
+694,Computer Systems and Architecture,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+695,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,E1
+696,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+697,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+698,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,E1
+699,Software Engineering and AI Fundamentals,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+700,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,"E11, E3"
+701,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,E3
+702,Software Engineering and AI Fundamentals,FB,1.5,2.0,0.75,1.0,66.25,E0
+703,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+704,Databases and Information Systems,FB,2.0,2.0,1.0,1.0,100.0,E0
+705,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+706,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+707,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+708,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,"E0, E1"
+709,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+710,Databases and Information Systems,FB,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+711,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+712,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+713,Databases and Information Systems,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+714,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+715,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+716,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+717,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+718,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+719,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+720,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+721,Computer Systems and Architecture,OE,1.0,2.0,0.5,1.0,32.5,E0
+722,Data Structures and Algorithms,OE,1.0,2.0,0.5,1.0,32.5,E0
+723,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+724,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+725,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+726,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+727,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+728,Cybersecurity,FB,2.0,1.0,1.0,0.5,32.5,E3
+729,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+730,Software Engineering and AI Fundamentals,MS,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+731,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+732,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+733,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+734,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+735,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,E3
+736,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+737,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+738,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E3, E7"
+739,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+740,Databases and Information Systems,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+741,Databases and Information Systems,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+742,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+743,Databases and Information Systems,FB,0.0,1.0,0.0,0.5,0.0,E1
+744,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+745,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+746,Data Structures and Algorithms,MS,0.0,0.5,0.0,0.25,0.0,E1
+747,Software Engineering and AI Fundamentals,MS,0.0,0.5,0.0,0.25,0.0,E1
+748,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,E3
+749,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+750,Databases and Information Systems,FB,0.0,2.0,0.0,1.0,0.0,E0
+751,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+752,Software Engineering and AI Fundamentals,FB,0.5,2.0,0.25,1.0,0.0,E0
+753,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+754,Databases and Information Systems,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+755,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+756,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+757,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+758,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+759,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+760,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+761,Cybersecurity,FB,0.5,1.5,0.25,0.75,7.5,"E0, E3"
+762,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+763,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+764,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+765,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,E1
+766,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+767,Data Structures and Algorithms,OE,1.5,2.0,0.75,1.0,66.25,E0
+768,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+769,Computer Systems and Architecture,FB,0.5,1.0,0.25,0.5,16.25,E3
+770,Software Engineering and AI Fundamentals,OE,0.5,1.0,0.25,0.5,16.25,E3
+771,Software Engineering and AI Fundamentals,FB,0.5,1.5,0.25,0.75,7.5,"E0, E8"
+772,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+773,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+774,Cybersecurity,OE,1.0,0.5,0.5,0.25,16.25,"E3, E6"
+775,Data Structures and Algorithms,OE,2.0,2.0,1.0,1.0,100.0,E0
+776,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+777,Software Engineering and AI Fundamentals,MC,2.0,1.0,1.0,0.5,32.5,E1
+778,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+779,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+780,Computer Systems and Architecture,TF,0.0,2.0,0.0,1.0,0.0,E0
+781,Computer Systems and Architecture,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+782,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+783,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,E1
+784,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+785,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+786,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+787,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+788,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+789,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+790,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+791,Computer Systems and Architecture,TF,2.0,0.5,1.0,0.25,0.0,E1
+792,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E2"
+793,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+794,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+795,Computer Systems and Architecture,MS,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+796,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,E1
+797,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+798,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+799,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E11"
+800,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+801,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+802,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+803,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+804,Databases and Information Systems,MS,0.0,0.5,0.0,0.25,0.0,E1
+805,Data Structures and Algorithms,FB,1.5,2.0,0.75,1.0,66.25,E0
+806,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+807,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+808,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+809,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+810,Computer Systems and Architecture,OE,2.0,1.0,1.0,0.5,32.5,E3
+811,Computer Systems and Architecture,TF,2.0,0.5,1.0,0.25,0.0,E1
+812,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+813,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,E3
+814,Cybersecurity,MS,1.0,1.0,0.5,0.5,50.0,E1
+815,Data Structures and Algorithms,MC,2.0,1.0,1.0,0.5,32.5,E1
+816,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+817,Databases and Information Systems,FB,1.5,1.0,0.75,0.5,41.25,E3
+818,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+819,Cybersecurity,OE,1.5,1.0,0.75,0.5,41.25,E3
+820,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,E1
+821,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+822,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+823,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E3, E9"
+824,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+825,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+826,Databases and Information Systems,MS,0.0,0.5,0.0,0.25,0.0,E1
+827,Software Engineering and AI Fundamentals,FB,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+828,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+829,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+830,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+831,Cybersecurity,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+832,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+833,Cybersecurity,OE,0.5,1.0,0.25,0.5,16.25,E1
+834,Computer Systems and Architecture,TF,0.0,0.0,0.0,0.0,0.0,E1
+835,Software Engineering and AI Fundamentals,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+836,Databases and Information Systems,TF,0.0,1.0,0.0,0.5,0.0,"E1, E11"
+837,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+838,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+839,Data Structures and Algorithms,OE,1.0,2.0,0.5,1.0,32.5,E0
+840,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+841,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E3, E7"
+842,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+843,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+844,Data Structures and Algorithms,FB,1.0,1.0,0.5,0.5,50.0,"E1, E8"
+845,Databases and Information Systems,FB,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+846,Cybersecurity,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+847,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+848,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+849,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,E3
+850,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+851,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+852,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+853,Computer Systems and Architecture,OE,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+854,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+855,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+856,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,E3
+857,Computer Systems and Architecture,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+858,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+859,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+860,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+861,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+862,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+863,Data Structures and Algorithms,OE,2.0,1.0,1.0,0.5,32.5,E3
+864,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+865,Cybersecurity,FB,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+866,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E8"
+867,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+868,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+869,Software Engineering and AI Fundamentals,TF,2.0,0.5,1.0,0.25,0.0,E1
+870,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+871,Databases and Information Systems,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+872,Cybersecurity,MS,1.0,1.0,0.5,0.5,50.0,E3
+873,Data Structures and Algorithms,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+874,Computer Systems and Architecture,FB,2.0,2.0,1.0,1.0,100.0,E0
+875,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+876,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+877,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+878,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+879,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+880,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+881,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+882,Computer Systems and Architecture,OE,0.5,0.5,0.25,0.25,25.0,E1
+883,Databases and Information Systems,OE,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+884,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+885,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,E3
+886,Software Engineering and AI Fundamentals,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+887,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+888,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,E3
+889,Computer Systems and Architecture,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+890,Software Engineering and AI Fundamentals,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+891,Cybersecurity,FB,1.0,0.5,0.5,0.25,16.25,E1
+892,Cybersecurity,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+893,Software Engineering and AI Fundamentals,OE,1.0,1.5,0.5,0.75,41.25,"E0, E9"
+894,Cybersecurity,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+895,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+896,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+897,Computer Systems and Architecture,OE,2.0,1.0,1.0,0.5,32.5,"E11, E3"
+898,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+899,Databases and Information Systems,FB,1.0,2.0,0.5,1.0,32.5,E0
+900,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+901,Software Engineering and AI Fundamentals,MC,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+902,Databases and Information Systems,FB,2.0,1.0,1.0,0.5,32.5,E3
+903,Data Structures and Algorithms,MC,0.0,0.0,0.0,0.0,0.0,E1
+904,Software Engineering and AI Fundamentals,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+905,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+906,Computer Systems and Architecture,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+907,Cybersecurity,OE,1.0,1.0,0.5,0.5,50.0,E3
+908,Cybersecurity,FB,1.0,2.0,0.5,1.0,32.5,E0
+909,Computer Systems and Architecture,MS,0.0,0.5,0.0,0.25,0.0,"E3, E6"
+910,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+911,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+912,Data Structures and Algorithms,MC,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+913,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+914,Software Engineering and AI Fundamentals,FB,0.5,1.0,0.25,0.5,16.25,"E1, E3"
+915,Software Engineering and AI Fundamentals,FB,1.5,2.0,0.75,1.0,66.25,E0
+916,Data Structures and Algorithms,TF,2.0,1.0,1.0,0.5,32.5,E3
+917,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,"E1, E4"
+918,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+919,Cybersecurity,TF,0.0,0.0,0.0,0.0,0.0,E1
+920,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+921,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+922,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+923,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,"E1, E2"
+924,Databases and Information Systems,TF,0.0,0.5,0.0,0.25,0.0,E1
+925,Databases and Information Systems,FB,2.0,2.0,1.0,1.0,100.0,E0
+926,Software Engineering and AI Fundamentals,MS,1.0,0.5,0.5,0.25,16.25,"E1, E3"
+927,Databases and Information Systems,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+928,Software Engineering and AI Fundamentals,TF,2.0,2.0,1.0,1.0,100.0,E0
+929,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E1
+930,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+931,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+932,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+933,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+934,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,E1
+935,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+936,Computer Systems and Architecture,TF,2.0,0.5,1.0,0.25,0.0,E1
+937,Computer Systems and Architecture,TF,0.0,2.0,0.0,1.0,0.0,E0
+938,Cybersecurity,MC,2.0,2.0,1.0,1.0,100.0,E0
+939,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+940,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+941,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+942,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+943,Databases and Information Systems,MC,2.0,2.0,1.0,1.0,100.0,E0
+944,Databases and Information Systems,MC,2.0,1.0,1.0,0.5,32.5,E1
+945,Cybersecurity,MC,2.0,1.0,1.0,0.5,32.5,"E1, E11"
+946,Data Structures and Algorithms,FB,2.0,1.0,1.0,0.5,32.5,E3
+947,Cybersecurity,FB,0.0,0.5,0.0,0.25,0.0,E1
+948,Software Engineering and AI Fundamentals,TF,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+949,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+950,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+951,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+952,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,"E1, E8"
+953,Software Engineering and AI Fundamentals,TF,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+954,Databases and Information Systems,FB,1.0,1.0,0.5,0.5,50.0,"E3, E8"
+955,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+956,Data Structures and Algorithms,FB,2.0,1.0,1.0,0.5,32.5,E3
+957,Software Engineering and AI Fundamentals,OE,1.5,1.0,0.75,0.5,41.25,E3
+958,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+959,Computer Systems and Architecture,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+960,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+961,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+962,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+963,Software Engineering and AI Fundamentals,MS,2.0,2.0,1.0,1.0,100.0,E0
+964,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+965,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+966,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,E3
+967,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+968,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+969,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+970,Data Structures and Algorithms,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+971,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+972,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E3
+973,Computer Systems and Architecture,MC,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+974,Data Structures and Algorithms,FB,2.0,2.0,1.0,1.0,100.0,E0
+975,Databases and Information Systems,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+976,Software Engineering and AI Fundamentals,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+977,Software Engineering and AI Fundamentals,FB,2.0,2.0,1.0,1.0,100.0,E0
+978,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+979,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+980,Software Engineering and AI Fundamentals,FB,1.0,0.5,0.5,0.25,16.25,E1
+981,Databases and Information Systems,MS,0.0,1.0,0.0,0.5,0.0,E1
+982,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+983,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+984,Data Structures and Algorithms,MC,0.0,0.5,0.0,0.25,0.0,E1
+985,Software Engineering and AI Fundamentals,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+986,Cybersecurity,MS,2.0,1.0,1.0,0.5,32.5,E3
+987,Databases and Information Systems,MS,0.0,2.0,0.0,1.0,0.0,E0
+988,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+989,Computer Systems and Architecture,TF,2.0,0.0,1.0,0.0,0.0,"E1, E2"
+990,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E1
+991,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E1
+992,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+993,Cybersecurity,FB,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+994,Software Engineering and AI Fundamentals,TF,0.0,0.5,0.0,0.25,0.0,E1
+995,Data Structures and Algorithms,FB,1.0,2.0,0.5,1.0,32.5,E0
+996,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+997,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,E1
+998,Software Engineering and AI Fundamentals,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+999,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1000,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1001,Data Structures and Algorithms,FB,0.0,0.5,0.0,0.25,0.0,E1
+1002,Cybersecurity,MS,0.0,1.0,0.0,0.5,0.0,E1
+1003,Cybersecurity,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+1004,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,E3
+1005,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+1006,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+1007,Computer Systems and Architecture,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+1008,Cybersecurity,FB,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1009,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,E3
+1010,Data Structures and Algorithms,FB,1.0,1.0,0.5,0.5,50.0,E3
+1011,Databases and Information Systems,FB,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+1012,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+1013,Software Engineering and AI Fundamentals,OE,1.0,1.0,0.5,0.5,50.0,E3
+1014,Computer Systems and Architecture,MC,0.0,2.0,0.0,1.0,0.0,E0
+1015,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+1016,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,E1
+1017,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+1018,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1019,Data Structures and Algorithms,OE,2.0,1.0,1.0,0.5,32.5,E3
+1020,Databases and Information Systems,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1021,Databases and Information Systems,OE,0.0,1.0,0.0,0.5,0.0,E1
+1022,Software Engineering and AI Fundamentals,MC,2.0,2.0,1.0,1.0,100.0,E0
+1023,Cybersecurity,TF,2.0,2.0,1.0,1.0,100.0,E0
+1024,Software Engineering and AI Fundamentals,FB,0.0,1.0,0.0,0.5,0.0,E3
+1025,Cybersecurity,MS,0.0,2.0,0.0,1.0,0.0,E0
+1026,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+1027,Cybersecurity,MS,2.0,2.0,1.0,1.0,100.0,E0
+1028,Software Engineering and AI Fundamentals,FB,2.0,1.5,1.0,0.75,66.25,E3
+1029,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+1030,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1031,Data Structures and Algorithms,MS,1.0,1.0,0.5,0.5,50.0,E1
+1032,Data Structures and Algorithms,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1033,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E1"
+1034,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1035,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1036,Cybersecurity,MC,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+1037,Computer Systems and Architecture,MC,2.0,2.0,1.0,1.0,100.0,E0
+1038,Software Engineering and AI Fundamentals,TF,2.0,0.5,1.0,0.25,0.0,E1
+1039,Computer Systems and Architecture,OE,0.0,1.0,0.0,0.5,0.0,E3
+1040,Data Structures and Algorithms,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1041,Databases and Information Systems,TF,2.0,2.0,1.0,1.0,100.0,E0
+1042,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,E1
+1043,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+1044,Software Engineering and AI Fundamentals,MC,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+1045,Computer Systems and Architecture,OE,2.0,2.0,1.0,1.0,100.0,E0
+1046,Cybersecurity,TF,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+1047,Data Structures and Algorithms,FB,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+1048,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+1049,Computer Systems and Architecture,FB,1.5,2.0,0.75,1.0,66.25,E0
+1050,Data Structures and Algorithms,TF,2.0,2.0,1.0,1.0,100.0,E0
+1051,Computer Systems and Architecture,TF,2.0,1.5,1.0,0.75,66.25,"E0, E11"
+1052,Computer Systems and Architecture,OE,1.0,1.0,0.5,0.5,50.0,E3
+1053,Computer Systems and Architecture,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+1054,Databases and Information Systems,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+1055,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1056,Data Structures and Algorithms,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+1057,Computer Systems and Architecture,MS,2.0,2.0,1.0,1.0,100.0,E0
+1058,Computer Systems and Architecture,FB,0.0,1.0,0.0,0.5,0.0,E3
+1059,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,"E3, E5"
+1060,Computer Systems and Architecture,MS,1.0,1.0,0.5,0.5,50.0,E3
+1061,Computer Systems and Architecture,OE,0.0,1.0,0.0,0.5,0.0,E3
+1062,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1063,Databases and Information Systems,MC,0.0,1.0,0.0,0.5,0.0,E1
+1064,Data Structures and Algorithms,MS,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+1065,Cybersecurity,MC,2.0,1.0,1.0,0.5,32.5,E1
+1066,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1067,Data Structures and Algorithms,MC,0.0,1.0,0.0,0.5,0.0,E1
+1068,Cybersecurity,MC,0.0,0.5,0.0,0.25,0.0,E1
+1069,Databases and Information Systems,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1070,Computer Systems and Architecture,MC,0.0,2.0,0.0,1.0,0.0,E0
+1071,Data Structures and Algorithms,MC,0.0,0.0,0.0,0.0,0.0,"E1, E2"
+1072,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,E1
+1073,Computer Systems and Architecture,MC,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+1074,Data Structures and Algorithms,MS,2.0,2.0,1.0,1.0,100.0,E0
+1075,Computer Systems and Architecture,FB,1.5,2.0,0.75,1.0,66.25,E0
+1076,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,E1
+1077,Software Engineering and AI Fundamentals,OE,1.5,1.5,0.75,0.75,75.0,"E0, E3"
+1078,Software Engineering and AI Fundamentals,FB,0.0,0.5,0.0,0.25,0.0,"E1, E6"
+1079,Computer Systems and Architecture,TF,2.0,2.0,1.0,1.0,100.0,E0
+1080,Data Structures and Algorithms,OE,1.0,1.0,0.5,0.5,50.0,E3
+1081,Computer Systems and Architecture,TF,0.0,1.0,0.0,0.5,0.0,E1
+1082,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+1083,Computer Systems and Architecture,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1084,Computer Systems and Architecture,MC,2.0,1.0,1.0,0.5,32.5,E1
+1085,Databases and Information Systems,MS,0.0,1.5,0.0,0.75,0.0,"E0, E3"
+1086,Data Structures and Algorithms,OE,1.0,1.5,0.5,0.75,41.25,"E0, E3"
+1087,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1088,Databases and Information Systems,TF,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+1089,Data Structures and Algorithms,MS,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+1090,Software Engineering and AI Fundamentals,MS,0.0,1.0,0.0,0.5,0.0,E1
+1091,Computer Systems and Architecture,OE,1.0,2.0,0.5,1.0,32.5,E0
+1092,Cybersecurity,TF,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1093,Computer Systems and Architecture,MC,0.0,2.0,0.0,1.0,0.0,E0
+1094,Computer Systems and Architecture,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1095,Data Structures and Algorithms,MC,2.0,2.0,1.0,1.0,100.0,E0
+1096,Databases and Information Systems,TF,2.0,1.0,1.0,0.5,32.5,E1
+1097,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,E1
+1098,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,E1
+1099,Software Engineering and AI Fundamentals,MS,0.0,0.5,0.0,0.25,0.0,E1
+1100,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1101,Computer Systems and Architecture,MS,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1102,Cybersecurity,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+1103,Cybersecurity,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+1104,Software Engineering and AI Fundamentals,OE,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1105,Databases and Information Systems,TF,2.0,1.0,1.0,0.5,32.5,"E1, E3"
+1106,Cybersecurity,FB,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1107,Computer Systems and Architecture,MC,2.0,1.5,1.0,0.75,66.25,"E0, E3"
+1108,Computer Systems and Architecture,MC,0.0,0.5,0.0,0.25,0.0,"E1, E3"
+1109,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E11, E3"
+1110,Data Structures and Algorithms,TF,0.0,2.0,0.0,1.0,0.0,E0
+1111,Software Engineering and AI Fundamentals,OE,2.0,2.0,1.0,1.0,100.0,E0
+1112,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,E1
+1113,Computer Systems and Architecture,MC,0.0,1.0,0.0,0.5,0.0,E1
+1114,Data Structures and Algorithms,FB,0.0,1.0,0.0,0.5,0.0,"E1, E3"
+1115,Software Engineering and AI Fundamentals,MS,1.0,1.0,0.5,0.5,50.0,"E1, E3"
+1116,Cybersecurity,FB,0.5,1.0,0.25,0.5,16.25,"E3, E8"
+1117,Software Engineering and AI Fundamentals,MC,2.0,0.5,1.0,0.25,0.0,"E1, E3"
+1118,Cybersecurity,MS,0.0,1.5,0.0,0.75,0.0,"E0, E1"
+1119,Databases and Information Systems,FB,1.5,2.0,0.75,1.0,66.25,E0
+1120,Computer Systems and Architecture,MS,0.0,1.0,0.0,0.5,0.0,"E0, E1"
